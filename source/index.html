@@ -84,7 +84,7 @@
             <p>&laquo;Лучшее приложение, что я видел в жизни!&raquo; </p>
           </div>
           <cite class="review__author">
-            Мурат Эльтазин
+            Мурат Эльтазин<br>
             главный редактор газеты «гаджетлайф»
           </cite>
         </blockquote>
@@ -101,6 +101,7 @@
           <p>Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих. </p>
           <p>А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
         </div>
+
       </section>
       <section class="routes">
         <h2 class="routes__title">Направления</h2>
@@ -167,7 +168,7 @@
         <h2 class="companions__title">Попутчики</h2>
         <div class="companions__intro">
           <p>Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
-          <p>Теперь можно легко найти единомышленников!</p>
+          <b class="companions__lead">Теперь можно легко найти единомышленников!</b>
         </div>
         <ul class="companions__list">
           <li class="companions__item">
@@ -180,12 +181,12 @@
                   <img class="travelmate__img" src="https://via.placeholder.com/270x270" alt="Фото Тани Фирсовой" width="270" height="270">
                 </picture>
               </a>
-              <p class="travelmate__lvl">
+              <p class="travelmate__lvl lvl">
                 <span class="visually-hidden">Уровень:</span>
-                <span class="travelmate__lvl-num">99</span>
+                <span class="lvl__num">99</span>
               </p>
-              <div class="travelmate__hashtags hashtags">
-                <span class="visually-hidden">Хэштеги:</span>
+              <p class="travelmate__hashtags hashtags">
+                <span class="visually-hidden">Тэги:</span>
                 <span>
                   <a class="hashtags__link" href="#">#ЗОЖ</a>
                   <a class="hashtags__link" href="#">#ПП</a>
@@ -194,7 +195,7 @@
                   <a class="hashtags__link" href="#">#авокадо</a>
                   <a class="hashtags__link" href="#">#смузи</a>
                 </span>
-              </div>
+              </p>
               <div class="travelmate__destination destination">
                 <span class="destination__title visually-hidden">Хочет посетить:</span>
                 <ul class="destination__list">
@@ -245,8 +246,8 @@
                 <span class="visually-hidden">Уровень:</span>
                 <span class="travelmate__lvl-num">80</span>
               </p>
-              <div class="travelmate__hashtags hashtags">
-                <span class="visually-hidden">Хэштеги:</span>
+              <p class="travelmate__hashtags hashtags">
+                <span class="visually-hidden">Тэги:</span>
                 <span>
                   <a class="hashtags__link" href="#">#бургер</a>
                   <a class="hashtags__link" href="#">#бар</a>
@@ -254,7 +255,7 @@
                   <a class="hashtags__link" href="#">#концерт</a>
                   <a class="hashtags__link" href="#">#крафт</a>
                 </span>
-              </div>
+              </p>
               <div class="travelmate__destination destination">
                 <span class="destination__title visually-hidden">Хочет посетить:</span>
                 <ul class="destination__list">
@@ -289,6 +290,45 @@
           </li>
         </ul>
         <a class="companions__btn btn" href="catalog.html">Показать всех</a>
+      </section>
+      <section class="rates">
+        <h2 class="rates__title">Добавьте свой профиль</h2>
+        <dl class="rates__list">
+          <div class="rates__row">
+            <dt class="rates__name">Базовое размещение</dt>
+            <dd class="rates__value">Бесплатно</dd>
+          </div>
+          <div class="rates__row">
+            <dt class="rates__name">Вывод на первых позициях</dt>
+            <dd class="rates__value">99 руб./мес</dd>
+          </div>
+          <div class="rates__row">
+            <dt class="rates__name">Кастомный цвет карточки</dt>
+            <dd class="rates__value">59 руб./мес</dd>
+          </div>
+        </dl>
+        <a class="rates__link" href="buisness.html">Показать тарифы для бизнеса</a>
+      </section>
+      <section class="biz-rates modal">
+        <h2 class="visually-hidden">Тарифы для бизнеса</h2>
+        <dl class="biz-rates__list">
+          <div class="biz-rates__row">
+            <dt class="biz-rates__name">Реклама у блоггера</dt>
+            <dd class="biz-rates__price">300 000 руб./пост</dd>
+          </div>
+          <div class="biz-rates__row">
+            <dt class="biz-rates__name">Накрутка подписчиков</dt>
+            <dd class="biz-rates__price">от 1 руб./шт.</dd>
+          </div>
+          <div class="biz-rates__row">
+            <dt class="biz-rates__name">Лайки от ботов</dt>
+            <dd class="biz-rates__price">от 20 коп./лайк</dd>
+          </div>
+          <div class="biz-rates__row">
+            <dt class="biz-rates__name">Ваш продакт-плейсмент</dt>
+            <dd class="biz-rates__price">Кастомный цвет карточки</dd>
+          </div>
+        </dl>
       </section>
     </main>
     <footer class="page-footer">
