@@ -8,7 +8,7 @@
     <header class="page-header">
       <a class="page-header__logo logo">
         <picture>
-          <img class="logo__image" src="#" alt="Логотип" width="100" height="19">
+          <img class="logo__image" src="https://via.placeholder.com/100x19" alt="Логотип" width="100" height="19">
         </picture>
       </a>
       <button class="page-header__toggle" type="button">
@@ -17,13 +17,13 @@
       <nav class="page-header__nav main-nav">
         <ul class="main-nav__list site-nav">
           <li class="site-nav__item">
-            <a href="#" class="site-nav__link">О сервисе</a>
+            <a class="site-nav__link" href="#">О сервисе</a>
           </li>
           <li class="site-nav__item">
-            <a href="#" class="site-nav__link">Направления</a>
+            <a class="site-nav__link" href="form.html">Направления</a>
           </li>
           <li class="site-nav__item">
-            <a href="#" class="site-nav__link">Попутчики</a>
+            <a class="site-nav__link" href="catalog.html">Попутчики</a>
           </li>
         </ul>
         <ul class="main-nav__list user-nav">
@@ -31,12 +31,12 @@
             <a href="#" class="user-nav__link">Авторизация</a>
           </li>
         </ul>
-        <ul class="main-nav__list contacts-nav">
-          <li class="contacts-nav__item">
-            <a class="contacts-nav__link" href="tel:+78005558628">8 800 555-86-28</a>
+        <ul class="main-nav__list contacts">
+          <li class="contacts__item">
+            <a class="contacts__link contacts__link--phone" href="tel:+78005558628">8 800 555-86-28</a>
           </li>
-          <li class="contacts-nav__item">
-            <a class="contacts-nav__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          <li class="contacts__item">
+            <a class="contacts__link contacts__link--mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </li>
         </ul>
         <ul class="main-nav__list social-nav">
@@ -309,55 +309,87 @@
         </dl>
         <a class="rates__link" href="buisness.html">Показать тарифы для бизнеса</a>
       </section>
-      <section class="biz-rates modal">
-        <h2 class="visually-hidden">Тарифы для бизнеса</h2>
-        <dl class="biz-rates__list">
-          <div class="biz-rates__row">
-            <dt class="biz-rates__name">Реклама у блоггера</dt>
-            <dd class="biz-rates__value">300 000 руб./пост</dd>
-          </div>
-          <div class="biz-rates__row">
-            <dt class="biz-rates__name">Накрутка подписчиков</dt>
-            <dd class="biz-rates__value">от 1 руб./шт.</dd>
-          </div>
-          <div class="biz-rates__row">
-            <dt class="biz-rates__name">Лайки от ботов</dt>
-            <dd class="biz-rates__value">от 20 коп./лайк</dd>
-          </div>
-          <div class="biz-rates__row">
-            <dt class="biz-rates__name">Ваш продакт-плейсмент</dt>
-            <dd class="biz-rates__value">Кастомный цвет карточки</dd>
-          </div>
-        </dl>
+      <section class="cta">
+        <h2 class="visually-hidden">Регистрация и информация</h2>
+        <b class="cta__lead">Заинтересовались?</b>
+        <p class="cta__text">Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее <a class="cta__link" href="login.html">авторизуйтесь.</a>
+        </p>
+        <form class="cta__form" action="https://echo.htmlacademy.ru" method="POST">
+          <label class="visually-hidden" for="cta-mail">Email:</label>
+          <input class="cta__mail" id="cta-mail" type="email">
+          <button class="cta__btn" type="submit">
+            <span class="visually-hidden">Отправить</span>
+          </button>
+        </form>
+        <p>Остались вопросы?</p>
+        <p>Мы с радостью на них ответим!</p>
+        <ul class="cta__contacts contacts">
+          <li class="contacts__item">
+            <a class="contacts__link contacts__link--phone" href="tel:+78005558628">8 800 555-86-28</a>
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__link contacts__link--mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </li>
+        </ul>
+      </section>
+      <section class="address">
+        <h2 class="visually-hidden">Где мы находимся</h2>
+        <p class="address__text">ул. Большая Конюшенная, 19/8</p>
+        <a class="address__link btn" href="https://yandex.ru/maps/-/CBFXQGSKCD" target="_blank">Проложить маршрут</a>
+        <img class="address__map" src="http://placehold.it/320x546" width="320" height="546" alt="Офис компании на карте по адресу: г.Санкт-Петербург, ул. Большая Конюшенная, 19/8">
+        <iframe src="https://yandex.ru/map-widget/v1/-/CBFXQGSKCD" width="320" height="546"></iframe>
       </section>
     </main>
     <footer class="page-footer">
-      <a class="logo">
+      <a class="page-footer__logo logo">
         <picture>
-          <img class="logo__image" src="#" alt="Логотип">
+          <img class="logo__image" src="https://via.placeholder.com/96x15" alt="Логотип" width="96" height="15">
         </picture>
       </a>
       <ul class="social">
         <li class="social__item">
-          <a href="#" class="social__link">
+          <a href="#" class="social__link social__link--fb">
             <span class="visually-hidden">Фейсбук</span>
           </a>
         </li>
         <li class="social__item">
-          <a href="#" class="social__link">
+          <a href="#" class="social__link social__link--vk">
             <span class="visually-hidden">Вконтакте</span>
           </a>
         </li>
         <li class="social__item">
-          <a href="#" class="social__link">
+          <a href="#" class="social__link social__link--insta">
             <span class="visually-hidden">Инстаграм</span>
           </a>
         </li>
       </ul>
-      <p class="copyright">
-        Разработано:
-        <a href="#"></a>
+      <p class="page-footer__copyright copyright">
+        <span class="copyright__text">Разработано</span>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+          <span class="visually-hidden">HTML Academy</span>
+        </a>
       </p>
     </footer>
+    <section class="biz-rates modal">
+      <h2 class="visually-hidden">Тарифы для бизнеса</h2>
+      <dl class="biz-rates__list">
+        <div class="biz-rates__row">
+          <dt class="biz-rates__name">Реклама у блоггера</dt>
+          <dd class="biz-rates__value">300 000 руб./пост</dd>
+        </div>
+        <div class="biz-rates__row">
+          <dt class="biz-rates__name">Накрутка подписчиков</dt>
+          <dd class="biz-rates__value">от 1 руб./шт.</dd>
+        </div>
+        <div class="biz-rates__row">
+          <dt class="biz-rates__name">Лайки от ботов</dt>
+          <dd class="biz-rates__value">от 20 коп./лайк</dd>
+        </div>
+        <div class="biz-rates__row">
+          <dt class="biz-rates__name">Ваш продакт-плейсмент</dt>
+          <dd class="biz-rates__value">Кастомный цвет карточки</dd>
+        </div>
+      </dl>
+    </section>
   </body>
 </html>
