@@ -60,11 +60,112 @@
     </header>
     <main class="inner-page">
       <h1 class="inner-page__title">Попутчики</h1>
+      <section class="countries-filter">
+        <h2 class="countries-filter">Фильтрация по странам</h2>
+      </section>
+      <section class="travelmate-filter">
+        <h2 class="travelmate-filter__title">Подберите идеального попутчика</h2>
+        <form class="travelmate-filter__form pref-form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="pref-form__group">
+            <legend class="pref-form__title">Хобби</legend>
+            <ul class="pref-form__list">
+              <li class="pref-form__item">
+                <label class="pref-form__label" for="gym">Спортзал</label>
+                <input class="pref-form__input" id="gym" type="checkbox" name="hobby" value="Спортзал" checked>
+              </li>
+              <li class="pref-form__item">
+                <label class="pref-form__label" for="hooka">Кальян</label>
+                <input class="pref-form__input" id="hooka" type="checkbox" name="hobby" value="Кальян">
+              </li>
+              <li class="pref-form__item">
+                <label class="pref-form__label" for="couch">Диван</label>
+                <input class="pref-form__input" id="couch" type="checkbox" name="hobby" value="Диван">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="pref-form__group">
+            <legend class="pref-form__title">Музыка</legend>
+            <ul class="pref-form__list">
+              <li class="pref-form__item">
+                <label class="pref-form__label" for="hardrock">Тяжелый рок</label>
+                <input class="pref-form__input" id="hardrock" type="checkbox" name="music" value="Тяжелый рок" checked>
+              </li>
+              <li class="pref-form__item">
+                <label class="pref-form__label" for="russianrap">Русский рэп</label>
+                <input class="pref-form__input" id="russianrap" type="checkbox" name="music" value="Русский рэп">
+              </li>
+              <li class="pref-form__item">
+                <label class="pref-form__label" for="eurodance">Евроденс</label>
+                <input class="pref-form__input" id="eurodance" type="checkbox" name="music" value="Евроденс">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="pref-form__group">
+            <legend class="pref-form__title">Еда</legend>
+            <ul class="pref-form__list">
+              <li class="pref-form__item">
+                <label class="pref-form__label" for="meat">Мясоед</label>
+                <input class="pref-form__input" id="meat" type="checkbox" name="food" value="Мясо" checked>
+              </li>
+              <li class="pref-form__item">
+                <label class="pref-form__label" for="healthyfood">Сидит на ПП</label>
+                <input class="pref-form__input" id="healthyfood" type="checkbox" name="food" value="Здоровая">
+              </li>
+              <li class="pref-form__item">
+                <label class="pref-form__label" for="rawvegan">Веган-сыроед</label>
+                <input class="pref-form__input" id="rawvegan" type="checkbox" name="food" value="Веган-сыроед">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="pref-form__group">
+            <legend class="pref-form__title">Транспорт</legend>
+            <ul class="pref-form__list">
+              <li class="pref-form__item">
+                <label class="pref-form__label" for="plane">Авиаперелет</label>
+                <input class="pref-form__input" id="plane" type="checkbox" name="transport" value="Авиаперелет" checked>
+              </li>
+              <li class="pref-form__item">
+                <label class="pref-form__label" for="bus">Автотранспорт</label>
+                <input class="pref-form__input" id="bus" type="checkbox" name="transport" value="Автотранспорт">
+              </li>
+              <li class="pref-form__item">
+                <label class="pref-form__label" for="bike">Велосипед</label>
+                <input class="pref-form__input" id="bike" type="checkbox" name="transport" value="Велосипед" checked>
+              </li>
+              <li class="pref-form__item">
+                <label class="pref-form__label" for="run">Пешком</label>
+                <input class="pref-form__input" id="run" type="checkbox" name="transport" value="Пешком" checked>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="pref-form__group range">
+            <legend class="pref-form__title">Левел</legend>
+            <div class="range__scale-wrapper">
+              <div class="range__scale">
+                <div class="range__bar"></div>
+              </div>
+              <div class="range__toggle range__toggle--min"></div>
+              <div class="range__toggle range__toggle--max"></div>
+            </div>
+            <div class="range__ctrl ctrl">
+              <label class="ctrl__field ctrl__field--min">
+                <span class="visually-hidden">от</span>
+                <input class="ctrl__input" type="text" name="min" value="30">
+              </label>
+              <label class="ctrl__field ctrl__field--max">
+                <span class="visually-hidden">до</span>
+                <input class="ctrl__input ctrl__input" type="text" name="max" value="100">
+              </label>
+            </div>
+            <button class="ctrl__btn" type="submit" name="button" value="OK">Показать</button>
+          </fieldset>
+        </form>
+      </section>
     </main>
     <footer class="page-footer">
-      <a class="page-footer__logo logo" href="index.html">
+      <a class="page-footer__logo logo">
         <picture>
-          <img class="logo__image" src="https://via.placeholder.com/96x15" alt="Логотип" width="112" height="96">
+          <img class="logo__image" src="https://via.placeholder.com/96x15" alt="Логотип" width="96" height="15">
         </picture>
       </a>
       <ul class="social">
