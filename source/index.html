@@ -39,19 +39,22 @@
             <a class="contacts__link contacts__link--mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </li>
         </ul>
-        <ul class="main-nav__list social-nav">
-          <li class="social-nav__item">
-            <a href="#" class="social-nav__link social-nav__link--fb">
+        <ul class="main-nav__list social">
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <!-- тут будет свг -->
               <span class="visually-hidden">Фейсбук</span>
             </a>
           </li>
-          <li class="social-nav__item">
-            <a href="#" class="social-nav__link social-nav__link--vk">
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <!-- тут будет свг -->
               <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
-          <li class="social-nav__item">
-            <a href="#" class="social-nav__link social-nav__link--insta">
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <!-- тут будет свг -->
               <span class="visually-hidden">Инстаграм</span>
             </a>
           </li>
@@ -99,9 +102,8 @@
         <h2 class="about__title">О сервисе</h2>
         <div class="about__text">
           <p>Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих. </p>
-          <p>А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
+          <p class="about__accent">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
         </div>
-
       </section>
       <section class="routes">
         <h2 class="routes__title">Направления</h2>
@@ -121,7 +123,7 @@
                 </dl>
               </div>
               <picture>
-                <img class="country__photo" src="https://via.placeholder.com/270x110" alt="фото Франции" width="270" height="110">
+                <img class="country__photo" src="https://via.placeholder.com/270x110" alt="фото Тайланд" width="270" height="110">
               </picture>
             </article>
           </li>
@@ -139,7 +141,7 @@
                 </dl>
               </div>
               <picture>
-                <img class="country__photo" src="https://via.placeholder.com/270x110" alt="фото Франции" width="270" height="110">
+                <img class="country__photo" src="https://via.placeholder.com/270x110" alt="фото Франция" width="270" height="110">
               </picture>
             </article>
           </li>
@@ -157,7 +159,7 @@
                 </dl>
               </div>
               <picture>
-                <img class="country__photo" src="https://via.placeholder.com/270x110" alt="фото Чехии" width="270" height="110">
+                <img class="country__photo" src="https://via.placeholder.com/270x110" alt="фото Чехия" width="270" height="110">
               </picture>
             </article>
           </li>
@@ -174,19 +176,25 @@
           <li class="companions__item">
             <article class="travelmate">
               <h3 class="travelmate__name travelmate__status travelmate__status--offline">
-                <a class="travelmate__link" href="/id123.html" aria-label="Таня Фирсова оффлайн">Таня Фирсова</a>
+                <a class="travelmate__link" href="/id1.html" aria-label="Таня Фирсова оффлайн">Таня Фирсова</a>
               </h3>
-              <a class="travelmate__link travelmate__photo" href="/id123.html">
+              <a class="travelmate__link travelmate__photo" href="/id1.html">
                 <picture>
-                  <img class="travelmate__img" src="https://via.placeholder.com/270x270" alt="Фото Тани Фирсовой" width="270" height="270">
+                  <img class="travelmate__img" src="https://via.placeholder.com/270x270" alt="Фото" width="270" height="270">
                 </picture>
               </a>
+              <div class="travelmate__likes like">
+                <a href="#" class="like__btn">
+                  <span class="visually-hidden">Нравится</span>
+                </a>
+                <span class="like__count">1,5 m</span>
+              </div>
               <p class="travelmate__lvl lvl">
-                <span class="visually-hidden">Уровень:</span>
+                <span class="lvl__title">Уровень:</span>
                 <span class="lvl__num">99</span>
               </p>
               <p class="travelmate__hashtags hashtags">
-                <span class="visually-hidden">Тэги:</span>
+                <span class="hashtags__title hashtags__title--hidden">Тэги:</span>
                 <span>
                   <a class="hashtags__link" href="#">#ЗОЖ</a>
                   <a class="hashtags__link" href="#">#ПП</a>
@@ -219,13 +227,13 @@
                   <li class="transport__item transport__item--plane transport__item--active">
                     <span class="transport__tooltip">Авиаперелет</span>
                   </li>
-                  <li class="transport__item transport__item--plane">
+                  <li class="transport__item transport__item--bus">
                     <span class="transport__tooltip">Автотранспорт</span>
                   </li>
-                  <li class="transport__item transport__item--plane">
+                  <li class="transport__item transport__item--bike">
                     <span class="transport__tooltip">Велосипед</span>
                   </li>
-                  <li class="transport__item transport__item--plane">
+                  <li class="transport__item transport__item--run">
                     <span class="transport__tooltip">Пешком</span>
                   </li>
                 </ul>
@@ -235,19 +243,25 @@
           <li class="companions__item">
             <article class="travelmate">
               <h3 class="travelmate__name travelmate__status travelmate__status--offline">
-                <a class="travelmate__link" href="/id123.html" aria-label="Петя Демин онлайн">Петя Демин</a>
+                <a class="travelmate__link" href="/id2.html" aria-label="Петя Демин оффлайн">Петя Демин</a>
               </h3>
-              <a class="travelmate__link travelmate__photo" href="/id123.html">
+              <a class="travelmate__link travelmate__photo" href="/id2.html">
                 <picture>
-                  <img class="travelmate__img" src="https://via.placeholder.com/270x270" alt="Фото Пети Демина" width="270" height="270">
+                  <img class="travelmate__img" src="https://via.placeholder.com/270x270" alt="Фото" width="270" height="270">
                 </picture>
               </a>
-              <p class="travelmate__lvl">
-                <span class="visually-hidden">Уровень:</span>
-                <span class="travelmate__lvl-num">80</span>
+              <div class="travelmate__likes like">
+                <a href="#" class="like__btn">
+                  <span class="visually-hidden">Нравится</span>
+                </a>
+                <span class="like__count">150</span>
+              </div>
+              <p class="travelmate__lvl lvl">
+                <span class="lvl__title">Уровень:</span>
+                <span class="lvl__num">80</span>
               </p>
               <p class="travelmate__hashtags hashtags">
-                <span class="visually-hidden">Тэги:</span>
+                <span class="hashtags__title hashtags__title--hidden">Тэги:</span>
                 <span>
                   <a class="hashtags__link" href="#">#бургер</a>
                   <a class="hashtags__link" href="#">#бар</a>
@@ -260,8 +274,8 @@
                 <span class="destination__title visually-hidden">Хочет посетить:</span>
                 <ul class="destination__list">
                   <li class="destination__item">
-                    <span class="destination__icon destination__icon--gremany"></span>
-                    <span class="destination__country">Германия</span>
+                    <span class="destination__icon destination__icon--belg"></span>
+                    <span class="destination__country">Бельгия</span>
                   </li>
                   <li class="destination__item">
                     <span class="destination__icon destination__icon--chezh"></span>
@@ -346,20 +360,20 @@
           <img class="logo__image" src="https://via.placeholder.com/96x15" alt="Логотип" width="96" height="15">
         </picture>
       </a>
-      <ul class="social">
+      <ul class="page-footer__social social">
         <li class="social__item">
-          <a href="#" class="social__link social__link--fb">
-            <span class="visually-hidden">Фейсбук</span>
+          <a href="#" class="social__link" aria-label="Фейсбук">
+            <!-- тут будет свг -->
           </a>
         </li>
         <li class="social__item">
-          <a href="#" class="social__link social__link--vk">
-            <span class="visually-hidden">Вконтакте</span>
+          <a href="#" class="social__link" aria-label="Вконтакте">
+            <!-- тут будет свг -->
           </a>
         </li>
         <li class="social__item">
-          <a href="#" class="social__link social__link--insta">
-            <span class="visually-hidden">Инстаграм</span>
+          <a href="#" class="social__link" aria-label="Инстаграм">
+            <!-- тут будет свг -->
           </a>
         </li>
       </ul>

@@ -39,20 +39,20 @@
             <a class="contacts__link contacts__link--mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </li>
         </ul>
-        <ul class="main-nav__list social-nav">
-          <li class="social-nav__item">
-            <a href="#" class="social-nav__link social-nav__link--fb">
-              <span class="visually-hidden">Фейсбук</span>
+        <ul class="main-nav__list social">
+          <li class="social__item">
+            <a href="#" class="social__link" aria-label="Фейсбук">
+              <!-- тут будет свг -->
             </a>
           </li>
-          <li class="social-nav__item">
-            <a href="#" class="social-nav__link social-nav__link--vk">
-              <span class="visually-hidden">Вконтакте</span>
+          <li class="social__item">
+            <a href="#" class="social__link" aria-label="Вконтакте">
+              <!-- тут будет свг -->
             </a>
           </li>
-          <li class="social-nav__item">
-            <a href="#" class="social-nav__link social-nav__link--insta">
-              <span class="visually-hidden">Инстаграм</span>
+          <li class="social__item">
+            <a href="#" class="social__link" aria-label="Инстаграм">
+              <!-- тут будет свг -->
             </a>
           </li>
         </ul>
@@ -63,9 +63,9 @@
       <section class="area">
         <h2 class="area__title">Фильтрация по странам</h2>
       </section>
-      <section class="travelmate-filter">
-        <h2 class="travelmate-filter__title">Подберите идеального попутчика</h2>
-        <form class="travelmate-filter__form pref-form" action="https://echo.htmlacademy.ru" method="post">
+      <section class="filter">
+        <h2 class="filter__title">Подберите идеального попутчика</h2>
+        <form class="filter__form pref-form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="pref-form__group">
             <legend class="pref-form__title">Хобби</legend>
             <ul class="pref-form__list">
@@ -293,7 +293,7 @@
                 </ul>
                 <a class="travelmate__btn" href="#">Позвать</a>
               </div>
-            </article
+            </article>
           </li>
           <li class="catalog__item">
             <article class="travelmate">
@@ -365,8 +365,7 @@
           <li class="catalog__item">
             <article class="travelmate">
               <h3 class="travelmate__name travelmate__status travelmate__status--online">
-                <a class="travelmate__link" href="/id123.html" aria-label="Лариса Роговая
-онлайн">Лариса Роговая</a>
+                <a class="travelmate__link" href="/id123.html" aria-label="Лариса Роговая онлайн">Лариса Роговая</a>
               </h3>
               <a class="travelmate__link travelmate__photo" href="/id4.html">
                 <picture>
@@ -428,6 +427,35 @@
         </ul>
         <a class="catalog__btn" href="#">Показать еще</a>
       </section>
+      <section class="pagination">
+        <h2 class="visually-hidden">Переключение страниц</h2>
+        <ul class="pagination__pages pages-list">
+          <li class="pages-list__item">
+            <a class="pages-list__link pages-list__link--active">1</a>
+          </li>
+          <li class="pages-list__item">
+            <a href="#" class="pages-list__link">2</a>
+          </li>
+          <li class="lpages-ist__item">
+            <a href="#" class="pages-list__link">3</a>
+          </li>
+          <li class="lpages-ist__item">
+            <a href="#" class="pages-list__link">4</a>
+          </li>
+        </ul>
+        <ul class="pagination__ctrl row-list">
+          <li class="row-list__item">
+            <a class="row-list__link row-list__link--prev" href="#">
+              <span class="visually-hidden">Назад</span>
+            </a>
+          </li>
+          <li>
+            <a class="row-list__link row-list__link--next" href="#">
+              <span class="visually-hidden">Вперед</span>
+            </a>
+          </li>
+        </ul>
+      </section>
     </main>
     <footer class="page-footer">
       <a class="page-footer__logo logo" href="index.html">
@@ -435,20 +463,20 @@
           <img class="logo__image" src="https://via.placeholder.com/96x15" alt="Логотип" width="96" height="15">
         </picture>
       </a>
-      <ul class="social">
+      <ul class="page-footer__social social">
         <li class="social__item">
-          <a href="#" class="social__link social__link--fb">
-            <span class="visually-hidden">Фейсбук</span>
+          <a href="#" class="social__link" aria-label="Фейсбук">
+            <!-- тут будет свг -->
           </a>
         </li>
         <li class="social__item">
-          <a href="#" class="social__link social__link--vk">
-            <span class="visually-hidden">Вконтакте</span>
+          <a href="#" class="social__link" aria-label="Вконтакте">
+            <!-- тут будет свг -->
           </a>
         </li>
         <li class="social__item">
-          <a href="#" class="social__link social__link--insta">
-            <span class="visually-hidden">Инстаграм</span>
+          <a href="#" class="social__link" aria-label="Инстаграм">
+            <!-- тут будет свг -->
           </a>
         </li>
       </ul>
