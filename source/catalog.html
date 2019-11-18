@@ -60,15 +60,25 @@
     </header>
     <main class="inner-page">
       <h1 class="inner-page__title">Попутчики</h1>
-      <section class="area">
+      <section class="area area--open">
+        <!-- для закрытого состояния будет area--hidden -->
         <h2 class="area__title">Фильтрация по странам</h2>
         <div class="area__header">
-          <ul class="area__list">
-            <li class="area__continent">Европа</li>
-            <li class="area__continent">Азия</li>
-            <li class="area__continent">Америка</li>
-            <li class="area__continent">Острова</li>
+          <ul class="area__tabs">
+            <li class="area__item">
+              <button class="area__continent area__continent--active" type="button" name="continent">Европа</button>
+            </li>
+            <li class="area__item">
+              <button class="area__continent" type="button" name="continent">Азия</button>
+            </li>
+            <li class="area__item">
+              <button class="area__continent" type="button" name="continent">Америка</button>
+            </li>
+            <li class="area__item">
+              <button class="area__continent" type="button" name="continent">Острова</button>
+            </li>
           </ul>
+          <button class="area_btn" type="button" name="minimize">Свернуть</button>
         </div>
         <section class="area__countries countries">
           <h2 class="visually-hidden">Список стран</h2>
