@@ -140,21 +140,23 @@
         <form class="travel-plan__form step-form" action="https://echo.htmlacademy.ru" method="post">
           <ol class="step-form__list">
             <li class="step-form__item" id="step-1">
-              <h3 class="step-form__title">Шаг 1. Даты пребывания</h3>
-              <div class="step-form__hint">
-                <p>Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+              <div>
+                <h3 class="step-form__title">Шаг 1. Даты пребывания</h3>
+                <div class="step-form__hint">
+                  <p>Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+                </div>
+                <ol class="step-form__indicator indicator indicator--desktop">
+                  <li class="indicator__step indicator__step--active">
+                    <span class="indicator__text">Даты</span>
+                  </li>
+                  <li class="indicator__step">
+                    <span class="indicator__text">Маршрут</span>
+                  </li>
+                  <li class="indicator__step">
+                    <span class="indicator__text">Развлечения</span>
+                  </li>
+                </ol>
               </div>
-              <ol class="step-form__indicator indicator indicator--desktop">
-                <li class="indicator__step indicator__step--active">
-                  <span class="indicator__text">Даты</span>
-                </li>
-                <li class="indicator__step">
-                  <span class="indicator__text">Маршрут</span>
-                </li>
-                <li class="indicator__step">
-                  <span class="indicator__text">Развлечения</span>
-                </li>
-              </ol>
               <fieldset class="step-form__group num-field">
                 <legend class="num-field__title">Ищу попутчиков:</legend>
                 <label class="num-field__label" for="travelmate-num">
@@ -404,21 +406,36 @@
                   </tbody>
                 </table>
               </section>
-              <a class="step-form__btn btn" href="#step-2">Следующий шаг</a>
+              <div>
+                <a class="step-form__btn btn" href="#step-2">Следующий шаг</a>
+              </div>
             </li>
             <li class="step-form__item" id="step-2">
-              <h3 class="step-form__title">Шаг 2. Маршрут</h3>
-              <div class="step-form__hint">
-                <p>Укажите страны, которые вы хотели по посетить.<br>Это может быть одна или сразу несколько.</p>
+              <div>
+                <h3 class="step-form__title">Шаг 2. Маршрут</h3>
+                <div class="step-form__hint">
+                  <p>Укажите страны, которые вы хотели по посетить.<br>Это может быть одна или сразу несколько.</p>
+                </div>
+                <ol class="step-form__indicator indicator indicator--desktop">
+                  <li class="indicator__step">
+                    <span class="indicator__text">Даты</span>
+                  </li>
+                  <li class="indicator__step indicator__step--active">
+                    <span class="indicator__text">Маршрут</span>
+                  </li>
+                  <li class="indicator__step">
+                    <span class="indicator__text">Развлечения</span>
+                  </li>
+                </ol>
               </div>
               <section class="step-form__country country-select">
                 <h2 class="visually-hidden">Выберите страну</h2>
                 <ul class="country-select__list">
                   <li class="country-select__item">
-                    <div class="country-select__field country-select__field--choose">
+                    <div class="country-select__field country-select__field--selected">
                       <span class="country-select__name country-select__flag">Босния и Герцеговина</span>
                       <button type="button" name="country-add">
-                        <span class="visually-hidden">Добавить</span>
+                        <span class="visually-hidden">Изменить</span>
                       </button>
                     </div>
                     <button type="button" name="country-remove">
@@ -426,10 +443,10 @@
                     </button>
                   </li>
                   <li class="country-select__item">
-                    <div class="country-select__field country-select__field--choose">
+                    <div class="country-select__field country-select__field--selected">
                       <span class="country-select__name country-select__flag">Чехия</span>
                       <button type="button" name="country-add">
-                        <span class="visually-hidden">Добавить</span>
+                        <span class="visually-hidden">Изменить</span>
                       </button>
                     </div>
                     <button type="button" name="country-remove">
@@ -577,23 +594,25 @@
                   </li>
                 </ul>
               </section>
-              <ol class="step-form__indicator indicator indicator--desktop">
-                <li class="indicator__step">
-                  <span class="indicator__text">Даты</span>
-                </li>
-                <li class="indicator__step indicator__step--active">
-                  <span class="indicator__text">Маршрут</span>
-                </li>
-                <li class="indicator__step">
-                  <span class="indicator__text">Развлечения</span>
-                </li>
-              </ol>
             </li>
             <li class="step-form__item">
-              <h3 class="step-form__title" id="step-3">Шаг 3. Развлечения</h3>
-              <div class="step-form__hint">
-                <p>Наконец, расскажите о своих планах времяпровождения.</p>
-                <p>Можно писать в свободной форме и ставить тэги.</p>
+              <div>
+                <h3 class="step-form__title" id="step-3">Шаг 3. Развлечения</h3>
+                <div class="step-form__hint">
+                  <p>Наконец, расскажите о своих планах времяпровождения.</p>
+                  <p>Можно писать в свободной форме и ставить тэги.</p>
+                </div>
+                <ol class="step-form__indicator indicator indicator--desktop">
+                  <li class="indicator__step">
+                    <span class="indicator__text">Даты</span>
+                  </li>
+                  <li class="indicator__step">
+                    <span class="indicator__text">Маршрут</span>
+                  </li>
+                  <li class="indicator__step indicator__step--active">
+                    <span class="indicator__text">Развлечения</span>
+                  </li>
+                </ol>
               </div>
               <div>
                 <span>Босния и герцеговина</span>
@@ -603,17 +622,6 @@
                 <span>Чехия</span>
                 <textarea name="name" rows="8" cols="80" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
               </div>
-              <ol class="step-form__indicator indicator indicator--desktop">
-                <li class="indicator__step">
-                  <span class="indicator__text">Даты</span>
-                </li>
-                <li class="indicator__step">
-                  <span class="indicator__text">Маршрут</span>
-                </li>
-                <li class="indicator__step indicator__step--active">
-                  <span class="indicator__text">Развлечения</span>
-                </li>
-              </ol>
             </li>
           </ol>
           <button class="step-form__btn btn" type="submit" name="button">Отправить</button>
