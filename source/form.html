@@ -69,11 +69,12 @@
         <picture>
           <img class="profile__photo" src="https://via.placeholder.com/100x100" alt="Фото профиля" width="100" height="100">
         </picture>
-        <form class="profile__photo-edit" action="https://echo.htmlacademy.ru" method="post">
-          <label class="profile__btn" for="photo-change">Сменить фото</label>
-          <input class="profile__file visually-hidden" id="photo-change" type="file">
-        </form>
         <form class="profile__form" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="profile__group">
+            <legend class="visually-hidden">Фотография</legend>
+            <label class="profile__btn" for="photo-change">Сменить фото</label>
+            <input class="profile__file visually-hidden" id="photo-change" type="file">
+          </fieldset>
           <fieldset class="profile__group">
             <legend class="profile__title">Тэги</legend>
             <textarea class="profile__tags" name="name" rows="8" cols="60">
