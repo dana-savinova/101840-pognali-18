@@ -1,7 +1,10 @@
 var headerNav = document.querySelector('.page-header__nav');
 var navToggle = document.querySelector('.page-header__toggle');
 
-headerNav.classList.remove('page-header__nav--nojs');
+if (headerNav.classList.contains('page-header__nav--nojs')) {
+  headerNav.classList.remove('page-header__nav--nojs');
+  headerNav.classList.add('page-header__nav--closed');
+};
 
 navToggle.addEventListener('click', function() {
   if (headerNav.classList.contains('page-header__nav--closed')) {

@@ -1,0 +1,17 @@
+.social {
+  @include list-reset;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.social__link {
+  display: block;
+  min-width: 45px;
+  text-align: center;
+}
+
+.social__icon {
+  fill: #cccccc;
+}
