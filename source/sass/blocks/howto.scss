@@ -1,0 +1,63 @@
+.howto {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  counter-reset: section;
+  list-style: none;
+}
+
+.howto__item {
+  position: relative;
+  min-height: 80px;
+  padding-top: 23px;
+  padding-right: 110px;
+  padding-bottom: 23px;
+  padding-left: 25px;
+
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+
+  color: $black;
+  background-color: $mango;
+
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.howto__item:not(:first-child) {
+  margin-top: -10px;
+}
+
+.howto__item:nth-child(4n+1) {
+  background-color: $mango;
+}
+
+.howto__item:nth-child(4n+2) {
+  background-color: $mango-two;
+}
+
+.howto__item:nth-child(4n+3) {
+  background-color: #ffbd30;
+}
+
+.howto__item:nth-child(4n+4) {
+  background-color: #ffd74b;
+}
+
+.howto__item::after {
+  counter-increment: section;
+  content: counters(section, ".") " ";
+
+  position: absolute;
+  right: 21px;
+
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+
+  color: $white;
+}
