@@ -1,7 +1,3 @@
-.logo__image--white {
-  display: none;
-}
-
 .logo {
   display: block;
   text-decoration: none;
@@ -10,6 +6,10 @@
 .logo__image {
   width: 100px;
   height: 19px;
+}
+
+.logo__image--blue {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
