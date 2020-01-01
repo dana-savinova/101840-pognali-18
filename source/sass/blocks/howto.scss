@@ -28,6 +28,10 @@
   border-top-left-radius: 10px;
 }
 
+.howto__item:last-child {
+  border-radius: 10px;
+}
+
 .howto__item:not(:first-child) {
   margin-top: -10px;
 }
