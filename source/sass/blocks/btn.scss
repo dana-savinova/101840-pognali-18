@@ -1,0 +1,48 @@
+.btn {
+  position: relative;
+
+  display: block;
+  width: 100%;
+  padding-top: 24px;
+  padding-right: 34px;
+  padding-bottom: 24px;
+  padding-left: 34px;
+  min-height: 62px;
+
+  border-radius: 10px;
+
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+
+  color: $dark-slate-blue;
+  background-color: $light-gold;
+
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    background-color: $dark-gold;
+  }
+
+  &:active {
+    color: rgba($dark-slate-blue, 0.3);
+    background-color: $dark-gold;
+  }
+}
+
+.btn::after {
+  content: "";
+
+  position: absolute;
+  top: 24px;
+  right: 36px;
+
+  width: 10px;
+  height: 14px;
+
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+
+  border-left: 10px solid $dark-slate-blue;
+}
