@@ -1,0 +1,35 @@
+.about {
+  min-height: 352px;
+
+  padding-top: 30px;
+  padding-right: 50px;
+  padding-bottom: 81px;
+  padding-left: 50px;
+  color: $white;
+  background-color: $dark-blue-grey;
+
+  background-image: url("../img/about-mobile@1x.png");
+  background-repeat: no-repeat;
+
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.about__title {
+  padding: 0;
+  margin: 0;
+
+  font-size: 24px;
+  line-height: 24px;
+  color: $mango;
+}
+
+.about__text {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 200;
+}
+
+.about__accent {
+  font-weight: 700;
+}
