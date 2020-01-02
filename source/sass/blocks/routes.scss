@@ -1,0 +1,68 @@
+.routes {
+  position: relative;
+  min-height: 500px;
+
+  padding-top: 95px;
+  padding-right: 25px;
+  padding-bottom: 30px;
+  padding-left: 25px;
+  color: $medium-grey;
+  background-color: #edeff6;
+}
+
+
+.routes::after {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  bottom: -25px;
+
+  @include section-bottom-rounding;
+  background-color: #edeff6;
+}
+
+.routes__title {
+  padding-right: 50px;
+  padding-left: 25px;
+
+  @include section-title;
+}
+
+.routes__intro {
+  padding-right: 50px;
+  padding-left: 25px;
+
+  @include subtext-font;
+}
+
+.routes__list {
+  display: flex;
+
+  @include list-reset;
+
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.routes__item {
+  position: relative;
+  min-width: 270px;
+
+  margin-bottom: 10px;
+}
+
+// edeff6 later
+
+// .routes__item--faded::after {
+//   content: "";
+//
+//   position: absolute;
+//   bottom: 0;
+//   left: 0;
+//
+//   width: 270px;
+//   height: 81px;
+//
+//   background: linear-gradient(180deg, transparent 20%, #000000 98%);
+// }

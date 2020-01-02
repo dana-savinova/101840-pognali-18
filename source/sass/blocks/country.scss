@@ -1,0 +1,92 @@
+.country {
+  display: flex;
+  flex-direction: column;
+
+  flex-shrink: 0;
+}
+
+.country__photo {
+  order: 1;
+
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.country__wrapper {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: -20px;
+  padding-top: 20px;
+  padding-right: 23px;
+  padding-bottom: 23px;
+  padding-left: 23px;
+
+  order: 2;
+  flex-shrink: 0;
+
+  color: $dark-blue;
+  background-color: $white;
+  border-radius: 10px;
+}
+
+.country__info {
+  position: relative;
+}
+
+.country__title {
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 0;
+
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.country__flag {
+  position: absolute;
+  top: -32px;
+
+  width: 35px;
+  height: 24px;
+}
+
+.country__slogan {
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.country__travels {
+  margin: 0;
+}
+
+.country__total {
+  position: relative;
+  margin: 0;
+  padding-left: 19px;
+
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.country__total::before {
+  content: "";
+
+  position: absolute;
+  top: 5px;
+  left: 0;
+
+  width: 11px;
+  height: 11px;
+
+  background-image: url("../img/user.svg");
+  background-repeat: no-repeat;
+
+  opacity: 0.3;
+}
