@@ -1,0 +1,24 @@
+.review {
+  display: flex;
+  margin: 0;
+  padding-right: 110px;
+  padding-bottom: 33px;
+  padding-left: 51px;
+
+  flex-direction: column;
+
+  background-color: $dark-blue;
+}
+
+.review__text {
+  font-size: 16px;
+  line-height: 17px;
+  font-weight: 200;
+}
+
+.review__author {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
+  font-style: normal;
+}

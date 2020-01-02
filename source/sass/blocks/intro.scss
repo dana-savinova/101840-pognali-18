@@ -1,11 +1,18 @@
 .intro {
+  color: #ffffff;
+  background-color: #161c36;
+
+  padding-bottom: 40px;
+}
+
+.intro__wrapper {
+  min-height: 410px;
+
   background-image: url("../img/traveller-illustration-mobile@1x.png"),
     url("../img/globe-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: bottom right 49px,
-    bottom left;
-  color: #ffffff;
-  background-color: #161c36;
+    top left;
 }
 
 .intro__title {
@@ -17,4 +24,12 @@
   font-weight: 700;
   color: #ffffff;
   text-align: center;
+}
+
+.intro__nav {
+  padding: 0;
+  margin: 0;
+  margin-top: -25px;
+
+  background: linear-gradient(0deg, rgba(22, 28, 53, 1) 50%, rgba(0, 0, 0, 0) 50%);
 }

@@ -11,11 +11,11 @@
     <header class="page-header">
       <div class="page-header__wrapper">
         <a class="page-header__logo logo">
-          <picture>
+          <!-- <picture>
             <source media="(min-width:1440px)" srcset="img/logo-desktop-white@1x.png">
             <source media="(min-width:768px)" srcset="img/logo-tablet-white@1x.png">
             <img class="logo__image logo__image--white" src="img/logo-mobile-white@1x.png" alt="Логотип" width="100" height="19">
-          </picture>
+          </picture> -->
           <picture>
             <source media="(min-width:1440px)" srcset="img/logo-desktop-blue@1x.png">
             <source media="(min-width:768px)" srcset="img/logo-tablet-blue@1x.png">
@@ -23,6 +23,10 @@
           </picture>
         </a>
         <button class="page-header__toggle page-header__toggle--nojs" type="button">
+          <svg class="page-header__toggle-icon" viewBox="0 0 25 11" xmlns="http://www.w3.org/2000/svg" width="25" height="11">
+            <path d="m1.5 3h22c.8 0 1.5-.7 1.5-1.5s-.7-1.5-1.5-1.5h-22c-.8 0-1.5.7-1.5 1.5s.7 1.5 1.5 1.5z"/>
+            <path d="m23.5 8h-22c-.8 0-1.5.7-1.5 1.5s.7 1.5 1.5 1.5h22c.8 0 1.5-.7 1.5-1.5s-.7-1.5-1.5-1.5z"/>
+          </svg>
           <span class="visually-hidden">Меню</span>
         </button>
       </div>
@@ -95,22 +99,36 @@
     <main>
       <h1 class="visually-hidden">Погнали - сервис для поиска попутчиков</h1>
       <section class="intro">
-        <h2 class="intro__title">В путешествие <span class="no-wrap">с крутыми</span> попутчиками!</h2>
-        <ul class="intro__list intro-nav">
+        <div class="intro__wrapper">
+          <h2 class="intro__title">В путешествие <span class="no-wrap">с крутыми</span> попутчиками!</h2>
+        </div>
+        <ul class="intro__nav intro-nav">
           <li class="intro-nav__item">
-            <a class="intro-nav__link intro-nav__link--phone" href="tel:+78005558628">
+            <a class="intro-nav__link" href="tel:+78005558628">
+              <svg class="intro__icon intro__icon--phone" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" width="18" height="18">
+                <g>
+                  <path d="m12.6 18c-.3 0-.5 0-.8 0-3.6-.4-6.2-2.1-8.1-4.3-1.9-2.1-3.4-4.9-3.7-8.7 0-.3 0-.7 0-1 .1-.7.4-1.1.8-1.5.4-.5 1.2-1.1 1.8-1.2.5 0 1.3.3 1.6.8.3.4.4 1.2.6 1.8.1.6.4 1.4.4 2-.2.9-1.3 1.3-1.7 1.9 1.1 2.8 3 4.8 5.4 6.2.6-.3 1.2-1.4 2-1.4.3 0 .7.2 1 .3s.6.2 1 .4c.5.2 1.4.5 1.7.9s.5 1.2.4 1.7c-.1.8-1.6 1.8-2.4 2.1z"/>
+                  <path d="m9.1 1.1c4.3 0 7.8 3.6 7.8 8h1.1c0-5-4-9.1-8.9-9.1z"/>
+                  <path d="m9.1 6.9v1.1c.6 0 1 .5 1 1.1h1.1c0-1.2-.9-2.2-2.1-2.2z"/>
+                  <path d="m9.1 4.6c2.4 0 4.4 2 4.4 4.5h1.2c0-3.1-2.5-5.7-5.5-5.7v1.2z"/>
+                </g>
+              </svg>
               <span class="visually-hidden">8 800 555-86-28</span>
             </a>
           </li>
           <li class="intro-nav__item">
-            <a class="intro-nav__link intro-nav__link--mail" href="mailto:mail@htmlacademy.ru">
+            <a class="intro-nav__link" href="mailto:mail@htmlacademy.ru">
+              <svg class="intro__icon intro__icon--mail" viewBox="0 0 18 14" xmlns="http://www.w3.org/2000/svg" width="18" height="14">
+                <g>
+                  <path d="m14.9 1.8c1.2-1 .9-1.8-.7-1.8h-10.5c-1.5 0-1.8.8-.6 1.8l3.7 3.1c1.2 1 3.2 1 4.4 0z"/>
+                  <path d="m11.9 7.1c-1.2 1-2.2 1.8-2.2 1.8-.1.1-.2.1-.3.1h-.1c-.1.1-.2.1-.3.1-.1 0-.2 0-.3-.1h-.1c-.1 0-.2 0-.3-.1s-1-.8-2.2-1.8l-3.9-3.3c-1.2-1-2.2-.5-2.2 1v6.3c0 1.6 1.3 2.9 2.8 2.9h12.3c1.6 0 2.8-1.3 2.8-2.8v-6.4c0-1.6-1-2-2.2-1z"/>
+                </g>
+              </svg>
               <span class="visually-hidden">mail@htmlacademy.ru</span>
             </a>
           </li>
           <li class="intro-nav__item">
-            <a class="intro-nav__auth" href="#">
-              Авторизация
-            </a>
+            <a href="#" class="intro-nav__link intro-nav__link--auth">Авторизация</a>
           </li>
         </ul>
         <blockquote class="intro__review review">
