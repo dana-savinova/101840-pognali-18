@@ -12,27 +12,19 @@
 
 
 .routes::after {
-  content: "";
-
-  position: absolute;
-  left: 0;
-  bottom: -25px;
-
   @include section-bottom-rounding;
-  background-color: #edeff6;
+}
+
+.routes__wrapper {
+  padding-right: 50px;
+  padding-left: 25px;
 }
 
 .routes__title {
-  padding-right: 50px;
-  padding-left: 25px;
-
   @include section-title;
 }
 
 .routes__intro {
-  padding-right: 50px;
-  padding-left: 25px;
-
   @include subtext-font;
 }
 
