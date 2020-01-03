@@ -1,0 +1,46 @@
+.copyright {
+  min-width: 153px;
+}
+
+.copyright__link {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  color: $medium-grey;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.copyright__text {
+  margin-right: 24px;
+
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.copyright__icon {
+  width: 27px;
+  height: 34px;
+
+  fill: $dark-blue-grey;
+}
+
+// .copyright__link {
+//   width: 27px;
+//   height: 34px;
+//
+//   background-image: url("../img/htmlacademy.svg");
+//   background-repeat: no-repeat;
+//   background-size: contain;
+// }

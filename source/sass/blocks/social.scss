@@ -15,3 +15,46 @@
 .social__icon {
   fill: #cccccc;
 }
+
+.social__link--yellow {
+  position: relative;
+  min-width: 45px;
+  min-height: 45px;
+
+  background-color: $light-gold;
+  border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    background-color: $dark-gold;
+  }
+
+  &:active {
+    background-color: $dark-gold;
+  }
+}
+
+.social__icon--blue {
+  position: absolute;
+
+  fill: $dark-slate-blue;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social__icon--fb {
+  top: 13px;
+  left: 17px;
+}
+
+.social__icon--vk {
+  top: 18px;
+  left: 11px;
+}
+
+.social__icon--insta {
+  top: 14px;
+  left: 14px;
+}
