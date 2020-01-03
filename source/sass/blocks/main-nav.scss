@@ -24,27 +24,27 @@
   margin-bottom: 42px;
 }
 
-@media (min-width: $desktop-width) {
-  .main-nav {
-    max-width: 1082px;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .main-nav__social {
-    display: none;
-  }
-
-  .main-nav__site {
-    order: 1;
-  }
-
-  .main-nav__contacts {
-    order: 2;
-    margin-left: auto;
-  }
-
-  .main-nav__user {
-    order: 3;
-  }
-}
+// @media (min-width: $desktop-width) {
+//   .main-nav {
+//     max-width: 1082px;
+//     flex-direction: row;
+//     justify-content: space-between;
+//   }
+//
+//   .main-nav__social {
+//     display: none;
+//   }
+//
+//   .main-nav__site {
+//     order: 1;
+//   }
+//
+//   .main-nav__contacts {
+//     order: 2;
+//     margin-left: auto;
+//   }
+//
+//   .main-nav__user {
+//     order: 3;
+//   }
+// }

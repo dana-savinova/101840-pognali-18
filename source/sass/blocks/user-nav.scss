@@ -36,23 +36,23 @@
 }
 
 
-@media (min-width: $tablet-width) {
-  .user-nav {
-    position: absolute;
-    top: calc((-65px) + (-50px));
-    right: 0;
-  }
-
-  .user-nav__link {
-    max-width: 188px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .user-nav {
-    position: static;
-  }
-}
+// @media (min-width: $tablet-width) {
+//   .user-nav {
+//     position: absolute;
+//     top: calc((-65px) + (-50px));
+//     right: 0;
+//   }
+//
+//   .user-nav__link {
+//     max-width: 188px;
+//   }
+// }
+//
+// @media (min-width: $desktop-width) {
+//   .user-nav {
+//     position: static;
+//   }
+// }
 
 // @media (min-width: $tablet-width) {
 //   .user-nav {
