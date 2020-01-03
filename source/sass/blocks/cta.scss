@@ -1,0 +1,91 @@
+.cta {
+  position: relative;
+
+  padding-top: 129px;
+  padding-right: 25px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+
+  color: $white;
+  background-color: $dark-blue-grey;
+
+  text-align: center;
+}
+
+.cta::after {
+  @include section-bottom-rounding;
+}
+
+.cta__lead {
+  display: block;
+  margin-bottom: 20px;
+
+  @include section-title;
+}
+
+.cta__text {
+  margin: 0;
+  margin-bottom: 31px;
+
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 200;
+}
+
+.cta__link {
+  color: $light-gold;
+}
+
+.cta__form {
+  display: flex;
+  width: 100%;
+
+  color: $medium-grey;
+  background-color: $white;
+
+  border-radius: 10px;
+}
+
+.cta__mail {
+  width: 210px;
+  height: 62px;
+  padding: 24px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+
+  border: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.cta__mail::placeholder {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+
+  color: rgba($medium-grey, 0.3);
+}
+
+.cta__btn {
+  position: relative;
+
+  padding: 0;
+  width: 60px;
+  height: 62px;
+
+  background-color: $light-gold;
+
+  border: none;
+  border-radius: 0;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.cta__btn::after {
+  top: 23px;
+  right: 23px;
+}
+
+.cta__hint p {
+
+}

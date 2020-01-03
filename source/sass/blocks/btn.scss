@@ -29,6 +29,10 @@
     color: rgba($dark-slate-blue, 0.3);
     background-color: $dark-gold;
   }
+
+  &:active::after {
+    opacity: 0.3;
+  }
 }
 
 .btn::after {
