@@ -1,4 +1,6 @@
 .page-footer {
+  position: relative;
+
   display: flex;
 
   flex-direction: column;
@@ -6,6 +8,13 @@
 
   color: $medium-grey;
   background-color: $white;
+}
+
+.page-footer::before {
+  @include section-bottom-rounding;
+  top: -24px;
+
+  transform: rotate(180deg);
 }
 
 .page-footer__logo {
