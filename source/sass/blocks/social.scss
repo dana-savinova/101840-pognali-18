@@ -2,7 +2,7 @@
   @include list-reset;
   display: flex;
 
-  justify-content: center;
+  // justify-content: center;
   align-items: center;
 }
 
@@ -57,4 +57,21 @@
 .social__icon--insta {
   top: 14px;
   left: 14px;
+}
+
+@media (min-width: $tablet-width) {
+  .social__icon--fb {
+    width: 14px;
+    height: 28px;
+  }
+
+  .social__icon--vk {
+    width: 31px;
+    height: 16px;
+  }
+
+  .social__icon--insta {
+    width: 24px;
+    height: 24px;
+  }
 }

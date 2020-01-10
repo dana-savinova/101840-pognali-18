@@ -1,65 +1,90 @@
 .user-nav {
   @include list-reset;
   display: flex;
-  flex-direction: column;
+
+  flex-wrap: wrap;
+
+  list-style: none;
 }
 
 .user-nav__link {
-  display: block;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  display: flex;
+  width: 40px;
+  height: 40px;
 
-  min-width: 270px;
-  min-height: 50px;
+  font-size: 20px;
+  line-height: 30px;
+
+
+  background-color: $mango;
+  border-radius: 50%;
+
+  align-items: center;
+  justify-content: center;
+
+  &:hover,
+  &:focus {
+    background-color: #f26926;
+  }
+
+  &:active {
+    color: rgba($dark-blue, 0.3);
+  }
+
+  &:active .user-nav__icon {
+    opacity: 0.3;
+  }
+}
+
+.user-nav__link--mail {
+  background-color: $dark-gold;
+
+  &:hover,
+  &:focus {
+    background-color: $mango;
+  }
+}
+
+.user-nav__icon {
+  fill: $dark-blue;
+}
+
+.user-nav__link--phone,
+.user-nav__link--mail {
+  display: none;
+}
+
+.user-nav__link--auth {
+  width: 189px;
+  height: 40px;
 
   font-size: 17px;
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
 
-  color: $dark-blue-grey;
-  background-color: #ffd74b;
-
   text-align: center;
   text-decoration: none;
+
+  color: $dark-blue-grey;
+  background-color: #ffd74b;
   border-radius: 25px;
+
+  &:hover,
+  &:focus {
+    background-color: $dark-gold;
+  }
 }
 
-
-.user-nav__link:hover,
-.user-nav__link:focus {
-  background-color: #ffbd30;
+@media (min-width: $tablet-width) {
+  .user-nav__link--auth {
+    width: 188px;
+  }
 }
 
-.user-nav__link:active {
-  color: rgba(#161c35, 0.3);
+@media (min-width: $desktop-width) {
+  .user-nav__link--phone,
+  .user-nav__link--mail {
+    display: flex;
+  }
 }
-
-
-// @media (min-width: $tablet-width) {
-//   .user-nav {
-//     position: absolute;
-//     top: calc((-65px) + (-50px));
-//     right: 0;
-//   }
-//
-//   .user-nav__link {
-//     max-width: 188px;
-//   }
-// }
-//
-// @media (min-width: $desktop-width) {
-//   .user-nav {
-//     position: static;
-//   }
-// }
-
-// @media (min-width: $tablet-width) {
-//   .user-nav {
-//     flex-direction: row;
-//   }
-//
-//   .user-nav__link {
-//     max-width: 189px;
-//   }
-// }
