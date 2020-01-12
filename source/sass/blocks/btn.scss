@@ -70,3 +70,10 @@
     background-color: $dark-blue-grey;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .btn {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
