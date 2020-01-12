@@ -89,6 +89,10 @@
   justify-content: space-between;
 }
 
+.page-header__link--hide {
+  display: none;
+}
+
 @media (max-width: 1439px) {
   .page-header__logo {
     position: relative;
@@ -132,6 +136,10 @@
   .page-header {
     min-height: 132px;
     padding-top: 40px;
+  }
+
+  .page-header--dark {
+    background-color: $dark-blue-grey;
   }
 
   .page-header__wrapper {
@@ -191,6 +199,10 @@
     .page-header__user {
       display: flex;
     }
+  }
+
+  .page-header__link--hide {
+    display: flex;
   }
 
   .page-header__site {

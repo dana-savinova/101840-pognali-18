@@ -1,13 +1,10 @@
 .review {
   display: flex;
-  margin: 0;
-  padding-right: 110px;
+  padding-right: 85px;
   padding-bottom: 33px;
-  padding-left: 51px;
+  padding-left: 26px;
 
   flex-direction: column;
-
-  background-color: $dark-blue;
 }
 
 .review__text {
@@ -21,4 +18,26 @@
   line-height: 22px;
   font-weight: 700;
   font-style: normal;
+}
+
+@media (min-width: $tablet-width) {
+  .review__text {
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .review__author {
+    font-size: 21px;
+    line-height: 25px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review {
+    padding: 0;
+  }
+
+  .review__text {
+    margin-bottom: 15px;
+  }
 }

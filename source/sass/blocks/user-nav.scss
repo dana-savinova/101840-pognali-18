@@ -49,11 +49,6 @@
   fill: $dark-blue;
 }
 
-.user-nav__link--phone,
-.user-nav__link--mail {
-  display: none;
-}
-
 .user-nav__link--auth {
   width: 189px;
   height: 40px;
@@ -79,12 +74,5 @@
 @media (min-width: $tablet-width) {
   .user-nav__link--auth {
     width: 188px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .user-nav__link--phone,
-  .user-nav__link--mail {
-    display: flex;
   }
 }
