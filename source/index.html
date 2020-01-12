@@ -190,70 +190,72 @@
         </div>
       </section>
       <section class="routes">
-        <div class="routes__wrapper">
-          <h2 class="routes__title section-title">Направления</h2>
-          <p class="routes__intro">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
+        <div class="container routes__box">
+          <div class="routes__wrapper">
+            <h2 class="routes__title section-title">Направления</h2>
+            <p class="routes__intro">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
+          </div>
+          <ul class="routes__list">
+            <li class="routes__item">
+              <article class="country">
+                <div class="country__wrapper">
+                  <div class="country__info">
+                    <h3 class="country__title">Таиланд</h3>
+                    <img class="country__flag" src="img/flag/flag-thailand.svg" alt="Флаг" width="35" height="24">
+                    <p class="country__slogan">Джунгли зовут!</p>
+                  </div>
+                  <dl class="country__travels">
+                    <dt><span class="visually-hidden">Всего путешественников:</span></dt>
+                    <dd class="country__total">18321</dd>
+                  </dl>
+                </div>
+                <picture>
+                  <source media="(min-width:768px)" srcset="img/thailand-desktop@1x.jpg 1x, img/thailand-desktop@2x.jpg 2x">
+                  <img class="country__photo" src="img/thailand-mobile@1x.jpg" srcset="img/thailand-mobile@1x.jpg 2x" alt="фото Тайланд" width="270" height="110">
+                </picture>
+              </article>
+            </li>
+            <li class="routes__item">
+              <article class="country">
+                <div class="country__wrapper">
+                  <div class="country__info">
+                    <h3 class="country__title">Франция</h3>
+                    <img class="country__flag" src="img/flag/flag-france.svg" alt="Флаг" width="35" height="24">
+                    <p class="country__slogan">Трэ бьен, манифик!</p>
+                  </div>
+                  <dl class="country__travels">
+                    <dt><span class="visually-hidden">Всего путешественников:</span></dt>
+                    <dd class="country__total">12518</dd>
+                  </dl>
+                </div>
+                <picture>
+                  <source media="(min-width:768px)" srcset="img/france-desktop@1x.jpg">
+                  <img class="country__photo" src="img/france-mobile@1x.jpg" alt="фото Франция" width="270" height="110">
+                </picture>
+              </article>
+            </li>
+            <li class="routes__item routes__item--faded">
+              <article class="country">
+                <div class="country__wrapper">
+                  <div class="country__info">
+                    <h3 class="country__title">Чехия</h3>
+                    <img class="country__flag" src="img/flag/flag-czech.svg" alt="Флаг" width="35" height="24">
+                    <p class="country__slogan">Закоулки старой Европы</p>
+                  </div>
+                  <dl class="country__travels">
+                    <dt><span class="visually-hidden">Всего путешественников:</span></dt>
+                    <dd class="country__total">5326</dd>
+                  </dl>
+                </div>
+                <picture>
+                  <source media="(min-width:768px)" srcset="img/czech-desktop@1x.jpg">
+                  <img class="country__photo" src="img/czech-mobile@1x.jpg" alt="фото Чехия" width="270" height="110">
+                </picture>
+              </article>
+            </li>
+          </ul>
+          <a class="routes__btn btn" href="form.html">Показать все</a>
         </div>
-        <ul class="routes__list">
-          <li class="routes__item">
-            <article class="country">
-              <div class="country__wrapper">
-                <div class="country__info">
-                  <h3 class="country__title">Таиланд</h3>
-                  <img class="country__flag" src="img/flag/flag-thailand.svg" alt="Флаг" width="35" height="24">
-                  <p class="country__slogan">Джунгли зовут!</p>
-                </div>
-                <dl class="country__travels">
-                  <dt><span class="visually-hidden">Всего путешественников:</span></dt>
-                  <dd class="country__total">18321</dd>
-                </dl>
-              </div>
-              <picture>
-                <source media="(min-width:768px)" srcset="img/thailand-desktop@1x.jpg">
-                <img class="country__photo" src="img/thailand-mobile@1x.jpg" alt="фото Тайланд" width="270" height="110">
-              </picture>
-            </article>
-          </li>
-          <li class="routes__item">
-            <article class="country">
-              <div class="country__wrapper">
-                <div class="country__info">
-                  <h3 class="country__title">Франция</h3>
-                  <img class="country__flag" src="img/flag/flag-france.svg" alt="Флаг" width="35" height="24">
-                  <p class="country__slogan">Трэ бьен, манифик!</p>
-                </div>
-                <dl class="country__travels">
-                  <dt><span class="visually-hidden">Всего путешественников:</span></dt>
-                  <dd class="country__total">12518</dd>
-                </dl>
-              </div>
-              <picture>
-                <source media="(min-width:768px)" srcset="img/france-desktop@1x.jpg">
-                <img class="country__photo" src="img/france-mobile@1x.jpg" alt="фото Франция" width="270" height="110">
-              </picture>
-            </article>
-          </li>
-          <li class="routes__item routes__item--faded">
-            <article class="country">
-              <div class="country__wrapper">
-                <div class="country__info">
-                  <h3 class="country__title">Чехия</h3>
-                  <img class="country__flag" src="img/flag/flag-czech.svg" alt="Флаг" width="35" height="24">
-                  <p class="country__slogan">Закоулки старой Европы</p>
-                </div>
-                <dl class="country__travels">
-                  <dt><span class="visually-hidden">Всего путешественников:</span></dt>
-                  <dd class="country__total">5326</dd>
-                </dl>
-              </div>
-              <picture>
-                <source media="(min-width:768px)" srcset="img/czech-desktop@1x.jpg">
-                <img class="country__photo" src="img/czech-mobile@1x.jpg" alt="фото Чехия" width="270" height="110">
-              </picture>
-            </article>
-          </li>
-        </ul>
-        <a class="routes__btn btn" href="form.html">Показать все</a>
       </section>
       <section class="companions">
         <div class="companions__wrapper">
@@ -458,9 +460,9 @@
           <p class="address__text">ул. Большая Конюшенная, 19/8</p>
           <a class="address__link btn btn--stroke" href="https://yandex.ru/maps/-/CBFXQGSKCD" target="_blank">Проложить маршрут</a>
         </div>
-        <div class="address__map">
-          <img class="address__img" src="img/map-mobile@1x.jpg" width="320" height="546" alt="Офис компании на карте по адресу: г.Санкт-Петербург, ул. Большая Конюшенная, 19/8">
-          <iframe class="address__iframe" src="https://yandex.ru/map-widget/v1/-/CBFXQGSKCD" width="320" height="546"></iframe>
+        <div class="address__map map">
+          <img class="map__img" src="img/map-mobile@1x.jpg" width="320" height="546" alt="Офис компании на карте по адресу: г.Санкт-Петербург, ул. Большая Конюшенная, 19/8">
+          <div class="map__iframe" id="map"></div>
         </div>
       </section>
     </main>
@@ -528,5 +530,7 @@
       </dl>
     </section>
     <script src="js/script.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=9a6a93e4-b624-46e3-a347-4e0d48cd48d3&lang=ru_RU"></script>
+    <script src="js/map.js"></script>
   </body>
 </html>
