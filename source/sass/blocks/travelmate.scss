@@ -1,0 +1,27 @@
+.travelmate {
+  padding-top: 16px;
+  padding-right: 20px;
+  padding-bottom: 22px;
+  padding-left: 20px;
+
+  font-size: 15px;
+  line-height: 18px;
+
+  color: $medium-grey;
+  background-color: $white;
+
+  border-radius: 20px;
+}
+
+.travelmate__link {
+  text-decoration: none;
+}
+
+.travelmate__name {
+  margin: 0;
+
+  font-size: 20px;
+  line-height: 20px;
+
+  color: $dark-slate-blue;
+}

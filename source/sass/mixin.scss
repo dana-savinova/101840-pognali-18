@@ -4,18 +4,21 @@
   list-style: none;
 }
 
-@mixin section-title {
-  font-size: 24px;
-  line-height: 24px;
-  color: $mango;
-}
-
 @mixin subtext-font {
   font-size: 16px;
   line-height: 22px;
   font-weight: 200;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 33px;
+  }
 }
 
+@mixin section-bottom-round {
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
 
 @mixin section-bottom-rounding {
   content: "";

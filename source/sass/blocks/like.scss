@@ -1,0 +1,80 @@
+.like {
+  display: flex;
+
+  align-items: center;
+}
+
+.like__btn {
+  position: relative;
+
+  width: 31px;
+  height: 31px;
+  margin-right: 7px;
+
+  background-color: #edeff6;
+  border-radius: 50%;
+
+  text-decoration: none;
+
+  &:hover {
+    background-color: #e2e5f2;
+
+    &::after {
+      opacity: 0.5;
+    }
+  }
+
+  &:active {
+    background-color: #e2e5f2;
+
+    &::after {
+      opacity: 0.1;
+    }
+  }
+}
+
+.like__btn::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 13px;
+  height: 11px;
+  margin-top: -6px;
+  margin-left: -7px;
+
+  background-image: url("../img/heart.svg");
+  background-size: 13px 11px;
+}
+
+
+.like__btn--active {
+  background-color: #f9eaea;
+
+  &:hover {
+    background-color: #f9d8d8;
+  }
+
+  &:active {
+    background-color: #f9d8d8;
+
+    &::after {
+      opacity: 0.3;
+    }
+  }
+}
+
+.like__btn--active::after {
+  background-image: url("../img/heart-active.svg");
+}
+
+.like__count {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+
+  color: $dark-blue;
+
+  text-transform: uppercase;
+}
