@@ -1,41 +1,41 @@
 .rates {
   position: relative;
 
-  padding-top: 70px;
-  padding-right: 25px;
-  padding-bottom: 10px;
-  padding-left: 50px;
-
   color: $medium-grey;
   background-color: #edeff6;
+
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
-.rates::after {
-  @include section-bottom-rounding;
+.rates__wrapper {
+  padding-top: 70px;
+  // padding-right: 25px;
+  padding-bottom: 35px;
+  // padding-left: 50px;
 }
 
 .rates__title {
-  position: relative;
+  // position: relative;
 
-  padding-right: 100px;
-
-  @include section-title;
+  padding-right: 140px;
 }
 
-.rates__title::after {
-  content: "";
 
-  position: absolute;
-  top: -20px;
-  right: 0;
-
-  width: 99px;
-  height: 99px;
-
-  background-image: url("../img/rates@1x.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
+// .rates__title::after {
+//   content: "";
+//
+//   position: absolute;
+//   top: -20px;
+//   right: 0;
+//
+//   width: 99px;
+//   height: 99px;
+//
+//   background-image: url("../img/rates@1x.png");
+//   background-size: contain;
+//   background-repeat: no-repeat;
+// }
 
 .rates__list {
   display: flex;
@@ -69,7 +69,8 @@
 
   position: absolute;
   top: 0;
-  right: -34px;
+  bottom: 0;
+  left: calc(100% - 34px);
 
   display: inline-block;
   width: 34px;
@@ -116,4 +117,92 @@
 
   color: $dark-blue-grey;
   text-decoration: none;
+}
+
+
+@media (min-width: $tablet-width) {
+  .rates__list {
+    margin-bottom: 33px;
+    margin-left: 92px;
+  }
+
+  .rates__row {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    flex-direction: row;
+  }
+
+  .rates__row::after {
+    left: -90px;
+
+    width: 67px;
+    height: 67px;
+
+    font-size: 28px;
+    line-height: 67px;
+  }
+
+  .rates__name,
+  .rates__value {
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .rates__name {
+    padding-right: 60px;
+  }
+
+  .rates__value {
+    width: 165px;
+    margin-left: auto;
+    padding-left: 35px;
+
+    text-align: right;
+  }
+
+  .rates__link {
+    position: relative;
+
+    padding-top: 23px;
+    padding-left: 90px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .rates__link::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 67px;
+    height: 67px;
+    background-color: #e2e5f2;
+    background-image: url("../img/business.svg");
+    background-repeat: no-repeat;
+    background-size: 17px 21px;
+    background-position: center center;
+    border-radius: 50%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .rates__wrapper {
+    padding-right: 133px;
+    padding-left: 131px;
+  }
+
+  .rates__title {
+    padding-right: 10px;
+    padding-left: 10px;
+
+    text-align: center;
+  }
+
+  .rates__list {
+    width: 814px;
+  }
 }
