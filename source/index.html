@@ -510,12 +510,18 @@
       </section>
       <section class="address">
         <h2 class="visually-hidden">Где мы находимся</h2>
-        <div class="address__wrapper">
+        <div class="address__wrapper container">
           <p class="address__text">ул. Большая Конюшенная, 19/8</p>
           <a class="address__link btn btn--stroke" href="https://yandex.ru/maps/-/CBFXQGSKCD" target="_blank">Проложить маршрут</a>
         </div>
-        <div class="address__map map">
-          <img class="map__img" src="img/map-mobile@1x.jpg" width="320" height="546" alt="Офис компании на карте по адресу: г.Санкт-Петербург, ул. Большая Конюшенная, 19/8">
+        <div class="address__map map map--upped">
+          <div class="map__wrapper">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+              <img class="map__img" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@1x.jpg 1x, img/map-mobile@2x.jpg 2x" alt="Офис компании на карте по адресу: г.Санкт-Петербург, ул. Большая Конюшенная, 19/8" width="320" height="546">
+            </picture>
+          </div>
           <div class="map__iframe" id="map"></div>
         </div>
       </section>
