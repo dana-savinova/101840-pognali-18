@@ -1,14 +1,16 @@
 .copyright {
-  min-width: 153px;
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
 }
 
 .copyright__link {
   display: flex;
 
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 
-  color: $medium-grey;
   text-decoration: none;
 
   &:hover,
@@ -24,9 +26,11 @@
 .copyright__text {
   margin-right: 24px;
 
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 22px;
   font-weight: 400;
+
+  color: $medium-grey;
 }
 
 .copyright__icon {
@@ -36,11 +40,9 @@
   fill: $dark-blue-grey;
 }
 
-// .copyright__link {
-//   width: 27px;
-//   height: 34px;
-//
-//   background-image: url("../img/htmlacademy.svg");
-//   background-repeat: no-repeat;
-//   background-size: contain;
-// }
+@media (min-width: $tablet-width) {
+  .copyright__text {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
