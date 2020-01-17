@@ -882,12 +882,14 @@
         <ul class="catalog__list">
           <li class="catalog__item">
             <article class="travelmate">
-              <h3 class="travelmate__name travelmate__status travelmate__status--offline">
-                <a class="travelmate__link" href="/id123.html" aria-label="Таня Фирсова оффлайн">Таня Фирсова</a>
+              <h3 class="travelmate-preview__name travelmate-preview__status travelmate-preview__status--offline">
+                <a class="travelmate-preview__link travelmate-preview__name" href="/id1.html" aria-label="Таня Фирсова оффлайн">Таня Фирсова</a>
               </h3>
-              <a class="travelmate__link travelmate__photo" href="/id1.html">
+              <a class="travelmate-preview__link travelmate-preview__photo" href="/id1.html">
                 <picture>
-                  <img class="travelmate__img" src="img/user/" alt="Фото" width="270" height="270">
+                  <source media="(min-width:1440px)" srcset="img/user/firsova-desktop@1x.jpg 1x, img/user/firsova-desktop@2x.jpg 2x">
+                  <source media="(min-width:768px)" srcset="img/user/firsova-tablet@1x.jpg 1x, img/user/firsova-tablet@2x.jpg 2x">
+                  <img class="country__photo" src="img/user/firsova-mobile@1x.jpg" srcset="img/user/firsova-mobile@2x.jpg 2x" alt="фото Таня Фирсова" width="270" height="270">
                 </picture>
               </a>
               <div class="travelmate__likes like">
@@ -896,11 +898,13 @@
                 </a>
                 <span class="like__count">1,5 m</span>
               </div>
-              <p class="travelmate__lvl lvl">
-                <span class="lvl__title">Уровень:</span>
-                <span class="lvl__num">99</span>
+              <p class="travelmate-preview__lvl lvl lvl--preview">
+                <span class="lvl__title lvl__title--hide">Уровень:</span>
+                <span class="lvl__num lvl__num--99">
+                  <span class="lvl__text">99</span>
+                </span>
               </p>
-              <p class="travelmate__hashtags hashtags">
+              <p class="travelmate-preview__hashtags hashtags">
                 <span class="hashtags__title hashtags__title--hidden">Тэги:</span>
                 <span>
                   <a class="hashtags__link" href="#">#ЗОЖ</a>
@@ -911,60 +915,70 @@
                   <a class="hashtags__link" href="#">#смузи</a>
                 </span>
               </p>
-              <div class="travelmate__destination destination">
-                <span class="destination__title">Хочет посетить:</span>
+              <div class="travelmate-preview__destination destination destination--preview">
+                <span class="destination__title visually-hidden">Хочет посетить:</span>
                 <ul class="destination__list">
                   <li class="destination__item">
-                    <span class="destination__country destination__country--shri">Шри-Ланка</span>
+                    <div class="destination__flag" data-tooltip="Шри&nbsp;Ланка">
+                      <img class="destination__img" src="../img/flag/flag-sri-lanka.svg" alt="Флаг" width="35" height="24">
+                    </div>
+                    <span class="destination__country">Шри-Ланка</span>
                   </li>
                   <li class="destination__item">
-                    <span class="destination__country destination__country--thai">Тайланд</span>
+                    <div class="destination__flag" data-tooltip="Тайланд">
+                      <img class="destination__img" src="../img/flag/flag-thailand.svg" alt="Флаг" width="35" height="24">
+                    </div>
+                    <span class="destination__country">Тайланд</span>
                   </li>
                   <li class="destination__item">
-                    <span class="destination__country destination__country--seychelles">Сейшелы</span>
+                    <div class="destination__flag" data-tooltip="Сейшелы">
+                      <img class="destination__img" src="../img/flag/flag-seychelles.svg" alt="Флаг" width="35" height="24">
+                    </div>
+                    <span class="destination__country">Сейшелы</span>
                   </li>
                 </ul>
               </div>
-              <div class="travelmate__transport transport">
-                <span class="transport__title">Транспорт:</span>
+              <div class="travelmate-preview__transport transport">
+                <span class="transport__title visually-hidden">Транспорт:</span>
                 <ul class="transport__list">
-                  <li class="transport__item transport__item--plane transport__item--active">
-                    <svg width="19" height="21">
-                      <use xlink:href="#icon-plane"></use>
+                  <li class="transport__item transport__item--plane transport__item--active" data-tooltip="Авиаперелет">
+                    <svg width="19" height="21" class="transport__icon">
+                      <use xlink:href="#plane"></use>
                     </svg>
                     <span class="visually-hidden">Авиаперелет</span>
                   </li>
-                  <li class="transport__item transport__item--bus">
-                    <svg width="19" height="21">
-                    <use xlink:href="#icon-bus"></use>
-                  </svg>
-                  <span class="visually-hidden">Автотранспорт</span>
+                  <li class="transport__item transport__item--bus" data-tooltip="Автотранспорт">
+                    <svg width="19" height="21" class="transport__icon">
+                      <use xlink:href="#bus"></use>
+                    </svg>
+                    <span class="visually-hidden">Автотранспорт</span>
                   </li>
-                  <li class="transport__item transport__item--bike">
-                    <svg width="24" height="21">
-                      <use xlink:href="#icon-bike"></use>
+                  <li class="transport__item transport__item--bike" data-tooltip="Велосипед">
+                    <svg width="24" height="21" class="transport__icon">
+                      <use xlink:href="#bike"></use>
                     </svg>
                     <span class="visually-hidden">Велосипед</span>
                   </li>
-                  <li class="transport__item transport__item--run">
-                    <svg width="19" height="21">
-                      <use xlink:href="#icon-run"></use>
+                  <li class="transport__item transport__item--run" data-tooltip="Пешком">
+                    <svg width="19" height="21" class="transport__icon">
+                      <use xlink:href="#run"></use>
                     </svg>
                     <span class="visually-hidden">Пешком</span>
                   </li>
                 </ul>
-                <a class="travelmate__btn" href="#">Позвать</a>
               </div>
             </article>
           </li>
           <li class="catalog__item">
             <article class="travelmate">
-              <h3 class="travelmate__name travelmate__status travelmate__status--offline">
-                <a class="travelmate__link" href="/id123.html" aria-label="Петя Демин оффлайн">Петя Демин</a>
+              <h3 class="travelmate-preview__name travelmate-preview__status travelmate-preview__status--offline">
+                <a class="travelmate-preview__link travelmate-preview__name" href="/id1.html" aria-label="Петя Демин оффлайн">Петя Демин</a>
               </h3>
-              <a class="travelmate__link travelmate__photo" href="/id2.html">
+              <a class="travelmate-preview__link travelmate-preview__photo" href="/id1.html">
                 <picture>
-                  <img class="travelmate__img" src="img/user/" alt="Фото" width="270" height="270">
+                  <source media="(min-width:1440px)" srcset="img/user/demin-desktop@1x.jpg 1x, img/user/demin-desktop@2x.jpg 2x">
+                  <source media="(min-width:768px)" srcset="img/user/demin-tablet@1x.jpg 1x, img/user/demin-tablet@2x.jpg 2x">
+                  <img class="country__photo" src="img/user/demin-mobile@1x.jpg" srcset="img/user/demin-mobile@2x.jpg 2x" alt="фото Петя Демин" width="270" height="270">
                 </picture>
               </a>
               <div class="travelmate__likes like">
@@ -973,11 +987,13 @@
                 </a>
                 <span class="like__count">150</span>
               </div>
-              <p class="travelmate__lvl lvl">
-                <span class="lvl__title">Уровень:</span>
-                <span class="lvl__num">80</span>
+              <p class="travelmate-preview__lvl lvl lvl--preview">
+                <span class="lvl__title lvl__title--hide">Уровень:</span>
+                <span class="lvl__num lvl__num--99">
+                  <span class="lvl__text">80</span>
+                </span>
               </p>
-              <p class="travelmate__hashtags hashtags">
+              <p class="travelmate-preview__hashtags hashtags">
                 <span class="hashtags__title hashtags__title--hidden">Тэги:</span>
                 <span>
                   <a class="hashtags__link" href="#">#бургер</a>
@@ -987,57 +1003,64 @@
                   <a class="hashtags__link" href="#">#крафт</a>
                 </span>
               </p>
-              <div class="travelmate__destination destination">
-                <span class="destination__title">Хочет посетить:</span>
+              <div class="travelmate-preview__destination destination destination--preview">
+                <span class="destination__title visually-hidden">Хочет посетить:</span>
                 <ul class="destination__list">
                   <li class="destination__item">
-                    <span class="destination__country destination__country--belg">Бельгия</span>
+                    <div class="destination__flag" data-tooltip="Бельгия">
+                      <img class="destination__img" src="../img/flag/flag-belgium.svg" alt="Флаг" width="35" height="24">
+                    </div>
+                    <span class="destination__country">Бельгия</span>
                   </li>
                   <li class="destination__item">
-                    <span class="destination__country destination__country--chezh">Чехия</span>
+                    <div class="destination__flag" data-tooltip="Чехия">
+                      <img class="destination__img" src="../img/flag/flag-czech.svg" alt="Флаг" width="35" height="24">
+                    </div>
+                    <span class="destination__country">Чехия</span>
                   </li>
                 </ul>
               </div>
-              <div class="travelmate__transport transport">
-                <span class="transport__title">Транспорт:</span>
+              <div class="travelmate-preview__transport transport">
+                <span class="transport__title visually-hidden">Транспорт:</span>
                 <ul class="transport__list">
-                  <li class="transport__item transport__item--plane transport__item--active">
-                    <svg width="19" height="21">
-                      <use xlink:href="#icon-plane"></use>
+                  <li class="transport__item transport__item--plane transport__item--active" data-tooltip="Авиаперелет">
+                    <svg width="19" height="21" class="transport__icon">
+                      <use xlink:href="#plane"></use>
                     </svg>
                     <span class="visually-hidden">Авиаперелет</span>
                   </li>
-                  <li class="transport__item transport__item--bus transport__item--active">
-                    <svg width="19" height="21">
-                      <use xlink:href="#icon-bus"></use>
+                  <li class="transport__item transport__item--bus transport__item--active" data-tooltip="Автотранспорт">
+                    <svg width="19" height="21" class="transport__icon">
+                      <use xlink:href="#bus"></use>
                     </svg>
                     <span class="visually-hidden">Автотранспорт</span>
                   </li>
-                  <li class="transport__item transport__item--bike">
-                    <svg width="24" height="21">
-                      <use xlink:href="#icon-bike"></use>
+                  <li class="transport__item transport__item--bike" data-tooltip="Велосипед">
+                    <svg width="24" height="21" class="transport__icon">
+                      <use xlink:href="#bike"></use>
                     </svg>
                     <span class="visually-hidden">Велосипед</span>
                   </li>
-                  <li class="transport__item transport__item--run transport__item--active">
-                    <svg width="19" height="21">
-                      <use xlink:href="#icon-run"></use>
+                  <li class="transport__item transport__item--run transport__item--active" data-tooltip="Пешком">
+                    <svg width="19" height="21" class="transport__icon">
+                      <use xlink:href="#run"></use>
                     </svg>
                     <span class="visually-hidden">Пешком</span>
                   </li>
                 </ul>
-                <a class="travelmate__btn" href="#">Позвать</a>
               </div>
             </article>
           </li>
           <li class="catalog__item">
             <article class="travelmate">
-              <h3 class="travelmate__name travelmate__status travelmate__status--offline">
-                <a class="travelmate__link" href="/id123.html" aria-label="Марк Смолов оффлайн">Марк Смолов</a>
+              <h3 class="travelmate-preview__name travelmate-preview__status travelmate-preview__status--offline">
+                <a class="travelmate-preview__link travelmate-preview__name" href="/id1.html" aria-label="Марк Смолов оффлайн">Марк Смолов</a>
               </h3>
-              <a class="travelmate__link travelmate__photo" href="/id3.html">
+              <a class="travelmate-preview__link travelmate-preview__photo" href="/id1.html">
                 <picture>
-                  <img class="travelmate__img" src="img/user/" alt="Фото" width="270" height="270">
+                  <source media="(min-width:1440px)" srcset="img/user/smolov-desktop@1x.jpg 1x, img/user/smolov-desktop@2x.jpg 2x">
+                  <source media="(min-width:768px)" srcset="img/user/smolov-tablet@1x.jpg 1x, img/user/smolov-tablet@2x.jpg 2x">
+                  <img class="country__photo" src="img/user/smolov-mobile@1x.jpg" srcset="img/user/smolov-mobile@2x.jpg 2x" alt="фото Марк Смолов" width="270" height="270">
                 </picture>
               </a>
               <div class="travelmate__likes like">
@@ -1046,11 +1069,13 @@
                 </a>
                 <span class="like__count">150</span>
               </div>
-              <p class="travelmate__lvl lvl">
-                <span class="lvl__title">Уровень:</span>
-                <span class="lvl__num">25</span>
+              <p class="travelmate-preview__lvl lvl lvl--preview">
+                <span class="lvl__title lvl__title--hide">Уровень:</span>
+                <span class="lvl__num lvl__num--99">
+                  <span class="lvl__text">25</span>
+                </span>
               </p>
-              <p class="travelmate__hashtags hashtags">
+              <p class="travelmate-preview__hashtags hashtags">
                 <span class="hashtags__title hashtags__title--hidden">Тэги:</span>
                 <span>
                   <a class="hashtags__link" href="#">#рэп</a>
@@ -1060,60 +1085,71 @@
                   <a class="hashtags__link" href="#">#суприм</a>
                 </span>
               </p>
-              <div class="travelmate__destination destination">
-                <span class="destination__title">Хочет посетить:</span>
+              <div class="travelmate-preview__destination destination destination--preview">
+                <span class="destination__title visually-hidden">Хочет посетить:</span>
                 <ul class="destination__list">
                   <li class="destination__item">
-                    <span class="destination__country destination__country--usa">США</span>
+                    <div class="destination__flag" data-tooltip="США">
+                      <img class="destination__img" src="../img/flag/flag-usa.svg" alt="Флаг" width="35" height="24">
+                    </div>
+                    <span class="destination__country">США</span>
                   </li>
                   <li class="destination__item">
-                    <span class="destination__country destination__country--aus">Австралия</span>
+                    <div class="destination__flag" data-tooltip="Австралия">
+                      <img class="destination__img" src="../img/flag/flag-australia.svg" alt="Флаг" width="35" height="24">
+                    </div>
+                    <span class="destination__country">Австралия</span>
                   </li>
                   <li class="destination__item">
-                    <span class="destination__country destination__country--domingo">Доминикана</span>
+                    <div class="destination__flag" data-tooltip="Доминикана">
+                      <img class="destination__img" src="../img/flag/flag-dominica.svg" alt="Флаг" width="35" height="24">
+                    </div>
+                    <span class="destination__country">Доминикана</span>
                   </li>
                 </ul>
               </div>
-              <div class="travelmate__transport transport">
-                <span class="transport__title">Транспорт:</span>
+              <div class="travelmate-preview__transport transport">
+                <span class="transport__title visually-hidden">Транспорт:</span>
                 <ul class="transport__list">
-                  <li class="transport__item transport__item--plane transport__item--active">
-                    <svg width="19" height="21">
-                      <use xlink:href="#icon-plane"></use>
+                  <li class="transport__item transport__item--plane transport__item--active" data-tooltip="Авиаперелет">
+                    <svg width="19" height="21" class="transport__icon">
+                      <use xlink:href="#plane"></use>
                     </svg>
                     <span class="visually-hidden">Авиаперелет</span>
                   </li>
-                  <li class="transport__item transport__item--bus">
-                    <svg width="19" height="21">
-                      <use xlink:href="#icon-bus"></use>
+                  <li class="transport__item transport__item--bus" data-tooltip="Автотранспорт">
+                    <svg width="19" height="21" class="transport__icon">
+                      <use xlink:href="#bus"></use>
                     </svg>
                     <span class="visually-hidden">Автотранспорт</span>
                   </li>
-                  <li class="transport__item transport__item--bike transport__item--active">
-                    <svg width="24" height="21">
-                      <use xlink:href="#icon-bike"></use>
+                  <li class="transport__item transport__item--bike transport__item--active" data-tooltip="Велосипед">
+                    <svg width="24" height="21" class="transport__icon">
+                      <use xlink:href="#bike"></use>
                     </svg>
                     <span class="visually-hidden">Велосипед</span>
                   </li>
-                  <li class="transport__item transport__item--run">
-                    <svg width="19" height="21">
-                      <use xlink:href="#icon-run"></use>
+                  <li class="transport__item transport__item--run" data-tooltip="Пешком">
+                    <svg width="19" height="21" class="transport__icon">
+                      <use xlink:href="#run"></use>
                     </svg>
                     <span class="visually-hidden">Пешком</span>
                   </li>
+
                 </ul>
-                <a class="travelmate__btn" href="#">Позвать</a>
               </div>
             </article>
           </li>
           <li class="catalog__item">
             <article class="travelmate">
-              <h3 class="travelmate__name travelmate__status travelmate__status--online">
-                <a class="travelmate__link" href="/id123.html" aria-label="Лариса Роговая онлайн">Лариса Роговая</a>
+              <h3 class="travelmate-preview__name travelmate-preview__status travelmate-preview__status--online">
+                <a class="travelmate-preview__link travelmate-preview__name" href="/id1.html" aria-label="Лариса Роговая онлайн">Лариса Роговая</a>
               </h3>
-              <a class="travelmate__link travelmate__photo" href="/id4.html">
+              <a class="travelmate-preview__link travelmate-preview__photo" href="/id1.html">
                 <picture>
-                  <img class="travelmate__img" src="img/user/" alt="Фото" width="270" height="270">
+                  <source media="(min-width:1440px)" srcset="img/user/rogovaya-desktop@1x.jpg 1x, img/user/rogovaya-desktop@2x.jpg 2x">
+                  <source media="(min-width:768px)" srcset="img/user/rogovaya-tablet@1x.jpg 1x, img/user/rogovaya-tablet@2x.jpg 2x">
+                  <img class="country__photo" src="img/user/rogovaya-mobile@1x.jpg" srcset="img/user/rogovaya-mobile@2x.jpg 2x" alt="фото Марк Смолов" width="270" height="270">
                 </picture>
               </a>
               <div class="travelmate__likes like">
@@ -1122,11 +1158,13 @@
                 </a>
                 <span class="like__count">23</span>
               </div>
-              <p class="travelmate__lvl lvl">
-                <span class="lvl__title">Уровень:</span>
-                <span class="lvl__num">50</span>
+              <p class="travelmate-preview__lvl lvl lvl--preview">
+                <span class="lvl__title lvl__title--hide">Уровень:</span>
+                <span class="lvl__num lvl__num--99">
+                  <span class="lvl__text">50</span>
+                </span>
               </p>
-              <p class="travelmate__hashtags hashtags">
+              <p class="travelmate-preview__hashtags hashtags">
                 <span class="hashtags__title hashtags__title--hidden">Тэги:</span>
                 <span>
                   <a class="hashtags__link" href="#">#образование</a>
@@ -1135,46 +1173,51 @@
                   <a class="hashtags__link" href="#">#линкедин</a>
                 </span>
               </p>
-              <div class="travelmate__destination destination">
-                <span class="destination__title">Хочет посетить:</span>
+              <div class="travelmate-preview__destination destination destination--preview">
+                <span class="destination__title visually-hidden">Хочет посетить:</span>
                 <ul class="destination__list">
                   <li class="destination__item">
-                    <span class="destination__country destination__country--uk">Великобритания</span>
+                    <div class="destination__flag" data-tooltip="Великобритания">
+                      <img class="destination__img" src="../img/flag/flag-united-kingdom.svg" alt="Флаг" width="35" height="24">
+                    </div>
+                    <span class="destination__country">Великобритания</span>
                   </li>
                   <li class="destination__item">
-                    <span class="destination__country destination__country--germany">Германия</span>
+                    <div class="destination__flag" data-tooltip="Германия">
+                      <img class="destination__img" src="../img/flag/flag-germany.svg" alt="Флаг" width="35" height="24">
+                    </div>
+                    <span class="destination__country">Германия</span>
                   </li>
                 </ul>
               </div>
-              <div class="travelmate__transport transport">
-                <span class="transport__title">Транспорт:</span>
+              <div class="travelmate-preview__transport transport">
+                <span class="transport__title visually-hidden">Транспорт:</span>
                 <ul class="transport__list">
-                  <li class="transport__item transport__item--plane transport__item--active">
-                    <svg width="19" height="21">
-                      <use xlink:href="#icon-plane"></use>
+                  <li class="transport__item transport__item--plane transport__item--active" data-tooltip="Авиаперелет">
+                    <svg width="19" height="21" class="transport__icon">
+                      <use xlink:href="#plane"></use>
                     </svg>
                     <span class="visually-hidden">Авиаперелет</span>
                   </li>
-                  <li class="transport__item transport__item--bus transport__item--active">
-                      <svg width="19" height="21">
-                        <use xlink:href="#icon-bus"></use>
-                      </svg>
-                      <span class="visually-hidden">Автотранспорт</span>
+                  <li class="transport__item transport__item--bus transport__item--active" data-tooltip="Автотранспорт">
+                    <svg width="19" height="21" class="transport__icon">
+                      <use xlink:href="#bus"></use>
+                    </svg>
+                    <span class="visually-hidden">Автотранспорт</span>
                   </li>
-                  <li class="transport__item transport__item--bike">
-                    <svg width="24" height="21">
-                      <use xlink:href="#icon-bike"></use>
+                  <li class="transport__item transport__item--bike" data-tooltip="Велосипед">
+                    <svg width="24" height="21" class="transport__icon">
+                      <use xlink:href="#bike"></use>
                     </svg>
                     <span class="visually-hidden">Велосипед</span>
                   </li>
-                  <li class="transport__item transport__item--run">
-                    <svg width="19" height="21">
-                      <use xlink:href="#icon-run"></use>
+                  <li class="transport__item transport__item--run" data-tooltip="Пешком">
+                    <svg width="19" height="21" class="transport__icon">
+                      <use xlink:href="#run"></use>
                     </svg>
                     <span class="visually-hidden">Пешком</span>
                   </li>
                 </ul>
-                <a class="travelmate__btn" href="#">Позвать</a>
               </div>
             </article>
           </li>
