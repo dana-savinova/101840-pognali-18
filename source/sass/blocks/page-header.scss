@@ -16,6 +16,10 @@
   background-color: #161c36;
 }
 
+.page-header--inner {
+  background-color: #192144;
+}
+
 .page-header--sticky {
   position: fixed;
   top: 0;
@@ -171,6 +175,10 @@
 @media (min-width: $desktop-width) {
   .page-header {
     background-color: #161c34;
+  }
+
+  .page-header--inner {
+    background-color: #192144;
   }
 
   .page-header__toggle {

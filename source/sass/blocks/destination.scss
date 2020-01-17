@@ -7,8 +7,22 @@
 
 .destination__item {
   display: flex;
+  align-items: center;
 
   margin-bottom: 10px;
+}
+
+.destination__title {
+  position: relative;
+
+  margin: 0;
+  margin-bottom: 10px;
+
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: normal;
+
+  text-transform: lowercase;
 }
 
 .destination__flag {

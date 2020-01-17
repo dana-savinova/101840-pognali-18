@@ -7,7 +7,7 @@
   padding-right: 34px;
   padding-bottom: 24px;
   padding-left: 34px;
-  min-height: 62px;
+  // min-height: 62px;
 
   border-radius: 10px;
 
@@ -71,9 +71,44 @@
   }
 }
 
+.btn--round {
+  display: flex;
+  justify-content: center;
+
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 7px;
+  padding-left: 10px;
+
+  font-size: 17px;
+  line-height: 30px;
+
+  text-transform: uppercase;
+
+  border-radius: 25px;
+
+  &:hover,
+  &:focus {
+    background-color: $dark-gold;
+  }
+
+  &:active {
+    color: rgba($dark-slate-blue, 0.3);
+  }
+}
+
+.btn--round::after {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .btn {
     font-size: 24px;
     line-height: 24px;
+  }
+
+  .btn--round {
+    font-size: 20px;
+    line-height: 30px;
   }
 }

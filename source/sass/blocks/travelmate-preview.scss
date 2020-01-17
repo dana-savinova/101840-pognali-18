@@ -18,6 +18,11 @@
 }
 
 .travelmate-preview__link {
+  font-size: 21px;
+  line-height: 21px;
+
+  color: $dark-slate-blue;
+
   text-decoration: none;
 }
 
@@ -34,6 +39,8 @@
   border-top-left-radius: 10px;
 
   overflow: hidden;
+
+  text-decoration: none;
 }
 
 .travelmate-preview__img {
@@ -70,11 +77,6 @@
   order: -8;
 
   margin: 0;
-
-  font-size: 21px;
-  line-height: 21px;
-
-  color: $dark-slate-blue;
 }
 
 .travelmate-preview__status::before {

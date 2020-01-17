@@ -1,5 +1,7 @@
 .travelmate {
-  padding-top: 16px;
+  width: 270px;
+
+  padding-top: 15px;
   padding-right: 20px;
   padding-bottom: 22px;
   padding-left: 20px;
@@ -13,15 +15,161 @@
   border-radius: 20px;
 }
 
-.travelmate__link {
-  text-decoration: none;
+.travelmate__info {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.travelmate__name {
-  margin: 0;
+.travelmate__photo {
+  order: -1;
+}
 
+.travelmate__img {
+  width: 70px;
+  height: 70px;
+
+  border-radius: 50%;
+}
+
+
+.travelmate__name {
+  position: relative;
+
+  width: 160px;
+  margin: 0;
+  padding-right: 60px;
+  padding-bottom: 35px;
+  padding-left: 16px;
+
+  text-align: left;
+}
+
+.travelmate__link {
   font-size: 20px;
   line-height: 20px;
 
   color: $dark-slate-blue;
+
+  text-decoration: none;
+}
+
+.travelmate__status::before {
+  content: "";
+
+  position: absolute;
+  right: 0;
+  top: 6px;
+
+  width: 5px;
+  height: 5px;
+
+  background-color: lightgrey;
+  border-radius: 50%;
+}
+
+.travelmate__status--offline::before {
+  background-color: #f97676;
+}
+
+.travelmate__status--online::before {
+  background-color: #81e31e;
+}
+
+.travelmate__likes {
+  width: 85px;
+  margin-top: -40px;
+  margin-left: 49px;
+}
+
+.travelmate__hashtags {
+  margin-top: 16px;
+  padding-right: 64px;
+}
+
+.travelmate__destination {
+  margin-top: 20px;
+}
+
+
+.travelmate__wrapper {
+  position: relative;
+
+  display: flex;
+  min-height: 87px;
+
+
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.travelmate__subhead {
+  position: relative;
+
+  display: block;
+  margin: 0;
+  margin-bottom: 15px;
+
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: normal;
+
+  color: $medium-grey;
+
+  text-transform: lowercase;
+}
+
+.travelmate__subhead::before,
+.travelmate__subhead::after {
+  content: "";
+
+  position: absolute;
+  top: 7px;
+  height: 1px;
+  background-color: #edeff6;
+}
+
+.travelmate__subhead::before {
+  width: 14px;
+  left: -21px;
+}
+
+.travelmate__subhead::after {
+  width: 138px;
+  right: -20px;
+}
+
+.travelmate__transport,
+.travelmate__lvl {
+  display: flex;
+  min-height: 87px;
+
+  flex-direction: column;
+}
+
+.travelmate__transport {
+  width: 170px;
+}
+
+.travelmate__subhead--transport::after {
+  width: 100px;
+  right: 0;
+}
+
+.travelmate__lvl {
+  width: 50px;
+  margin: 0;
+}
+
+.travelmate__subhead--lvl::before {
+  display: none;
+}
+
+.travelmate__subhead--lvl::after {
+  width: 14px;
+  right: -21px;
+}
+
+.travelmate__btn {
+  margin-top: 14px;
 }
