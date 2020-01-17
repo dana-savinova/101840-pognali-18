@@ -81,20 +81,22 @@
 
 
 @media (min-width: $tablet-width) {
-  .transport__list {
-    flex-direction: column;
-    align-items: center;
-  }
-
   .transport__item {
     background-color: $white;
+
+    &--preview {
+      background-color: #edeff6;
+    }
   }
 
-  .transport__item--preview {
-    background-color: #edeff6;
-  }
+  @media (max-width: 1439px) {
+    .transport__list {
+      flex-direction: column;
+      align-items: center;
 
-  .transport__list--preview {
-    flex-direction: column;
+      &--preview {
+        flex-direction: column;
+      }
+    }
   }
 }

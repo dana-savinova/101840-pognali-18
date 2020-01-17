@@ -247,9 +247,12 @@
     height: 50px;
   }
 
+  .travelmate__box {
+    order: 3;
+  }
+
   .travelmate__destination {
     width: 630px;
-    order: 3;
   }
 
   .travelmate__wrapper {
@@ -267,5 +270,38 @@
     padding-right: 5px;
 
     order: 3;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .travelmate {
+    width: 950px;
+    height: 285px;
+
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .travelmate__wrapper {
+    position: static;
+    width: 280px;
+
+    order: 10;
+  }
+
+  .travelmate__destination {
+    width: 280px;
+  }
+
+  .travelmate__info {
+    width: 620px;
+  }
+
+  .travelmate__box {
+    order: 10;
+  }
+
+  .travelmate__subhead--dest {
+    display: none;
   }
 }
