@@ -1,4 +1,5 @@
 .travelmate {
+  position: relative;
   width: 270px;
 
   padding-top: 15px;
@@ -31,23 +32,24 @@
   border-radius: 50%;
 }
 
-
 .travelmate__name {
   position: relative;
 
-  width: 160px;
+  max-width: 90px;
   margin: 0;
+
   padding-right: 60px;
   padding-bottom: 35px;
   padding-left: 16px;
+
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
 
   text-align: left;
 }
 
 .travelmate__link {
-  font-size: 20px;
-  line-height: 20px;
-
   color: $dark-slate-blue;
 
   text-decoration: none;
@@ -57,7 +59,7 @@
   content: "";
 
   position: absolute;
-  right: 0;
+  right: -35px;
   top: 6px;
 
   width: 5px;
@@ -76,12 +78,15 @@
 }
 
 .travelmate__likes {
+  position: absolute;
+  top: 54px;
+  left: 67px;
+
   width: 85px;
-  margin-top: -40px;
-  margin-left: 49px;
 }
 
 .travelmate__hashtags {
+  max-width: 230px;
   margin-top: 16px;
   padding-right: 64px;
 }
@@ -172,4 +177,95 @@
 
 .travelmate__btn {
   margin-top: 14px;
+}
+
+@media (min-width: $tablet-width) {
+  .travelmate {
+    display: flex;
+    width: 688px;
+    padding-top: 35px;
+    padding-right: 25px;
+    padding-bottom: 26px;
+    padding-left: 35px;
+
+    flex-wrap: wrap;
+  }
+
+  .travelmate__subhead {
+    display: none;
+  }
+
+  .travelmate__subhead--dest {
+    display: block;
+  }
+
+  .travelmate__info {
+    width: 100%;
+    padding-right: 95px;
+
+    order: 1;
+  }
+
+  .travelmate__name {
+    max-width: 250px;
+    padding-right: 0;
+
+    order: 2;
+
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .travelmate__status::before {
+    top: 12px;
+  }
+
+  .travelmate__img {
+    width: 190px;
+    height: 190px;
+
+    border-radius: 15px;
+  }
+
+  .travelmate__buttons {
+    display: flex;
+    width: 255px;
+    margin-top: -100px;
+    margin-left: 209px;
+
+    order: 2;
+    align-items: center;
+  }
+
+  .travelmate__likes {
+    position: static;
+    flex-shrink: 0;
+  }
+
+  .travelmate__btn {
+    width: 148px;
+    height: 50px;
+  }
+
+  .travelmate__destination {
+    width: 630px;
+    order: 3;
+  }
+
+  .travelmate__wrapper {
+    position: absolute;
+    top: 34px;
+    right: 25px;
+
+    width: 60px;
+  }
+
+  .travelmate__hashtags {
+    max-width: 231px;
+    margin-top: -150px;
+    margin-left: 209px;
+    padding-right: 5px;
+
+    order: 3;
+  }
 }

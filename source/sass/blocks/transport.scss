@@ -78,3 +78,23 @@
     display: block;
   }
 }
+
+
+@media (min-width: $tablet-width) {
+  .transport__list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .transport__item {
+    background-color: $white;
+  }
+
+  .transport__item--preview {
+    background-color: #edeff6;
+  }
+
+  .transport__list--preview {
+    flex-direction: column;
+  }
+}
