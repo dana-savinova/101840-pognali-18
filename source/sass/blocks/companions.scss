@@ -1,5 +1,6 @@
 .companions {
   position: relative;
+  z-index: 1;
 
   margin-top: -30px;
   padding-top: 115px;
@@ -11,6 +12,31 @@
   background-color: $dark-blue-grey;
 
   border-radius: 20px;
+}
+
+
+.companions::before {
+  width: 320px;
+  height: 100%;
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: 0 auto;
+  z-index: -1;
+
+  background-image: url("../img/smolov-back-desktop@1x.png"),
+    url("../img/rectangle-bg-blue.svg"),
+    url("../img/rogovaya-back-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: right 25px top 70px,
+    left -30px top 70px,
+    left -10px top 340px;
+  background-size: 143px 143px,
+    143px 143px,
+    71px 71px;
 }
 
 .companions__wrapper {
@@ -51,6 +77,20 @@
 }
 
 @media (min-width: $tablet-width) {
+  .companions::before {
+    width: 768px;
+    background-image: url("../img/rogovaya-back-desktop@1x.png"),
+      url("../img/rectangle-bg-blue.svg"),
+      url("../img/smolov-back-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position: right 77px top 140px,
+      left 40px top 140px,
+      left 40px top 486px;
+    background-size: 285px 285px,
+      213px 213px,
+      143px 143px;
+  }
+
   .companions__box {
     padding-right: 75px;
     padding-left: 74px;
@@ -79,6 +119,16 @@
 }
 
 @media (min-width: $desktop-width) {
+  .companions::before {
+    width: 1440px;
+    background-position: left 191px bottom 80px,
+      left 60px top 128px,
+      left 547px top 194px;
+    background-size: 285px 285px,
+      213px 213px,
+      143px 143px;
+  }
+
   .companions__box {
     display: flex;
 
