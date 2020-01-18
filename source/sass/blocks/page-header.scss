@@ -11,13 +11,17 @@
   background-color: $white;
 }
 
+.page-header__box {
+  position: relative;
+}
+
 .page-header--dark {
   color: $white;
   background-color: #161c36;
 }
 
 .page-header--inner {
-  background-color: #192144;
+  background-color: #161c36;
 }
 
 .page-header--sticky {
@@ -146,6 +150,10 @@
     background-color: $dark-blue-grey;
   }
 
+  .page-header--inner {
+    background-color: #161c36;
+  }
+
   .page-header__wrapper {
     max-width: 355px;
   }
@@ -157,20 +165,22 @@
   .page-header__nav--closed {
     .page-header__user {
       display: flex;
+      justify-content: flex-end;
     }
   }
 
   @media (max-width: 1439px) {
     .page-header__user {
       position: absolute;
-      top: 40px;
-      right: 40px;
+      top: 0;
+      right: 0;
 
       margin: 0;
+
+      justify-content: flex-end;
     }
   }
 }
-
 
 @media (min-width: $desktop-width) {
   .page-header {
@@ -178,7 +188,7 @@
   }
 
   .page-header--inner {
-    background-color: #192144;
+    background-color: #161c36;
   }
 
   .page-header__toggle {

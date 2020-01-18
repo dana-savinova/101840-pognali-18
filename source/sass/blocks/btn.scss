@@ -7,18 +7,17 @@
   padding-right: 34px;
   padding-bottom: 24px;
   padding-left: 34px;
-  // min-height: 62px;
-
-  border-radius: 10px;
 
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
 
+  text-decoration: none;
+
   color: $dark-slate-blue;
   background-color: $light-gold;
 
-  text-decoration: none;
+  border-radius: 10px;
 
   &:hover,
   &:focus {
@@ -47,7 +46,6 @@
 
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
-
   border-left: 10px solid $dark-slate-blue;
 }
 
@@ -73,12 +71,12 @@
 
 .btn--round {
   display: flex;
-  justify-content: center;
-
-  padding-top: 10px;
+  padding-top: 7px;
   padding-right: 10px;
-  padding-bottom: 7px;
+  padding-bottom: 4px;
   padding-left: 10px;
+
+  justify-content: center;
 
   font-size: 17px;
   line-height: 30px;

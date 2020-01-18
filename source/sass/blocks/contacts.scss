@@ -1,6 +1,7 @@
 .contacts {
   @include list-reset;
   display: flex;
+
   flex-direction: column;
 }
 
@@ -13,11 +14,11 @@
   font-size: 16px;
   line-height: 22px;
   font-weight: 700;
+
   text-transform: uppercase;
+  text-decoration: none;
 
   color: $light-gold;
-
-  text-decoration: none;
 
   &:hover,
   &:focus {

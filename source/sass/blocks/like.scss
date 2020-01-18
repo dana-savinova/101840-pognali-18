@@ -7,9 +7,12 @@
 .like__btn {
   position: relative;
 
+  display: flex;
   width: 31px;
   height: 31px;
   margin-right: 7px;
+
+  flex-shrink: 0;
 
   background-color: #edeff6;
   border-radius: 50%;
@@ -36,13 +39,11 @@
 .like__btn::after {
   content: "";
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 10px;
+  left: 9px;
 
   width: 13px;
   height: 11px;
-  margin-top: -6px;
-  margin-left: -7px;
 
   background-image: url("../img/heart.svg");
   background-size: 13px 11px;
@@ -77,4 +78,26 @@
   color: $dark-blue;
 
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .like__btn {
+    width: 50px;
+    height: 50px;
+  }
+
+  .like__btn::after {
+    top: 17px;
+    left: 15px;
+
+    width: 20px;
+    height: 17px;
+
+    background-size: 20px 17px;
+  }
+
+  .like__count {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

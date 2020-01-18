@@ -5,7 +5,7 @@
   padding-top: 15px;
   padding-right: 20px;
   padding-bottom: 22px;
-  padding-left: 20px;
+  padding-left: 18px;
 
   font-size: 15px;
   line-height: 18px;
@@ -35,12 +35,12 @@
 .travelmate__name {
   position: relative;
 
-  max-width: 90px;
+  width: 90px;
   margin: 0;
 
   padding-right: 60px;
   padding-bottom: 35px;
-  padding-left: 16px;
+  padding-left: 17px;
 
   font-size: 20px;
   line-height: 20px;
@@ -53,14 +53,23 @@
   color: $dark-slate-blue;
 
   text-decoration: none;
+
+  &:focus,
+  &:hover {
+    color: rgba($dark-slate-blue, 0.6);
+  }
+
+  &:active {
+    color: rgba($dark-slate-blue, 0.3);
+  }
 }
 
 .travelmate__status::before {
   content: "";
 
   position: absolute;
-  right: -35px;
   top: 6px;
+  right: -35px;
 
   width: 5px;
   height: 5px;
@@ -79,28 +88,33 @@
 
 .travelmate__likes {
   position: absolute;
-  top: 54px;
-  left: 67px;
+  top: 56px;
+  left: 68px;
 
   width: 85px;
 }
 
 .travelmate__hashtags {
-  max-width: 230px;
-  margin-top: 16px;
-  padding-right: 64px;
+  width: 230px;
+  margin-top: 10px;
+  padding-right: 39px;
+  padding-left: 8px;
+}
+
+.travelmate__box {
+  padding-left: 8px;
 }
 
 .travelmate__destination {
-  margin-top: 20px;
+  margin-top: 13px;
 }
-
 
 .travelmate__wrapper {
   position: relative;
 
   display: flex;
-  min-height: 87px;
+  // min-height: 87px;
+  margin-top: 4px;
 
 
   justify-content: space-between;
@@ -113,7 +127,7 @@
 
   display: block;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 
   font-size: 15px;
   line-height: 18px;
@@ -147,7 +161,7 @@
 .travelmate__transport,
 .travelmate__lvl {
   display: flex;
-  min-height: 87px;
+  min-height: 73px;
 
   flex-direction: column;
 }
@@ -162,7 +176,7 @@
 }
 
 .travelmate__lvl {
-  width: 50px;
+  width: 44px;
   margin: 0;
 }
 
@@ -175,17 +189,17 @@
   right: -21px;
 }
 
-.travelmate__btn {
-  margin-top: 14px;
+.travelmate__buttons {
+  margin-top: 10px;
 }
 
 @media (min-width: $tablet-width) {
   .travelmate {
     display: flex;
     width: 688px;
-    padding-top: 35px;
+    padding-top: 33px;
     padding-right: 25px;
-    padding-bottom: 26px;
+    padding-bottom: 18px;
     padding-left: 35px;
 
     flex-wrap: wrap;
@@ -193,10 +207,6 @@
 
   .travelmate__subhead {
     display: none;
-  }
-
-  .travelmate__subhead--dest {
-    display: block;
   }
 
   .travelmate__info {
@@ -207,13 +217,25 @@
   }
 
   .travelmate__name {
-    max-width: 250px;
+    width: 250px;
     padding-right: 0;
+    padding-left: 33px;
 
     order: 2;
 
     font-size: 30px;
     line-height: 30px;
+  }
+
+  .travelmate__hashtags {
+    z-index: 1;
+
+    max-width: 231px;
+    margin-top: -148px;
+    margin-left: 226px;
+    padding: 0;
+
+    order: 3;
   }
 
   .travelmate__status::before {
@@ -228,27 +250,57 @@
   }
 
   .travelmate__buttons {
+    z-index: 1;
+
     display: flex;
-    width: 255px;
-    margin-top: -100px;
-    margin-left: 209px;
+    width: 300px;
+    margin-top: -61px;
+    margin-left: 221px;
 
     order: 2;
+    flex-direction: row-reverse;
+    justify-content: space-between;
     align-items: center;
-  }
-
-  .travelmate__likes {
-    position: static;
-    flex-shrink: 0;
   }
 
   .travelmate__btn {
     width: 148px;
     height: 50px;
+    padding-top: 12px;
+    padding-left: 7px;
+  }
+
+  .travelmate__likes {
+    position: static;
+
+    width: 115px;
+    margin-right: auto;
+
+    flex-shrink: 0;
   }
 
   .travelmate__box {
+    margin-top: 5px;
+    padding: 0;
+
     order: 3;
+  }
+
+  .travelmate__subhead--dest {
+    display: block;
+    padding-left: 47px;
+  }
+
+  .travelmate__subhead--dest::before {
+    left: -44px;
+
+    width: 71px;
+  }
+
+  .travelmate__subhead--dest::after {
+    right: -15px;
+
+    width: 499px;
   }
 
   .travelmate__destination {
@@ -257,19 +309,18 @@
 
   .travelmate__wrapper {
     position: absolute;
-    top: 34px;
-    right: 25px;
+    top: 29px;
+    right: 27px;
 
     width: 60px;
   }
 
-  .travelmate__hashtags {
-    max-width: 231px;
-    margin-top: -150px;
-    margin-left: 209px;
-    padding-right: 5px;
+  .travelmate__transport {
+    margin-bottom: 10px;
+  }
 
-    order: 3;
+  .travelmate__lvl {
+    margin-left: 10px;
   }
 }
 
@@ -277,31 +328,89 @@
   .travelmate {
     width: 950px;
     height: 285px;
+    padding: 0;
+    padding-right: 44px;
 
     flex-direction: column;
     flex-wrap: wrap;
   }
 
-  .travelmate__wrapper {
-    position: static;
-    width: 280px;
+  .travelmate__img {
+    width: 285px;
+    height: 285px;
+
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .travelmate__photo {
+    margin-right: 59px;
+  }
+
+  .travelmate__info {
+    width: 620px;
+    height: 285px;
+
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .travelmate__name {
+    margin-top: 48px;
+    padding: 0;
+  }
+
+  .travelmate__hashtags {
+    margin: 0;
+    margin-top: 17px;
+    margin-left: 3px;
+  }
+
+  .travelmate__buttons {
+    margin-top: -96px;
+    margin-left: 341px;
+  }
+
+  .travelmate__subhead--dest {
+    display: none;
+  }
+
+  .travelmate__status::before {
+    width: 7px;
+    height: 7px;
+
+    top: 10px;
+    right: 0;
+    left: -26px;
+  }
+
+  .travelmate__box {
+    height: 285px;
+    padding-top: 26px;
 
     order: 10;
   }
 
   .travelmate__destination {
     width: 280px;
+    margin: 0;
+    margin-left: 33px;
   }
 
-  .travelmate__info {
-    width: 620px;
-  }
+  .travelmate__wrapper {
+    position: static;
 
-  .travelmate__box {
+    width: 230px;
+    max-height: 85px;
+    margin-top: 40px;
+    margin-left: 25px;
+
+    align-items: flex-start;
+
     order: 10;
   }
 
-  .travelmate__subhead--dest {
-    display: none;
+  .travelmate__transport {
+    margin-top: 10px;
   }
 }
