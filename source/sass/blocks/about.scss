@@ -73,6 +73,7 @@
 @media (min-width: $tablet-width) {
   .about {
     min-height: 683px;
+    padding-bottom: 75px;
 
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
@@ -110,7 +111,7 @@
 
   .about__text {
     width: 300px;
-    margin-bottom: 51px;
+    margin-bottom: 83px;
   }
 
   .about__accent {
@@ -133,7 +134,17 @@
     padding-left: 132px;
   }
 
+  .about__title {
+    margin-bottom: 58px;
+  }
+
+  .about__text {
+    width: 620px;
+    margin-bottom: 83px;
+  }
+
   .about__accent {
+    margin-top: 38px;
     padding-right: 150px;
   }
 

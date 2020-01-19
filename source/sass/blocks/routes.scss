@@ -131,7 +131,7 @@
     max-height: 840px;
     margin-top: -40px;
     padding-top: 161px;
-    padding-bottom: 110px;
+    padding-bottom: 102px;
   }
 
   .routes::after {
@@ -140,28 +140,33 @@
 
   .routes__box {
     display: flex;
+    padding-left: 131px;
 
     flex-direction: row;
     flex-wrap: wrap;
   }
 
   .routes__list {
-    width: 660px;
+    width: 570px;
+    margin-top: 41px;
 
     order: 1;
   }
 
   .routes__wrapper {
     width: 600px;
+    padding-top: 45px;
+    padding-left: 161px;
+
+
     order: 2;
   }
 
   .routes__btn {
     width: 274px;
     max-height: 81px;
-
-    margin-top: -110px;
-    margin-left: 804px;
+    margin-top: -118px;
+    margin-left: 734px;
 
 
     order: 3;

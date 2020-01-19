@@ -69,7 +69,15 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-footer {
+    padding-top: 40px;
+  }
+
   .page-footer__copyright {
     width: 155px;
+  }
+
+  .page-footer__social {
+    margin-left: -45px;
   }
 }

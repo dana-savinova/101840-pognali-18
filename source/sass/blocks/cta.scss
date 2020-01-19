@@ -215,20 +215,25 @@
 }
 
 @media (min-width: $desktop-width) {
+  .cta {
+    padding-top: 165px;
+    padding-bottom: 101px;
+  }
+
   .cta__lead {
-    margin-bottom: 60px;
+    margin-bottom: 58px;
   }
 
   .cta__text {
     max-width: 620px;
     margin-right: auto;
-    margin-bottom: 60px;
+    margin-bottom: 57px;
     margin-left: auto;
   }
 
   .cta__form {
-    max-width: 1031px;
-    margin-bottom: 60px;
+    max-width: 1176px;
+    margin-bottom: 40px;
   }
 
   .cta__mail,
@@ -236,10 +241,15 @@
     min-height: 81px;
   }
 
+  .cta__mail {
+    width: 850px;
+  }
+
   .cta__hint {
     width: 618px;
     margin-right: auto;
-    margin-left: auto;
+    margin-bottom: 45px;
+    margin-left: 342px;
   }
 
   .cta__break {
@@ -264,5 +274,13 @@
   .cta__btn::after {
     top: 32px;
     right: 36px;
+  }
+
+  .cta__contacts {
+    width: 868px;
+    padding: 0;
+
+    flex-direction: row;
+    justify-content: space-between;
   }
 }

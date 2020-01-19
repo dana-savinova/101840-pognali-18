@@ -69,10 +69,14 @@
     flex-direction: row;
   }
 
+  .site-nav__item {
+    margin-right: 34px;
+  }
+
   .site-nav::before {
     content: "";
     position: absolute;
-    left: -45px;
+    left: -104px;
     top: 13px;
 
     width: 60px;
@@ -82,7 +86,8 @@
   }
 
   .site-nav__link {
-    margin-left: 40px;
+    margin: 0;
+    // margin-left: 40px;
 
     font-size: 20px;
     line-height: 30px;
