@@ -105,6 +105,8 @@
   .country__wrapper {
     width: 430px;
     margin: 0;
+    padding-top: 31px;
+    padding-left: 28px;
 
     flex-direction: column;
 
@@ -118,8 +120,8 @@
     width: 70px;
     height: 47px;
 
-    top: 0;
-    right: -60px;
+    top: -15px;
+    left: 368px;
   }
 
   .country__photo {
@@ -153,6 +155,10 @@
   .country__total::before {
     width: 20px;
     height: 20px;
+  }
+
+  .country__travels {
+    margin-top: 17px;
   }
 }
 

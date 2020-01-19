@@ -18,21 +18,9 @@
 @mixin section-bottom-round {
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
-}
 
-@mixin section-bottom-rounding {
-  content: "";
-
-  position: absolute;
-  z-index: 1;
-
-  left: 0;
-  bottom: -24px;
-
-  width: 100%;
-  height: 25px;
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
-
-  background-color: inherit;
+  @media (min-width: $tablet-width) {
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
 }

@@ -119,6 +119,17 @@
 @media (min-width: $tablet-width) {
   .travelmate-preview {
     width: 285px;
+    padding-bottom: 23px;
+
+    border-radius: 20px;
+  }
+
+  .travelmate-preview__photo {
+    width: 285px;
+    height: 285px;
+
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
   }
 
   .travelmate-preview__photo,
@@ -129,20 +140,29 @@
   .travelmate-preview__name {
     font-size: 24px;
     line-height: 24px;
+
+    margin-top: 15px;
   }
 
-  .travelmate-preview__hashtags {
-    width: 222px;
-
-    font-size: 20px;
+  .travelmate-preview__link {
+    font-size: 24px;
     line-height: 24px;
   }
 
   .travelmate-preview__status::before {
-    top: 10px;
-    left: -15px;
+    top: 8px;
+    left: -21px;
 
     width: 7px;
     height: 7px;
+  }
+
+  .travelmate-preview__hashtags {
+    width: 232px;
+    margin-top: 6px;
+    margin-bottom: 19px;
+
+    font-size: 20px;
+    line-height: 24px;
   }
 }

@@ -11,8 +11,7 @@
   color: $white;
   background-color: $dark-blue-grey;
 
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
+  @include section-bottom-round;
 }
 
 .cta__wrapper {
@@ -136,6 +135,21 @@
 }
 
 @media (min-width: $tablet-width) {
+  .cta {
+    margin-top: -60px;
+    padding-top: 137px;
+    padding-bottom: 60px;
+  }
+
+  .cta__lead {
+    margin-bottom: 57px;
+  }
+
+  .cta__text {
+    width: 610px;
+    margin-bottom: 62px;
+  }
+
   .cta__text,
   .cta__hint {
     font-size: 28px;
@@ -144,18 +158,59 @@
 
   .cta__form {
     max-width: 618px;
-    margin-left: auto;
     margin-right: auto;
+    margin-bottom: 31px;
+    margin-left: auto;
+
+    border-radius: 20px;
   }
 
   .cta__mail {
+    width: 536px;
+    padding-top: 21px;
+    padding-bottom: 18px;
+    padding-left: 34px;
+
     font-size: 24px;
     line-height: 24px;
+
+    border-radius: 20px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
   .cta__mail::placeholder {
     font-size: 24px;
     line-height: 24px;
+  }
+
+  .cta__btn {
+    width: 82px;
+    height: 81px;
+
+    border-radius: 20px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .cta__btn::after {
+    top: 31px;
+    right: 36px;
+  }
+
+  .cta__hint {
+    width: 610px;
+    margin-bottom: 40px;
+  }
+
+  .cta__break {
+    display: none;
+  }
+
+  .cta__contacts {
+    width: 100%;
+    margin: 0;
+    padding-left: 37px;
   }
 }
 

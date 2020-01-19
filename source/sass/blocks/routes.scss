@@ -67,7 +67,22 @@
 
 @media (min-width: $tablet-width) {
   .routes {
-    z-index: 1;
+    margin-top: -50px;
+    padding-top: 123px;
+    padding-bottom: 80px;
+
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
+
+  .routes__box {
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+
+  .routes__wrapper {
+    margin-bottom: 103px;
+    padding: 0;
   }
 
   .routes::after {
@@ -97,9 +112,17 @@
     }
   }
 
-  .routes__box {
-    padding-left: 75px;
-    padding-right: 75px;
+  .routes__title {
+    margin-bottom: 60px;
+  }
+
+  .routes__intro {
+    display: block;
+    width: 365px;
+  }
+
+  .routes__list {
+    margin-bottom: 47px;
   }
 }
 

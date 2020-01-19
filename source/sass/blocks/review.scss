@@ -21,7 +21,13 @@
 }
 
 @media (min-width: $tablet-width) {
+  .review {
+    padding-left: 34px;
+  }
+
   .review__text {
+    margin-bottom: 15px;
+
     font-size: 28px;
     line-height: 33px;
   }

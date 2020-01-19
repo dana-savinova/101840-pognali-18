@@ -149,7 +149,7 @@
 @media (min-width: $tablet-width) {
   .page-header {
     min-height: 132px;
-    padding-top: 40px;
+    padding-top: 45px;
   }
 
   .page-header--dark {
@@ -160,8 +160,13 @@
     background-color: #161c36;
   }
 
+  .page-header__toggle--closed .page-header__toggle-icon--burger {
+    top: 16px;
+    left: 0;
+  }
+
   .page-header__wrapper {
-    max-width: 355px;
+    max-width: 357px;
   }
 
   .page-header__nav {
@@ -178,8 +183,8 @@
   @media (max-width: 1439px) {
     .page-header__user {
       position: absolute;
-      top: 0;
-      right: 0;
+      top: -4px;
+      right: 40px;
 
       margin: 0;
 

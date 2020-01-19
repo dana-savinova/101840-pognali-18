@@ -9,8 +9,11 @@
   color: $white;
   background-color: $dark-blue-grey;
 
-  border-bottom-right-radius: 30px;
-  border-bottom-left-radius: 30px;
+  @include section-bottom-round;
+}
+
+.companions__break {
+  display: none;
 }
 
 
@@ -88,6 +91,16 @@
 }
 
 @media (min-width: $tablet-width) {
+  .companions {
+    margin-top: -60px;
+    padding-top: 200px;
+    padding-bottom: 88px;
+  }
+
+  .companions__break {
+    display: inline;
+  }
+
   .companions::before {
     width: 768px;
     background-image: url("../img/rogovaya-back-desktop@1x.png"),
@@ -108,17 +121,26 @@
   }
 
   .companions__wrapper {
-    width: 425px;
+    width: 460px;
+    margin-bottom: 58px;
+    padding-left: 0;
+  }
 
-    margin-bottom: 62px;
+  .companions__title {
+    margin-bottom: 57px;
   }
 
   .companions__lead {
+    width: 400px;
+    margin-top: 29px;
+
     font-size: 21px;
     line-height: 25px;
   }
 
   .companions__list {
+    margin-bottom: 60px;
+
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;

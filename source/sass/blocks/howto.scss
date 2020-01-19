@@ -83,8 +83,16 @@
 
   .howto__item {
     min-height: 140px;
+    padding-top: 31px;
+    padding-right: 108px;
+    padding-bottom: 20px;
+    padding-left: 33px;
 
     flex-shrink: 0;
+
+    font-size: 24px;
+    line-height: 24px;
+
     border-radius: 0;
   }
 

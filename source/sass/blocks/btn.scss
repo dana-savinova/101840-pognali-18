@@ -107,8 +107,19 @@
 
 @media (min-width: $tablet-width) {
   .btn {
+    padding-top: 30px;
+    padding-bottom: 27px;
+    padding-left: 33px;
+
     font-size: 24px;
     line-height: 24px;
+
+    border-radius: 20px;
+  }
+
+  .btn::after {
+    top: 31px;
+    right: 36px;
   }
 
   .btn--round {

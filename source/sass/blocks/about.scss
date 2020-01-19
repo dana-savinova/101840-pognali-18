@@ -10,6 +10,10 @@
   @include section-bottom-round;
 }
 
+.about__btn {
+  display: none;
+}
+
 .about::before {
   content: "";
 
@@ -69,6 +73,9 @@
 @media (min-width: $tablet-width) {
   .about {
     min-height: 683px;
+
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
   }
 
   .about::before {
@@ -78,7 +85,7 @@
       url("../img/rectangle-bg-big-blue.svg");
     background-repeat: no-repeat;
     background-position: right 7px bottom 88px,
-      left 40px top 53px;
+      left 40px top;
     background-size: 376px 548px,
       688px 213px;
 
@@ -92,12 +99,29 @@
     padding-top: 43px;
     padding-right: 395px;
     padding-bottom: 88px;
-    padding-left: 76px;
+    padding-left: 75px;
 
     background: none;
   }
 
+  .about__title {
+    margin-bottom: 40px;
+  }
+
+  .about__text {
+    width: 300px;
+    margin-bottom: 51px;
+  }
+
+  .about__accent {
+    margin-top: 30px;
+
+    font-size: 21px;
+    line-height: 25px;
+  }
+
   .about__btn {
+    display: block;
     width: 274px;
   }
 }
@@ -111,9 +135,6 @@
 
   .about__accent {
     padding-right: 150px;
-
-    font-size: 21px;
-    line-height: 25px;
   }
 
   .about::before {

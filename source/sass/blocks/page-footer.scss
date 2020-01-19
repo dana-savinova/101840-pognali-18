@@ -7,6 +7,7 @@
 
   color: $medium-grey;
   background-color: $white;
+
   border-top-right-radius: 30px;
   border-top-left-radius: 30px;
 }
@@ -36,7 +37,22 @@
 
 @media (min-width: $tablet-width) {
   .page-footer {
-    padding-bottom: 46px;
+    margin-top: -92px;
+    padding-top: 44px;
+    padding-bottom: 34px;
+
+    border-top-right-radius: 60px;
+    border-top-left-radius: 60px;
+  }
+
+  .page-footer__logo {
+    margin-top: 10px;
+  }
+
+  .page-footer__social {
+    margin: 0;
+    margin-top: -10px;
+    margin-left: -13px;
   }
 
   .page-footer__wrapper {
@@ -45,7 +61,8 @@
   }
 
   .page-footer__copyright {
-    width: 150px;
+    width: 154px;
+    padding-top: 2px;
 
     box-shadow: none;
   }
