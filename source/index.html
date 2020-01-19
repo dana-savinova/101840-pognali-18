@@ -54,7 +54,7 @@
           </picture>
         </a>
         <button class="page-header__toggle page-header__toggle--nojs" type="button">
-          <svg class="page-header__toggle-icon" viewBox="0 0 25 11" xmlns="http://www.w3.org/2000/svg" width="25" height="11">
+          <svg class="page-header__toggle-icon page-header__toggle-icon--burger" viewBox="0 0 25 11" xmlns="http://www.w3.org/2000/svg" width="25" height="11">
             <path d="m1.5 3h22c.8 0 1.5-.7 1.5-1.5s-.7-1.5-1.5-1.5h-22c-.8 0-1.5.7-1.5 1.5s.7 1.5 1.5 1.5z"/>
             <path d="m23.5 8h-22c-.8 0-1.5.7-1.5 1.5s.7 1.5 1.5 1.5h22c.8 0 1.5-.7 1.5-1.5s-.7-1.5-1.5-1.5z"/>
           </svg>
@@ -211,17 +211,17 @@
         <div class="about__wrapper container">
           <h2 class="about__title section-title">О сервисе</h2>
           <div class="about__text">
-            <p>Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих. </p>
+            <p>Любое путешествие веселее <span class="no-wrap">с попутчиками</span>, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих. </p>
             <p class="about__accent">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
           </div>
-          <a class="about__btn btn" href="#">Подробнее</a>
+          <!-- <a class="about__btn btn" href="#">Подробнее</a> -->
         </div>
       </section>
       <section class="routes">
         <div class="container routes__box">
           <div class="routes__wrapper">
             <h2 class="routes__title section-title">Направления</h2>
-            <p class="routes__intro">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
+            <p class="routes__intro">Мы не продаем туры <span class="no-wrap">и ничего</span> не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
           </div>
           <ul class="routes__list">
             <li class="routes__item">
@@ -290,7 +290,7 @@
           <div class="companions__wrapper">
             <h2 class="companions__title section-title">Попутчики</h2>
             <div class="companions__intro">
-              <p>Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
+              <p class="companions__text">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
               <b class="companions__lead">Теперь можно легко найти единомышленников!</b>
             </div>
           </div>
@@ -307,7 +307,7 @@
                   </picture>
                 </a>
                 <p class="travelmate-preview__lvl lvl lvl--preview">
-                  <span class="lvl__title lvl__title--hide">Уровень:</span>
+                  <span class="lvl__title lvl__title--hide">Левел:</span>
                   <span class="lvl__num lvl__num--preview lvl__num--99">
                     <span class="lvl__text">99</span>
                   </span>
@@ -379,7 +379,7 @@
             </li>
             <li class="companions__item">
               <article class="travelmate-preview">
-                <h3 class="travelmate-preview__name travelmate-preview__status travelmate-preview__status--offline">
+                <h3 class="travelmate-preview__name travelmate-preview__status travelmate-preview__status--online">
                   <a class="travelmate-preview__link" href="/id1.html" aria-label="Петя Демин оффлайн">Петя Демин</a>
                 </h3>
                 <a class="travelmate-preview__photo" href="/id1.html">
@@ -389,9 +389,9 @@
                   </picture>
                 </a>
                 <p class="travelmate-preview__lvl lvl lvl--preview">
-                  <span class="lvl__title lvl__title--hide">Уровень:</span>
+                  <span class="lvl__title lvl__title--hide">Левел:</span>
                   <span class="lvl__num lvl__num--preview lvl__num--99">
-                    <span class="lvl__text">99</span>
+                    <span class="lvl__text">80</span>
                   </span>
                 </p>
                 <p class="travelmate-preview__hashtags hashtags">
@@ -408,22 +408,16 @@
                   <span class="destination__title visually-hidden">Хочет посетить:</span>
                   <ul class="destination__list">
                     <li class="destination__item">
-                      <div class="destination__flag" data-tooltip="Шри&nbsp;Ланка">
-                        <img class="destination__img" src="../img/flag/flag-sri-lanka.svg" alt="Флаг" width="35" height="24">
+                      <div class="destination__flag" data-tooltip="Бельгия">
+                        <img class="destination__img" src="../img/flag/flag-belgium.svg" alt="Флаг" width="35" height="24">
                       </div>
-                      <span class="destination__country">Шри-Ланка</span>
+                      <span class="destination__country">Бельгия</span>
                     </li>
                     <li class="destination__item">
-                      <div class="destination__flag" data-tooltip="Тайланд">
-                        <img class="destination__img" src="../img/flag/flag-thailand.svg" alt="Флаг" width="35" height="24">
+                      <div class="destination__flag" data-tooltip="Чехия">
+                        <img class="destination__img" src="../img/flag/flag-czech.svg" alt="Флаг" width="35" height="24">
                       </div>
-                      <span class="destination__country">Тайланд</span>
-                    </li>
-                    <li class="destination__item">
-                      <div class="destination__flag" data-tooltip="Сейшелы">
-                        <img class="destination__img" src="../img/flag/flag-seychelles.svg" alt="Флаг" width="35" height="24">
-                      </div>
-                      <span class="destination__country">Сейшелы</span>
+                      <span class="destination__country">Чехия</span>
                     </li>
                   </ul>
                 </div>
@@ -436,7 +430,7 @@
                       </svg>
                       <span class="visually-hidden">Авиаперелет</span>
                     </li>
-                    <li class="transport__item transport__item--bus" data-tooltip="Автотранспорт">
+                    <li class="transport__item transport__item--bus transport__item--active" data-tooltip="Автотранспорт">
                       <svg width="19" height="21" class="transport__icon">
                         <use xlink:href="#bus"></use>
                       </svg>
@@ -448,7 +442,7 @@
                       </svg>
                       <span class="visually-hidden">Велосипед</span>
                     </li>
-                    <li class="transport__item transport__item--run" data-tooltip="Пешком">
+                    <li class="transport__item transport__item--run transport__item--active" data-tooltip="Пешком">
                       <svg width="19" height="21" class="transport__icon">
                         <use xlink:href="#run"></use>
                       </svg>
@@ -486,11 +480,11 @@
         <div class="cta__wrapper container">
           <h2 class="visually-hidden">Регистрация и информация</h2>
           <b class="cta__lead section-title">Заинтересовались?</b>
-          <p class="cta__text">Зарегистрируйтесь, это быстро и бесплатно!<br> Уже зарегистрированы? Тогда скорее <a class="cta__link" href="login.html">авторизуйтесь.</a>
+          <p class="cta__text">Зарегистрируйтесь, <span class="no-wrap">это быстро</span> и бесплатно!<br> Уже зарегистрированы? Тогда скорее <a class="cta__link" href="login.html">авторизуйтесь.</a>
           </p>
           <form class="cta__form" action="https://echo.htmlacademy.ru" method="POST">
-            <label class="visually-hidden" for="cta-mail">Email:</label>
-            <input class="cta__mail" id="cta-mail" type="email" placeholder="Email">
+            <label class="visually-hidden" for="cta-mail">E-mail:</label>
+            <input class="cta__mail" id="cta-mail" type="email" placeholder="E-mail">
             <button class="cta__btn btn" type="submit" aria-label="Регистрация">
               <span class="cta__btn-text">Регистрация</span>
             </button>
@@ -524,9 +518,11 @@
       </section>
       <section class="address">
         <h2 class="visually-hidden">Где мы находимся</h2>
-        <div class="address__wrapper container">
-          <p class="address__text">ул. Большая Конюшенная, 19/8</p>
-          <a class="address__link btn btn--stroke" href="https://yandex.ru/maps/-/CBFXQGSKCD" target="_blank">Проложить маршрут</a>
+        <div class="address__wrapper">
+          <div class="container">
+            <p class="address__text">ул. Большая Конюшенная, 19/8</p>
+            <a class="address__link btn btn--stroke" href="https://yandex.ru/maps/-/CBFXQGSKCD" target="_blank">Проложить маршрут</a>
+          </div>
         </div>
         <div class="address__map map map--upped">
           <div class="map__wrapper">

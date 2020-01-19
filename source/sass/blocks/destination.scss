@@ -3,6 +3,7 @@
   margin-top: 15px;
 
   flex-direction: column;
+  flex-wrap: wrap;
 
   @include list-reset;
 }
@@ -83,6 +84,9 @@
 // preview stylesheet
 .destination--preview {
   .destination__list {
+    margin-left: 26px;
+    margin-right: 10px;
+
     flex-direction: row;
     justify-content: center;
   }
@@ -93,6 +97,11 @@
 
   .destination__flag {
     position: relative;
+    margin: 0;
+  }
+
+  .destination__item {
+    margin-right: 18px;
   }
 
   .destination__img {

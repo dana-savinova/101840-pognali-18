@@ -1,12 +1,14 @@
 .page-footer {
-  padding-top: 48px;
+  position: relative;
+  z-index: 30;
 
+  margin-top: -30px;
+  padding-top: 39px;
 
   color: $medium-grey;
   background-color: $white;
-
-  border-top-right-radius: 25px;
-  border-top-left-radius: 25px;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
 }
 
 .page-footer__wrapper {
@@ -16,9 +18,18 @@
   align-items: center;
 }
 
+.page-footer__logo {
+  margin-bottom: 15px;
+}
+
+.page-footer__social {
+  margin-bottom: 36px;
+}
 
 .page-footer__copyright {
-  padding-top: 22px;
+  width: 100%;
+  margin: 0;
+  padding-top: 15px;
   padding-bottom: 14px;
   box-shadow: inset 0 1px 0 0 #f2f2f2;
 }

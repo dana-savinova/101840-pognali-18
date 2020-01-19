@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 22px;
+  padding-bottom: 17px;
 
   font-size: 15px;
   line-height: 18px;
@@ -29,8 +29,7 @@
 .travelmate-preview__photo {
   display: flex;
   width: 270px;
-  min-height: 270px;
-  max-height: 270px;
+  height: 270px;
 
   order: -10;
 
@@ -48,12 +47,6 @@
   height: auto;
 
   transition: transform 0.3s ease-in-out;
-
-  // &:hover,
-  // &:focus {
-  //   transform: scale(1.05);
-  //   transition: transform 0.5s ease-in-out;
-  // }
 }
 
 .travelmate-preview:hover .travelmate-preview__img,
@@ -66,7 +59,7 @@
   z-index: 1;
 
   width: 100%;
-  margin-top: -13px;
+  margin-top: -27px;
 
   order: -9;
 }
@@ -74,17 +67,19 @@
 .travelmate-preview__name {
   position: relative;
 
-  order: -8;
-
   margin: 0;
+  margin-top: 4px;
+  margin-bottom: 15px;
+
+  order: -8;
 }
 
 .travelmate-preview__status::before {
   content: "";
 
   position: absolute;
-  left: -12px;
-  top: 6px;
+  left: -16px;
+  top: 7px;
 
   width: 5px;
   height: 5px;
@@ -103,6 +98,7 @@
 
 .travelmate-preview__hashtags {
   width: 180px;
+  margin-bottom: 10px;
 
   font-size: 16px;
   line-height: 18px;
@@ -111,7 +107,7 @@
 
 .travelmate-preview__lvl {
   position: absolute;
-  top: 16px;
+  top: 6px;
   left: 17px;
 
   background-color: rgba(black, 0.6);

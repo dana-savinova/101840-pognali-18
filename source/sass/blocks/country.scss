@@ -18,11 +18,11 @@
   display: flex;
   justify-content: space-between;
 
-  margin-top: -20px;
-  padding-top: 20px;
+  margin-top: -18px;
+  padding-top: 27px;
   padding-right: 23px;
-  padding-bottom: 23px;
-  padding-left: 23px;
+  padding-bottom: 22px;
+  padding-left: 24px;
 
   order: 2;
   flex-shrink: 0;
@@ -38,7 +38,7 @@
 
 .country__title {
   margin: 0;
-  margin-bottom: 5px;
+  margin-bottom: 2px;
   padding: 0;
 
   font-size: 21px;
@@ -48,7 +48,8 @@
 
 .country__flag {
   position: absolute;
-  top: -32px;
+  top: -39px;
+  left: 1px;
 
   width: 35px;
   height: 24px;
@@ -65,6 +66,7 @@
 
 .country__travels {
   margin: 0;
+  margin-right: 2px;
 }
 
 .country__total {

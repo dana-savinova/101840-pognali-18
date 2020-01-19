@@ -1,9 +1,11 @@
 .routes {
   position: relative;
+  z-index: 80;
+
   min-height: 500px;
   margin-top: -20px;
 
-  padding-top: 95px;
+  padding-top: 92px;
   padding-bottom: 30px;
   color: $medium-grey;
   background-color: #edeff6;
@@ -11,29 +13,41 @@
   @include section-bottom-round;
 }
 
+.routes__title {
+  margin: 0;
+}
 
-// .routes__wrapper {
-//   padding-right: 50px;
-//   padding-left: 25px;
-// }
+.routes__wrapper {
+  padding-right: 25px;
+  padding-left: 25px;
+}
 
 .routes__intro {
   @include subtext-font;
+
+  margin-top: 19px;
+  padding-right: 24px;
 }
 
 .routes__list {
   display: flex;
-
-  @include list-reset;
+  margin: 0;
+  margin-top: 60px;
+  margin-bottom: 8px;
+  padding: 0;
 
   flex-direction: column;
   flex-shrink: 0;
+
+  list-style: none;
 }
 
 .routes__item {
   position: relative;
   min-width: 270px;
+}
 
+.routes__item:not(:last-child) {
   margin-bottom: 10px;
 }
 

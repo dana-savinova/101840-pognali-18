@@ -79,14 +79,16 @@
   }
 }
 
+.transport__list--preview {
+  .transport__item {
+    background-color: $white;
+  }
+}
+
 
 @media (min-width: $tablet-width) {
   .transport__item {
     background-color: $white;
-
-    &--preview {
-      background-color: #edeff6;
-    }
   }
 
   .transport__icon--plane {

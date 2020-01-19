@@ -6,7 +6,10 @@ function init() {
     {
       center: [59.938631, 30.323055],
       controls: [],
-      zoom: 17
+      zoom: 16
+      // center: [59.938631, 30.323055],
+      // controls: [],
+      // zoom: 17
     },
     (myPlacemark = new ymaps.Placemark(
       [59.938631, 30.323055],
@@ -16,7 +19,8 @@ function init() {
       {
         iconLayout: "default#image",
         iconImageHref: "img/map-marker.svg",
-        iconImageSize: [54, 54]
+        iconImageSize: [54, 54],
+        iconImageOffset: [-20, -30]
       }
     ))
   );

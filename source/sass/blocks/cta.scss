@@ -1,23 +1,25 @@
 .cta {
   position: relative;
+  z-index: 50;
 
-  // padding-top: 129px;
-  // padding-right: 25px;
-  // padding-bottom: 10px;
-  // padding-left: 25px;
+  margin-top: -30px;
+  padding-top: 102px;
+  padding-bottom: 28px;
 
   text-align: center;
 
   color: $white;
   background-color: $dark-blue-grey;
 
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
 
 .cta__wrapper {
-  padding-top: 129px;
-  padding-bottom: 10px;
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
 }
 
 .cta__lead {
@@ -26,8 +28,9 @@
 }
 
 .cta__text {
+  width: 200px;
   margin: 0;
-  margin-bottom: 31px;
+  margin-bottom: 28px;
 
   font-size: 16px;
   line-height: 22px;
@@ -41,6 +44,7 @@
 .cta__form {
   display: flex;
   width: 100%;
+  margin-bottom: 13px;
 
   justify-content: space-between;
 
@@ -51,12 +55,10 @@
 }
 
 .cta__mail {
-  min-height: 62px;
+  width: 205px;
   padding: 24px;
-  padding-top: 22px;
+  padding-top: 19px;
   padding-bottom: 22px;
-
-  flex-grow: 1;
 
   font-size: 18px;
   line-height: 18px;
@@ -109,14 +111,13 @@
 
   padding: 0;
   width: 60px;
-  min-height: 62px;
+  height: 62px;
+  flex-shrink: 0;
 
   background-color: $light-gold;
 
   border: none;
-  border-radius: 0;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-radius: 10px;
 }
 
 .cta__btn::after {
@@ -126,6 +127,12 @@
 
 .cta__btn-text {
   display: none;
+}
+
+.cta__contacts {
+  margin: 0;
+  margin-top: 2px;
+  margin-left: -30px;
 }
 
 @media (min-width: $tablet-width) {
