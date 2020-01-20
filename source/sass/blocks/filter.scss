@@ -1,0 +1,25 @@
+.filter {
+  width: 270px;
+  padding-top: 26px;
+  padding-right: 20px;
+  padding-bottom: 22px;
+  padding-left: 20px;
+
+  font-size: 15px;
+  line-height: 15px;
+
+  color: $medium-grey;
+  background-color: $light-gold;
+  border-radius: 20px;
+}
+
+.filter__title {
+  margin: 0;
+  padding: 0;
+  padding-left: 6px;
+
+  font-size: 22.5px;
+  line-height: 22.5px;
+
+  color: $dark-slate-blue;
+}
