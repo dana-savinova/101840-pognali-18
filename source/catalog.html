@@ -165,8 +165,11 @@
       </div>
       <section class="area area--open">
         <!-- для закрытого состояния будет area--hidden -->
-        <h2 class="area__title">Фильтрация по странам</h2>
         <div class="area__header">
+          <h2 class="area__title">Фильтрация по странам</h2>
+          <button class="area_btn area_btn--filter" type="button" name="minimize">Свернуть</button>
+        </div>
+        <div class="area__wrapper area__wrapper--closed">
           <ul class="area__tabs">
             <li class="area__item">
               <a class="area__continent area__continent--active" href="/europe">Европа</a>
@@ -181,9 +184,6 @@
               <a class="area__continent" href="/islands">Острова</a>
             </li>
           </ul>
-          <button class="area_btn area_btn--close" type="button" name="minimize">Свернуть</button>
-        </div>
-        <div class="area__wrapper">
           <section class="area__countries countries">
             <h2 class="visually-hidden">Список стран</h2>
             <section class="countries__alphabet alphabetical-index">
@@ -812,7 +812,7 @@
               </ul>
             </section>
           </section>
-          <button class="area_btn area_btn--wide" type="button" name="minimize">Свернуть</button>
+          <button class="area_btn area_btn--minimize" type="button" name="minimize">Свернуть</button>
         </div>
       </section>
       <div class="inner-page__row">
@@ -1373,5 +1373,6 @@
       </div>
     </footer>
     <script src="js/script.js"></script>
+    <script src="js/area.js"></script>
   </body>
 </html>

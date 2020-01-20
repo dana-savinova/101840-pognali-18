@@ -1,3 +1,17 @@
-// .filter {
-//   display: none;
-// }
+.filter {
+  width: 270px;
+
+  font-size: 15px;
+  line-height: 15px;
+
+  color: $medium-grey;
+  background-color: $light-gold;
+  border-radius: 20px;
+}
+
+.filter__title {
+  font-size: 22.5px;
+  line-height: 22.5px;
+
+  color: $dark-slate-blue;
+}
