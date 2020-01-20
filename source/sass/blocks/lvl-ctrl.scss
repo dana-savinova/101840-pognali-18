@@ -81,3 +81,14 @@
     line-height: 20px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .lvl-ctrl {
+    width: 192px;
+    margin: 0;
+  }
+
+  .lvl-ctrl__input {
+    width: 96px;
+  }
+}

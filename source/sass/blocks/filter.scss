@@ -39,3 +39,17 @@
     line-height: 30px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .filter {
+    width: 285px;
+    padding-top: 48px;
+    padding-right: 41px;
+    padding-bottom: 47px;
+    padding-left: 46px;
+  }
+
+  .filter__title {
+    margin-bottom: 18px;
+  }
+}

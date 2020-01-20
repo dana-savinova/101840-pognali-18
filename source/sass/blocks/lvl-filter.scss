@@ -34,3 +34,27 @@
     width: 150px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .lvl-filter {
+    margin-left: 2px;
+
+    flex-direction: column;
+  }
+
+  .lvl-filter__range {
+    width: 191px;
+  }
+
+  .lvl-filter__title {
+    margin-top: 0;
+    margin-bottom: 13px;
+
+    order: -1;
+  }
+
+  .lvl-filter__ctrl {
+    width: 192px;
+    margin-bottom: 28px;
+  }
+}

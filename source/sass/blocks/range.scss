@@ -83,3 +83,17 @@
     left: 271px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .range {
+    width: 100%;
+  }
+
+  .range__toggle--min {
+    left: 58px;
+  }
+
+  .range__toggle--max {
+    left: 178px;
+  }
+}

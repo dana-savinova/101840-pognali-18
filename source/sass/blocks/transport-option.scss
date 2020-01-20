@@ -38,22 +38,22 @@
 
   .transport-option__icon {
     height: 21px;
-  }
 
-  .transport-option__icon--plane {
-    width: 19px;
-  }
+    &--plane {
+      width: 19px;
+    }
 
-  .transport-option__icon--bus {
-    width: 17px;
-  }
+    &--bus {
+      width: 17px;
+    }
 
-  .transport-option__icon--bike {
-    width: 24px;
-  }
+    &--bike {
+      width: 24px;
+    }
 
-  .transport-option__icon--run {
-    width: 20px;
+    &--run {
+      width: 20px;
+    }
   }
 
   .transport-option {
@@ -66,5 +66,21 @@
 
   .transport-option__legend {
     margin-top: -20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .transport-option__legend {
+    margin-top: 0;
+    margin-left: 2px;
+  }
+
+  .transport-option {
+    margin-top: 0;
+  }
+
+  .transport-option__list {
+    margin-top: 13px;
+    margin-bottom: 18px;
   }
 }
