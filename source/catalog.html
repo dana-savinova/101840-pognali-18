@@ -43,7 +43,7 @@
         </symbol>
       </svg>
     </div>
-    <header class="page-header page-header--inner">
+    <header class="page-header">
       <div class="container page-header__box">
       <div class="page-header__wrapper">
         <a class="page-header__logo logo" href="index.html">
@@ -54,7 +54,7 @@
           </picture>
         </a>
         <button class="page-header__toggle page-header__toggle--nojs" type="button">
-          <svg class="page-header__toggle-icon" viewBox="0 0 25 11" xmlns="http://www.w3.org/2000/svg" width="25" height="11">
+          <svg class="page-header__toggle-icon page-header__toggle-icon--burger" viewBox="0 0 25 11" xmlns="http://www.w3.org/2000/svg" width="25" height="11">
             <path d="m1.5 3h22c.8 0 1.5-.7 1.5-1.5s-.7-1.5-1.5-1.5h-22c-.8 0-1.5.7-1.5 1.5s.7 1.5 1.5 1.5z"/>
             <path d="m23.5 8h-22c-.8 0-1.5.7-1.5 1.5s.7 1.5 1.5 1.5h22c.8 0 1.5-.7 1.5-1.5s-.7-1.5-1.5-1.5z"/>
           </svg>
@@ -164,12 +164,12 @@
         </div>
       </div>
       <section class="area area--open">
-        <!-- для закрытого состояния будет area--hidden -->
-        <div class="area__header">
-          <h2 class="area__title">Фильтрация по странам</h2>
-          <button class="area_btn area_btn--filter" type="button" name="minimize">Свернуть</button>
-        </div>
-        <div class="area__wrapper area__wrapper--closed">
+        <div class="area__box">
+          <div class="area__header">
+            <h2 class="area__title">Фильтрация по странам</h2>
+            <button class="area_btn area_btn--filter" type="button" name="minimize">Свернуть</button>
+          </div>
+          <div class="area__wrapper area__wrapper--closed">
           <ul class="area__tabs">
             <li class="area__item">
               <a class="area__continent area__continent--active" href="/europe">Европа</a>
@@ -814,107 +814,118 @@
           </section>
           <button class="area_btn area_btn--minimize" type="button" name="minimize">Свернуть</button>
         </div>
+        </div>
       </section>
-      <div class="inner-page__row">
-      <section class="filter">
-        <h2 class="filter__title">Подберите идеального попутчика</h2>
-        <form class="filter__form pref-form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="pref-form__group">
-            <legend class="pref-form__title">Хобби</legend>
-            <ul class="pref-form__list">
-              <li class="pref-form__item">
-                <label class="pref-form__label" for="gym">Спортзал</label>
-                <input class="pref-form__input" id="gym" type="checkbox" name="hobby" value="Спортзал" checked>
-              </li>
-              <li class="pref-form__item">
-                <label class="pref-form__label" for="hooka">Кальян</label>
-                <input class="pref-form__input" id="hooka" type="checkbox" name="hobby" value="Кальян">
-              </li>
-              <li class="pref-form__item">
-                <label class="pref-form__label" for="couch">Диван</label>
-                <input class="pref-form__input" id="couch" type="checkbox" name="hobby" value="Диван">
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="pref-form__group">
-            <legend class="pref-form__title">Музыка</legend>
-            <ul class="pref-form__list">
-              <li class="pref-form__item">
-                <label class="pref-form__label" for="hardrock">Тяжелый рок</label>
-                <input class="pref-form__input" id="hardrock" type="checkbox" name="music" value="Тяжелый рок" checked>
-              </li>
-              <li class="pref-form__item">
-                <label class="pref-form__label" for="russianrap">Русский рэп</label>
-                <input class="pref-form__input" id="russianrap" type="checkbox" name="music" value="Русский рэп">
-              </li>
-              <li class="pref-form__item">
-                <label class="pref-form__label" for="eurodance">Евроденс</label>
-                <input class="pref-form__input" id="eurodance" type="checkbox" name="music" value="Евроденс">
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="pref-form__group">
-            <legend class="pref-form__title">Еда</legend>
-            <ul class="pref-form__list">
-              <li class="pref-form__item">
-                <label class="pref-form__label" for="meat">Мясоед</label>
-                <input class="pref-form__input" id="meat" type="checkbox" name="food" value="Мясо" checked>
-              </li>
-              <li class="pref-form__item">
-                <label class="pref-form__label" for="healthyfood">Сидит на ПП</label>
-                <input class="pref-form__input" id="healthyfood" type="checkbox" name="food" value="Здоровая">
-              </li>
-              <li class="pref-form__item">
-                <label class="pref-form__label" for="rawvegan">Веган-сыроед</label>
-                <input class="pref-form__input" id="rawvegan" type="checkbox" name="food" value="Веган-сыроед">
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="pref-form__group transport-option">
-            <legend class="pref-form__title transport-option__title">Транспорт</legend>
-            <ul class="transport-option__list">
-              <li class="transport-option__item">
-                <label class="transport-option__label" for="plane">Авиаперелет</label>
-                <input class="transport-option__input" id="plane" type="checkbox" name="transport" value="Авиаперелет" checked>
-              </li>
-              <li class="transport-option__item">
-                <label class="transport-option__label" for="bus">Автотранспорт</label>
-                <input class="transport-option__input" id="bus" type="checkbox" name="transport" value="Автотранспорт">
-              </li>
-              <li class="transport-option__item">
-                <label class="transport-option__label" for="bike">Велосипед</label>
-                <input class="transport-option__input" id="bike" type="checkbox" name="transport" value="Велосипед" checked>
-              </li>
-              <li class="transport-option__item">
-                <label class="transport-option__label" for="run">Пешком</label>
-                <input class="transport-option__input" id="run" type="checkbox" name="transport" value="Пешком" checked>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="pref-form__group range">
-            <legend class="pref-form__title">Левел</legend>
-            <div class="range__scale-wrapper">
-              <div class="range__scale">
-                <div class="range__bar"></div>
+      <div class="inner-page__row container">
+        <section class="filter">
+          <h2 class="filter__title">Подберите идеального попутчика</h2>
+          <form class="filter__form pref-form" action="https://echo.htmlacademy.ru" method="post">
+            <fieldset class="pref-form__group">
+              <legend class="pref-form__legend">
+                <button class="pref-form__title">Хобби</button>
+              </legend>
+              <ul class="pref-form__list">
+                <li class="pref-form__item">
+                  <input class="visually-hidden pref-form__input pref-form__input--checkbox" id="gym" type="checkbox" name="hobby" value="Спортзал" checked>
+                  <label class="pref-form__label" for="gym">Спортзал</label>
+                </li>
+                <li class="pref-form__item">
+                  <input class="visually-hidden pref-form__input pref-form__input--checkbox" id="hooka" type="checkbox" name="hobby" value="Кальян">
+                  <label class="pref-form__label" for="hooka">Кальян</label>
+                </li>
+                <li class="pref-form__item">
+                  <input class="visually-hidden pref-form__input pref-form__input--checkbox" id="couch" type="checkbox" name="hobby" value="Диван">
+                  <label class="pref-form__label" for="couch">Диван</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="pref-form__group">
+              <legend class="pref-form__legend">
+                <button class="pref-form__title">Музыка</button>
+              </legend>
+              <ul class="pref-form__list">
+                <li class="pref-form__item">
+                  <input class="visually-hidden pref-form__input pref-form__input--checkbox" id="hardrock" type="checkbox" name="music" value="Тяжелый рок" checked>
+                  <label class="pref-form__label" for="hardrock">Тяжелый рок</label>
+                </li>
+                <li class="pref-form__item">
+                  <input class="visually-hidden pref-form__input pref-form__input--checkbox" id="russianrap" type="checkbox" name="music" value="Русский рэп">
+                  <label class="pref-form__label" for="russianrap">Русский рэп</label>
+                </li>
+                <li class="pref-form__item">
+                  <input class="visually-hidden pref-form__input pref-form__input--checkbox" id="eurodance" type="checkbox" name="music" value="Евроденс">
+                  <label class="pref-form__label" for="eurodance">Евроденс</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="pref-form__group">
+              <legend class="pref-form__legend">
+                <button class="pref-form__title">Еда</button>
+              </legend>
+              <ul class="pref-form__list">
+                <li class="pref-form__item">
+                  <input class="visually-hidden pref-form__input pref-form__input--checkbox" id="meat" type="checkbox" name="food" value="Мясо" checked>
+                  <label class="pref-form__label" for="meat">Мясоед</label>
+                </li>
+                <li class="pref-form__item">
+                  <input class="visually-hidden pref-form__input pref-form__input--checkbox" id="healthyfood" type="checkbox" name="food" value="Здоровая">
+                  <label class="pref-form__label" for="healthyfood">Сидит на ПП</label>
+                </li>
+                <li class="pref-form__item">
+                  <input class="visually-hidden pref-form__input pref-form__input--checkbox" id="rawvegan" type="checkbox" name="food" value="Веган-сыроед"                >
+                  <label class="pref-form__label" for="rawvegan">Веган-сыроед</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="pref-form__group transport-option">
+              <legend class="pref-form__legend transport-option__title">
+                <button class="pref-form__title">Транспорт</button>
+              </legend>
+              <ul class="transport-option__list">
+                <li class="transport-option__item">
+                  <label class="transport-option__label" for="form-plane">Авиаперелет</label>
+                  <input class="transport-option__input" id="form-plane" type="checkbox" name="transport" value="Авиаперелет" checked>
+                </li>
+                <li class="transport-option__item">
+                  <label class="transport-option__label" for="form-bus">Автотранспорт</label>
+                  <input class="transport-option__input" id="form-bus" type="checkbox" name="transport" value="Автотранспорт">
+                </li>
+                <li class="transport-option__item">
+                  <label class="transport-option__label" for="form-bike">Велосипед</label>
+                  <input class="transport-option__input" id="form-bike" type="checkbox" name="transport" value="Велосипед" checked>
+                </li>
+                <li class="transport-option__item">
+                  <label class="transport-option__label" for="form-run">Пешком</label>
+                  <input class="transport-option__input" id="form-run" type="checkbox" name="transport" value="Пешком" checked>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="pref-form__group range">
+              <legend class="pref-form__legend">
+                <button class="pref-form__title">Левел</button>
+              </legend>
+              <div class="range__scale-wrapper">
+                <div class="range__scale">
+                  <div class="range__bar"></div>
+                </div>
+                <div class="range__toggle range__toggle--min"></div>
+                <div class="range__toggle range__toggle--max"></div>
               </div>
-              <div class="range__toggle range__toggle--min"></div>
-              <div class="range__toggle range__toggle--max"></div>
-            </div>
-            <div class="range__ctrl ctrl">
-              <label class="ctrl__field ctrl__field--min">
-                <span class="visually-hidden">от</span>
-                <input class="ctrl__input" type="text" name="min" value="30">
-              </label>
-              <label class="ctrl__field ctrl__field--max">
-                <span class="visually-hidden">до</span>
-                <input class="ctrl__input ctrl__input" type="text" name="max" value="100">
-              </label>
-            </div>
-            <button class="pref-form__btn" type="submit" name="button" value="OK">Показать</button>
-          </fieldset>
-        </form>
-      </section>
-        <div class="inner-page__col container">
+              <div class="range__ctrl ctrl">
+                <label class="ctrl__field ctrl__field--min">
+                  <span class="visually-hidden">от</span>
+                  <input class="ctrl__input" type="text" name="min" value="30">
+                </label>
+                <label class="ctrl__field ctrl__field--max">
+                  <span class="visually-hidden">до</span>
+                  <input class="ctrl__input ctrl__input" type="text" name="max" value="100">
+                </label>
+              </div>
+              <button class="pref-form__btn" type="submit" name="button" value="OK">Показать</button>
+            </fieldset>
+          </form>
+        </section>
+        <div class="inner-page__col">
           <section class="catalog">
             <h2 class="visually-hidden">Список попутчиков</h2>
             <ul class="catalog__list">
@@ -1374,5 +1385,6 @@
     </footer>
     <script src="js/script.js"></script>
     <script src="js/area.js"></script>
+    <script src="js/pref-form.js"></script>
   </body>
 </html>
