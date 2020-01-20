@@ -1,0 +1,38 @@
+.indicator {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+@media (max-width: 1470px) {
+  .indicator__text {
+    display: none;
+  }
+}
+
+.indicator__step {
+  position: relative;
+
+  width: 21px;
+  height: 24px;
+}
+
+.indicator__step::before {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  top: 9px;
+
+  width: 5px;
+  height: 5px;
+
+  background-color: rgba(#000000, 0.6);
+  border-radius: 50%;
+}
+
+.indicator__step--active::before {
+  background-color: $dark-slate-blue;
+}

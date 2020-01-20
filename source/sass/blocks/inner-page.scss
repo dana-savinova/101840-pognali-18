@@ -140,4 +140,15 @@
     font-size: 60px;
     line-height: 70px;
   }
+
+  .inner-page__row {
+    display: flex;
+    flex-direction: row-reverse;
+
+    align-items: flex-start;
+  }
+
+  .inner-page__col {
+    margin-bottom: 107px;
+  }
 }

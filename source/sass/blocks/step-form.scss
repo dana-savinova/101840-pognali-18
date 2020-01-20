@@ -1,0 +1,89 @@
+.step-form__list {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  list-style: none;
+}
+
+
+.step-form__item {
+  // display: flex;
+
+  width: 270px;
+  margin-bottom: 10px;
+  padding-top: 24px;
+  padding-right: 25px;
+  padding-bottom: 6px;
+  padding-left: 25px;
+
+  // flex-direction: column;
+
+  color: $medium-grey;
+  background-color: $white;
+
+  border-radius: 10px;
+}
+
+.step-form__title {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.step-form__hint {
+  font-size: 16px;
+  line-height: 22px;
+  color: $medium-grey;
+}
+
+.step-form__indicator {
+  display: none;
+}
+
+.step-form__label {
+  position: relative;
+
+  padding-left: 39px;
+
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 400;
+
+  color: $medium-grey;
+}
+
+.step-form__label::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 26px;
+  height: 26px;
+
+  background-color: $white;
+  border-radius: 4px;
+  border: solid 1px #cbced9;
+}
+
+.step-form__checkbox:checked ~ .step-form__label::after {
+  content: "";
+
+  position: absolute;
+  top: 8px;
+  left: 9px;
+  z-index: 10;
+
+  width: 9px;
+  height: 9px;
+
+  background-image: url("../img/tick.svg");
+  background-size: 9px 9px;
+}
+
+.step-form__btn--back {
+  background-color: $white;
+}
