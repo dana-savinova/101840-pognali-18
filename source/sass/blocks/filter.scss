@@ -23,3 +23,19 @@
 
   color: $dark-slate-blue;
 }
+
+@media (min-width: $tablet-width) {
+  .filter {
+    width: 688px;
+    padding-top: 37px;
+    padding-bottom: 38px;
+    padding-left: 28px;
+  }
+
+  .filter__title {
+    margin-bottom: 37px;
+
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
