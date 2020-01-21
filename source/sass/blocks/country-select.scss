@@ -1,0 +1,365 @@
+.country-select__list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+
+  flex-direction: column;
+
+  list-style: none;
+}
+
+.country-select__item {
+  position: relative;
+
+  display: flex;
+  margin-bottom: 22px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 17px;
+    right: 48px;
+    z-index: 1;
+
+    width: 8px;
+    height: 8px;
+
+    border: 1px solid $white;
+
+    border-radius: 100%;
+  }
+
+  &--selected::after {
+    border-color: $dark-slate-blue;
+    background-color: $dark-slate-blue;
+  }
+
+  &--add::after {
+    border-color: #cbced9;
+    background-color: #edeff6;
+  }
+
+  &--choose::after {
+    border-color: #cbced9;
+    background-color: $white;
+  }
+}
+
+.country-select__item:not(:last-child)::before {
+  content: "";
+  position: absolute;
+
+  bottom: -15px;
+  right: 50px;
+
+  width: 5px;
+  height: 10px;
+
+  background-image: url("../img/small-arrow.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.country-select__remove {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+
+  width: 21px;
+  height: 21px;
+
+  background-color: #edeff6;
+  background-image: url("../img/menu-close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 9px 9px;
+  border: none;
+  border-radius: 50%;
+}
+
+.country-select__field {
+  position: relative;
+
+  display: flex;
+  width: 168px;
+  padding-top: 12px;
+  padding-right: 12px;
+  padding-bottom: 10px;
+  padding-left: 12px;
+
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: left;
+
+  color: #1d2e5b;
+}
+
+.country-select__field--selected {
+  border: 1px solid #cbced9;
+  border-radius: 4px;
+
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.country-select__field--selected::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 50px;
+  height: 100%;
+
+  background-image: linear-gradient(to left, #ffffff 60%, transparent);
+}
+
+.country-select__edit {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+
+  width: 40px;
+  height: 100%;
+
+  border: none;
+  background-color: transparent;
+
+  background-image: url("../img/dropdown-form.svg");
+  background-repeat: no-repeat;
+  background-size: 12px 7px;
+  background-position: center;
+  opacity: 0.3;
+}
+
+.country-select__flag {
+  position: relative;
+
+  display: flex;
+  width: 53px;
+
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid #cbced9;
+  border-radius: 4px;
+}
+
+.country-select__flag::before {
+  content: attr(data-tooltip);
+
+  position: absolute;
+  bottom: -72px;
+  left: 50%;
+
+  display: none;
+  padding-top: 16px;
+  padding-right: 28px;
+  padding-bottom: 17px;
+  padding-left: 24px;
+
+  font-size: 20px;
+  line-height: 24px;
+
+  color: $white;
+  background-color: $tooltip-blue;
+
+  border-radius: 4px;
+
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.country-select__flag::after {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: 10px;
+
+  display: none;
+  padding-top: 16px;
+  width: 16px;
+  height: 16px;
+
+  background-color: $tooltip-blue;
+
+  transform: rotate(45deg);
+}
+
+.country-select__flag:hover {
+  &::before,
+  &::after {
+    z-index: 17;
+
+    display: block;
+  }
+}
+
+.country-select__dropdown {
+  display: none;
+}
+
+.country-select__field--choose {
+  width: 220px;
+
+  justify-content: space-between;
+
+  border: 1px solid #cbced9;
+  border-radius: 4px;
+}
+
+.country-select__choose {
+  width: 42px;
+  height: auto;
+
+  background-color: transparent;
+  border: none;
+
+  background-image: url("../img/dropdown-form.svg");
+  background-repeat: no-repeat;
+  background-size: 12px 7px;
+  background-position: center right;
+  opacity: 0.3;
+}
+
+
+.country-select__field--add {
+  width: 220px;
+
+  justify-content: space-between;
+
+  background-color: #edeff6;
+  border-radius: 4px;
+}
+
+.country-select__add {
+  background-color: transparent;
+  border: none;
+
+  background-image: url("../img/qty-plus.svg");
+  background-repeat: no-repeat;
+  background-size: 14px 14px;
+  background-position: center right;
+  opacity: 0.3;
+}
+
+
+@media (min-width: $tablet-width) {
+  .country-select {
+    padding-top: 0;
+  }
+
+  .country-select__list {
+    position: relative;
+    padding-top: 40px;
+  }
+
+  .country-select__list::after {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    right: 135px;
+
+    width: 1px;
+    height: 100%;
+
+    background-color: #d6d9e6;
+  }
+
+  .country-select__list::before {
+    content: "";
+
+    position: absolute;
+    bottom: 0;
+    right: 135px;
+
+    width: 10px;
+    height: 25px;
+
+    background-image: linear-gradient(to top, #ffffff 60%, transparent);
+  }
+
+  .country-select__item {
+    margin-bottom: 15px;
+
+    justify-content: space-between;
+  }
+
+  .country-select__field {
+    width: 370px;
+
+    padding-top: 26px;
+    padding-right: 35px;
+    padding-bottom: 22px;
+    padding-left: 25px;
+
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 500;
+  }
+
+  .country-select__flag {
+    width: 70px;
+    margin-right: 40px;
+
+    border: none;
+  }
+
+  .country-select__img {
+    width: 70px;
+    height: 47px;
+  }
+
+  .country-select__item:not(:last-child)::before {
+    display: none;
+  }
+
+  .country-select__item::after {
+    top: 26px;
+    right: 128px;
+
+    width: 15px;
+    height: 15px;
+  }
+
+  .country-select__remove {
+    top: 24px;
+    right: -5px;
+
+    background-color: transparent;
+    background-size: 17px 17px;
+  }
+
+  .country-select__edit {
+    width: 40px;
+
+    background-size: 17px 9px;
+    background-position: center right 26px;
+  }
+
+  .country-select__field--choose {
+    padding-right: 26px;
+  }
+
+  .country-select__choose {
+    background-size: 17px 9px;
+    background-position: center right;
+  }
+
+  .country-select__field--add {
+    padding-right: 28px;
+  }
+
+  .country-select__add {
+    width: 30px;
+    height: 20px;
+
+    background-size: 20px 20px;
+  }
+}

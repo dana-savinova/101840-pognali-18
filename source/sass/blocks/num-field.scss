@@ -1,0 +1,146 @@
+.num-field {
+  padding: 0;
+  border: 0;
+}
+
+.num-field__wrapper {
+  display: flex;
+  width: 220px;
+  margin-bottom: 20px;
+
+  flex-direction: column;
+}
+
+.num-field__row {
+  display: flex;
+}
+
+.num-field__row--btns {
+  border: 1px solid #cbced9;
+  border-radius: 4px;
+}
+
+.num-field__btn {
+  position: relative;
+
+  width: 41px;
+  height: 41px;
+
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 14px 14px;
+
+  border: none;
+  border-radius: 4px;
+}
+
+.num-field__btn--incr {
+  background-image: url("../img/qty-plus-mobile.svg");
+  background-position: center right 15px;
+}
+
+.num-field__btn--decr {
+  background-image: url("../img/qty-minus-mobile.svg");
+}
+
+.num-field__input {
+  // padding-top: 16px;
+  // padding-bottom: 16px;
+
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 500;
+  text-align: center;
+  border: 0;
+
+  appearance: textfield;
+}
+
+.num-field__row--text {
+  margin-bottom: 8px;
+  justify-content: space-between;
+}
+
+.num-field__label,
+.num-field__title {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+
+  text-transform: uppercase;
+  color: $dark-slate-blue;
+}
+
+.num-field__label {
+  color: rgba($dark-slate-blue, 0.3);
+}
+
+@media (min-width: $tablet-width) {
+  .num-field__wrapper {
+    width: 531px;
+  }
+
+  .num-field__title,
+  .num-field__label {
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+  }
+
+  .num-field__btn {
+    width: 70px;
+    height: 70px;
+
+    background-size: 20px 20px;
+  }
+
+  .num-field__row--text {
+    margin-bottom: 22px;
+  }
+
+  .num-field__row--btns {
+    justify-content: space-between;
+  }
+
+  .num-field__input {
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+  }
+
+  .num-field__btn--incr {
+    background-position: center right 19px;
+  }
+
+  .num-field__btn--decr {
+    background-position: center right 28px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .num-field__wrapper {
+    width: 500px;
+    margin-bottom: 6px;
+  }
+
+  .num-field__row--btns {
+    width: 181px;
+    margin-top: -92px;
+    margin-left: 220px;
+  }
+
+  .num-field__row--text {
+    padding-top: 31px;
+    padding-bottom: 24px;
+  }
+
+  .num-field__input {
+    width: 61px;
+  }
+
+  .num-field__btn {
+    width: 60px;
+  }
+}
