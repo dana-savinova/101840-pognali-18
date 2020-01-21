@@ -1,5 +1,6 @@
 .plan-desc {
   display: flex;
+  padding-bottom: 22px;
 
   flex-direction: column;
 }
@@ -8,9 +9,12 @@
   position: relative;
   display: flex;
   width: 220px;
-  margin-bottom: 25px;
 
   flex-direction: column;
+}
+
+.plan-desc__item:not(:last-child) {
+  margin-bottom: 27px;
 }
 
 .plan-desc__item::before {
@@ -45,21 +49,74 @@
 .plan-desc__text {
   width: 220px;
   height: 220px;
-  padding-top: 9px;
+  padding-top: 10px;
   padding-right: 13px;
   padding-bottom: 9px;
-  padding-left: 13px;
+  padding-left: 14px;
 
+  font-size: 16px;
+  line-height: 22px;
+
+  color: $medium-grey;
   background-color: $white;
   border-radius: 4px;
   border: solid 1px #cbced9;
+
+  resize: none;
+
+  &:hover {
+    border-color: #e5e5e5;
+  }
+
+  &:focus {
+    border-color: #161c35;
+  }
+
+  &:invalid {
+    border-color: #f47e7e;
+  }
+}
+
+.plan-desc__message {
+  display: none;
+
+  position: absolute;
+  bottom: 1px;
+  left: 1px;
+  z-index: 1;
+
+  width: 218px;
+  height: 59px;
+  padding-top: 10px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+
+  color: #ff0000;
+  background-color: #ffefef;
+  border-radius: 4px;
+}
+
+.plan-desc__text:invalid ~ .plan-desc__message {
+  display: block;
+}
+
+.plan-desc__text::placeholder {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: rgba($medium-grey, 0.3);
 }
 
 .plan-desc__country {
   position: relative;
 
   margin-bottom: 16px;
-  padding-left: 10px;
+  padding-left: 11px;
 
   font-size: 18px;
   line-height: 18px;
@@ -84,7 +141,7 @@
   content: "";
 
   position: absolute;
-  top: 0;
+  top: -3px;
   right: 0;
   z-index: 1;
 

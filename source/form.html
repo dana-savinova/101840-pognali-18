@@ -165,23 +165,26 @@
       </div>
       <section class="profile">
         <h2 class="visually-hidden">Профиль</h2>
-        <div class="profile__info">
-          <p class="profile__lvl profile-lvl">
-            <span class="visually-hidden">Уровень:</span>
-            <span class="profile-lvl__num">80</span>
-            <svg class="profile-lvl__bar" width="100" height="100">
-              <circle r="47" cx="50" cy="50" fill="transparent" stroke="#ff8d30" stroke-width="3" stroke-dasharray="236px 70px"></circle>
-            </svg>
-          </p>
-          <picture>
-            <source media="(min-width: 768px)" srcset="img/photo-account-tablet@1x.jpg 1x, img/photo-account-tablet@2x.jpg 2x">
-            <img class="profile__photo" src="img/photo-account-mobile@1x.jpg" srcset="img/photo-account-mobile@1x.jpg 1x, img/photo-account-mobile@2x.jpg 2x" alt="Фото профиля" width="100" height="100">
-          </picture>
-        </div>
-        <form class="profile__form" action="https://echo.htmlacademy.ru/" method="post">
+        <div class="profile__box container">
+          <div class="profile__info">
+            <p class="profile__lvl profile-lvl">
+              <span class="visually-hidden">Уровень:</span>
+              <span class="profile-lvl__num">80</span>
+              <svg class="profile-lvl__bar" width="100" height="100">
+                <circle r="47" cx="50" cy="50" fill="transparent" stroke="#ff8d30" stroke-width="3" stroke-dasharray="236px 70px"></circle>
+              </svg>
+            </p>
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/photo-account-tablet@1x.jpg 1x, img/photo-account-tablet@2x.jpg 2x">
+              <img class="profile__photo" src="img/photo-account-mobile@1x.jpg" srcset="img/photo-account-mobile@1x.jpg 1x, img/photo-account-mobile@2x.jpg 2x" alt="Фото профиля" width="100" height="100">
+            </picture>
+          </div>
+          <form class="profile__form" action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="profile__group">
             <legend class="visually-hidden">Фотография</legend>
-            <label class="profile__btn" for="photo-change"><span class="profile__hide">Сменить </span>фото</label>
+            <label class="profile__btn" for="photo-change">
+              Сменить фото
+            </label>
             <input class="profile__file visually-hidden" id="photo-change" type="file" accept="image/*">
           </fieldset>
           <fieldset class="profile__group">
@@ -193,7 +196,7 @@
           <fieldset class="profile__group transport-option">
             <div class="profile__wrapper">
               <legend class="profile__title transport-option__title">Транспорт</legend>
-              <ul class="transport-option__list">
+              <ul class="profile__list transport-option__list">
                 <li class="transport-option__item" data-tooltip="Авиаперелет">
                   <input class="visually-hidden" id="plane" type="checkbox" name="transport" value="Авиаперелет" checked>
                   <label class="transport-option__label" for="plane">
@@ -234,6 +237,7 @@
             </div>
           </fieldset>
         </form>
+        </div>
       </section>
       <section class="user-plan">
         <div class="uset-plan__box container">
@@ -531,7 +535,7 @@
               <div class="step-form__wrapper">
                 <h3 class="step-form__title">Шаг 2.<br> Маршрут</h3>
                 <div class="step-form__hint">
-                  <p>Укажите страны, которые вы хотели по посетить.<br>Это может быть одна или сразу несколько.</p>
+                  <p>Укажите страны, которые вы хотели по посетить. Это может быть одна или сразу несколько.</p>
                 </div>
                 <ol class="step-form__indicator indicator indicator--desktop">
                   <li class="indicator__step">
@@ -723,11 +727,10 @@
               </div>
             </li>
             <li class="step-form__item">
-              <div class="step-form__wrapper">
+              <div class="step-form__wrapper step-form__wrapper--third">
                 <h3 class="step-form__title" id="step-3">Шаг 3.<br> Развлечения</h3>
                 <div class="step-form__hint">
-                  <p>Наконец, расскажите о своих планах времяпровождения.</p>
-                  <p>Можно писать в свободной форме и ставить тэги.</p>
+                  <p>Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
                 </div>
                 <ol class="step-form__indicator indicator indicator--desktop">
                   <li class="indicator__step">
@@ -744,11 +747,13 @@
               <div class="step-form__wrapper plan-desc">
                 <div class="plan-desc__item">
                   <label class="plan-desc__country plan-desc__flag plan-desc__flag--bosnia" for="bih-plan">Босния и герцеговина</label>
-                  <textarea class="plan-desc__text" id="bih-plan" name="country-plan" rows="8" cols="80" placeholder="План действий"></textarea>
+                  <textarea class="plan-desc__text" id="bih-plan" name="country-plan" rows="8" cols="80" placeholder="План действий" required></textarea>
+                  <div class="plan-desc__message">Это поле должно быть заполнено</div>
                 </div>
                 <div class="plan-desc__item">
                   <label class="plan-desc__country plan-desc__flag plan-desc__flag--czech" for="czech-plan">Чехия</label>
-                  <textarea class="plan-desc__text" id="czech-plan" name="country-plan" rows="8" cols="80" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+                  <textarea class="plan-desc__text" id="czech-plan" name="country-plan" rows="8" cols="80" placeholder="План действий" required>Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+                  <div class="plan-desc__message">Это поле должно быть заполнено</div>
                 </div>
               </div>
               <div class="step-form__wrapper">

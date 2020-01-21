@@ -1,6 +1,6 @@
 .user-plan {
-  padding-top: 29px;
-  padding-bottom: 56px;
+  padding-top: 28px;
+  padding-bottom: 48px;
 
   color: $dark-slate-blue;
   background-color: #dfe3f0;
@@ -10,6 +10,9 @@
 }
 
 .user-plan__title {
+  margin: 0;
+  margin-bottom: 29px;
+
   color: $dark-slate-blue;
 }
 
@@ -32,7 +35,7 @@
   padding-top: 24px;
   padding-right: 25px;
   padding-left: 25px;
-  padding-bottom: 21px;
+  padding-bottom: 20px;
 
   color: $dark-slate-blue;
   background-color: $white;
@@ -55,6 +58,7 @@
 
 .user-plan__dest {
   margin: 0;
+  margin-bottom: 20px;
   padding: 0;
   padding-left: 17px;
 
@@ -65,15 +69,30 @@
 
 .user-plan__travelmates,
 .user-plan__date {
+  margin: 0;
+  padding: 0;
+
   font-size: 14px;
   line-height: 14px;
   font-weight: 500;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
 }
 
+.user-plan__travelmates {
+  margin-bottom: 5px;
+}
+
+.user-plan__date {
+  margin-bottom: 20px;
+}
+
 .user-plan__edit {
+  margin-left: 2px;
+
   font-size: 14px;
   line-height: 18px;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   text-decoration: none;
 

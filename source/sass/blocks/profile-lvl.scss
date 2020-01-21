@@ -4,6 +4,7 @@
   display: flex;
   width: 100px;
   height: 100px;
+  margin: 0;
 
   justify-content: center;
   align-items: center;
@@ -22,7 +23,7 @@
 .profile-lvl__num {
   position: relative;
 
-  margin-top: -14px;
+  margin-top: -18px;
 
   font-size: 38px;
   line-height: 38px;

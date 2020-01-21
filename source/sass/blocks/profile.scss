@@ -1,3 +1,19 @@
+.profile {
+  padding-top: 23px;
+  padding-bottom: 9px;
+}
+
+.profile__info {
+  display: flex;
+  padding-right: 16px;
+  padding-left: 20px;
+  padding-bottom: 12px;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+
 .profile__photo {
   width: 99px;
   height: 100px;
@@ -5,12 +21,6 @@
   border-radius: 50%;
 }
 
-.profile__info {
-  display: flex;
-  padding-top: 10px;
-
-  align-items: center;
-}
 
 .profile__group {
   margin: 0;
@@ -23,10 +33,10 @@
   display: flex;
   width: 270px;
   margin-bottom: 34px;
-  padding-top: 10px;
+  padding-top: 7px;
   padding-right: 10px;
-  padding-bottom: 7px;
-  padding-left: 10px;
+  padding-bottom: 3px;
+  padding-left: 9px;
 
   font-size: 17px;
   line-height: 30px;
@@ -65,11 +75,11 @@
 
 .profile__tags {
   width: 270px;
-  height: 89px;
-  padding-top: 22px;
+  height: 78px;
+  padding-top: 13px;
   padding-right: 24px;
-  padding-bottom: 21px;
-  padding-left: 24px;
+  padding-bottom: 13px;
+  padding-left: 27px;
 
   font-size: 16px;
   line-height: 22px;
@@ -90,7 +100,7 @@
 .profile__title {
   z-index: 1;
 
-  margin-top: -10px;
+  margin-top: -9px;
 
   padding-right: 14px;
   padding-left: 14px;
@@ -102,4 +112,8 @@
 
   color: $dark-slate-blue;
   background-color: #edeff6;
+}
+
+.profile__list {
+  margin-bottom: 15px;
 }
