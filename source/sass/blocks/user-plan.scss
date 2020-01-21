@@ -160,3 +160,65 @@
     margin-left: 29px;
   }
 }
+
+
+@media (min-width: $desktop-width) {
+  .user-plan {
+    padding-top: 49px;
+    padding-bottom: 76px;
+  }
+
+  .user-plan__title {
+    margin-left: 6px;
+  }
+
+  .user-plan__item {
+    display: flex;
+    margin-bottom: 14px;
+    padding-top: 22px;
+    padding-bottom: 23px;
+
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .user-plan__item::before {
+    top: 41px;
+    left: 42px;
+
+    font-weight: 500;
+  }
+
+  .user-plan__dest {
+    width: 600px;
+    margin: 0;
+    padding-left: 95px;
+    padding-right: 41px;
+  }
+
+  .user-plan__wrapper {
+    width: 674px;
+    padding-right: 40px;
+
+    justify-content: flex-start;
+
+    box-shadow: none;
+  }
+
+  .user-plan__travelmates {
+    width: 179px;
+  }
+
+  .user-plan__date {
+    width: 200px;
+    margin-right: auto;
+  }
+
+  .user-plan__edit {
+    width: 150px;
+    margin: 0;
+
+    text-align: right;
+  }
+}

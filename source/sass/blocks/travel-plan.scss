@@ -33,3 +33,29 @@
     margin-bottom: 49px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .travel-plan {
+    padding-top: 50px;
+    padding-bottom: 64px;
+
+    border-top-right-radius: 60px;
+    border-top-left-radius: 60px;
+  }
+
+  .travel-plan__box {
+    padding-left: 60px;
+  }
+
+  .travel-plan__wrapper {
+    margin-bottom: 49px;
+  }
+
+  .travel-plan__title {
+    margin-left: 70px;
+  }
+
+  .travel-plan__indicator {
+    display: none;
+  }
+}

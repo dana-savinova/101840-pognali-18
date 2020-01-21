@@ -118,3 +118,29 @@
     background-position: center right 28px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .num-field__wrapper {
+    width: 500px;
+    margin-bottom: 6px;
+  }
+
+  .num-field__row--btns {
+    width: 181px;
+    margin-top: -92px;
+    margin-left: 220px;
+  }
+
+  .num-field__row--text {
+    padding-top: 31px;
+    padding-bottom: 24px;
+  }
+
+  .num-field__input {
+    width: 61px;
+  }
+
+  .num-field__btn {
+    width: 60px;
+  }
+}

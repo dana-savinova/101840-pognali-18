@@ -158,7 +158,7 @@
     </header>
     <main class="inner-page">
       <div class="inner-page__wrapper">
-        <div class="inner-page__box container">
+        <div class="inner-page__box">
           <h1 class="inner-page__title">Направления</h1>
         </div>
       </div>
@@ -179,13 +179,15 @@
             </picture>
           </div>
           <form class="profile__form" action="https://echo.htmlacademy.ru/" method="post">
-          <fieldset class="profile__group">
-            <legend class="visually-hidden">Фотография</legend>
-            <label class="profile__btn" for="photo-change">
-              Сменить фото
-            </label>
-            <input class="profile__file visually-hidden" id="photo-change" type="file" accept="image/*">
-          </fieldset>
+            <div class="profile__btn-wrapper">
+              <fieldset class="profile__group">
+                <legend class="visually-hidden">Фотография</legend>
+                <label class="profile__btn" for="photo-change">
+                  Сменить фото
+                </label>
+                <input class="profile__file visually-hidden" id="photo-change" type="file" accept="image/*">
+              </fieldset>
+            </div>
           <fieldset class="profile__group">
             <div class="profile__wrapper profile__wrapper--hashtags">
               <legend class="profile__title profile__title--hashtags">Тэги</legend>
@@ -284,10 +286,12 @@
         <form class="travel-plan__form step-form" action="https://echo.htmlacademy.ru" method="post">
           <ol class="step-form__list">
             <li class="step-form__item" id="step-1">
-              <div class="step-form__wrapper">
-                <h3 class="step-form__title">Шаг 1.<br> Даты пребывания</h3>
-                <div class="step-form__hint">
-                  <p>Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+              <div class="step-form__head">
+                <div class="step-form__col">
+                  <h3 class="step-form__title">Шаг 1.<br class="step-form__break"> Даты пребывания</h3>
+                  <div class="step-form__hint">
+                    <p>Укажите предпочтительное количество попутчиков, которых <span class="no-wrap">вы хотели</span> бы позвать в поездку и ее предполагаемую длительность.</p>
+                  </div>
                 </div>
                 <ol class="step-form__indicator indicator indicator--desktop">
                   <li class="indicator__step indicator__step--active">
@@ -302,47 +306,49 @@
                 </ol>
               </div>
               <div class="step-form__wrapper">
-                <fieldset class="step-form__group step-form__group--travelmates num-field">
-                  <div class="num-field__wrapper">
-                    <div class="num-field__row num-field__row--text">
-                      <legend class="num-field__title">Ищу попутчиков:</legend>
-                      <label class="num-field__label" for="travelmate-num">
-                        Чел.
-                      </label>
+                <div class="step-form__row">
+                  <fieldset class="step-form__group step-form__group--travelmates num-field">
+                    <div class="num-field__wrapper">
+                      <div class="num-field__row num-field__row--text">
+                        <legend class="num-field__title">Ищу попутчиков:</legend>
+                        <label class="num-field__label" for="travelmate-num">
+                          Чел.
+                        </label>
+                      </div>
+                      <div class="num-field__row num-field__row--btns">
+                        <button class="num-field__btn num-field__btn--decr" type="button">
+                          <span class="visually-hidden">Убавить</span>
+                        </button>
+                        <input class="num-field__input" id="travelmate-num" type="number" value="2" name="travelmate-number">
+                        <button class="num-field__btn num-field__btn--incr" type="button">
+                          <span class="visually-hidden">Прибавить</span>
+                        </button>
+                      </div>
                     </div>
-                    <div class="num-field__row num-field__row--btns">
-                      <button class="num-field__btn num-field__btn--decr" type="button">
-                        <span class="visually-hidden">Убавить</span>
-                      </button>
-                      <input class="num-field__input" id="travelmate-num" type="number" value="2" name="travelmate-number">
-                      <button class="num-field__btn num-field__btn--incr" type="button">
-                        <span class="visually-hidden">Прибавить</span>
-                      </button>
+                  </fieldset>
+                  <fieldset class="step-form__group step-form__group--days num-field">
+                    <div class="num-field__wrapper">
+                      <div class="num-field__row num-field__row--text">
+                        <legend class="step-form__legend num-field__title">Длительность:</legend>
+                        <label class="num-field__label" for="days-num">
+                          Дн.
+                        </label>
+                      </div>
+                      <div class="num-field__row num-field__row--btns">
+                        <button class="num-field__btn num-field__btn--decr" type="button">
+                          <span class="visually-hidden">Убавить</span>
+                        </button>
+                        <input class="num-field__input" id="days-num" type="number" value="2" name="days-number">
+                        <button class="num-field__btn num-field__btn--incr" type="button">
+                          <span class="visually-hidden">Прибавить</span>
+                        </button>
+                      </div>
                     </div>
+                  </fieldset>
+                  <div class="step-form__group step-form__group--children">
+                    <input class="visually-hidden step-form__checkbox" type="checkbox" id="children" name="children" checked>
+                    <label class="step-form__label" for="children">Можно с детьми</label>
                   </div>
-                </fieldset>
-                <fieldset class="step-form__group step-form__group--days num-field">
-                  <div class="num-field__wrapper">
-                    <div class="num-field__row num-field__row--text">
-                      <legend class="step-form__legend num-field__title">Длительность:</legend>
-                      <label class="num-field__label" for="days-num">
-                        Дн.
-                      </label>
-                    </div>
-                    <div class="num-field__row num-field__row--btns">
-                      <button class="num-field__btn num-field__btn--decr" type="button">
-                        <span class="visually-hidden">Убавить</span>
-                      </button>
-                      <input class="num-field__input" id="days-num" type="number" value="2" name="days-number">
-                      <button class="num-field__btn num-field__btn--incr" type="button">
-                        <span class="visually-hidden">Прибавить</span>
-                      </button>
-                    </div>
-                  </div>
-                </fieldset>
-                <div class="step-form__group step-form__group--children">
-                  <input class="visually-hidden step-form__checkbox" type="checkbox" id="children" name="children" checked>
-                  <label class="step-form__label" for="children">Можно с детьми</label>
                 </div>
                 <section class="step-form__date calendar">
                   <div class="calendar__toggle">
@@ -535,10 +541,12 @@
               </div>
             </li>
             <li class="step-form__item" id="step-2">
-              <div class="step-form__wrapper">
-                <h3 class="step-form__title">Шаг 2.<br> Маршрут</h3>
-                <div class="step-form__hint step-form__hint--country">
-                  <p>Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
+              <div class="step-form__head">
+                <div class="step-form__col">
+                  <h3 class="step-form__title">Шаг 2.<br class="step-form__break"> Маршрут</h3>
+                  <div class="step-form__hint step-form__hint--country">
+                    <p>Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
+                  </div>
                 </div>
                 <ol class="step-form__indicator indicator indicator--desktop">
                   <li class="indicator__step">
@@ -730,10 +738,12 @@
               </div>
             </li>
             <li class="step-form__item">
-              <div class="step-form__wrapper step-form__wrapper--third">
-                <h3 class="step-form__title" id="step-3">Шаг 3.<br> Развлечения</h3>
-                <div class="step-form__hint">
-                  <p>Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
+              <div class="step-form__head">
+                <div class="step-form__col">
+                  <h3 class="step-form__title" id="step-3">Шаг 3.<br class="step-form__break"> Развлечения</h3>
+                  <div class="step-form__hint">
+                    <p>Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
+                  </div>
                 </div>
                 <ol class="step-form__indicator indicator indicator--desktop">
                   <li class="indicator__step">
