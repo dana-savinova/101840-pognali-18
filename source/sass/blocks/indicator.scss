@@ -36,3 +36,14 @@
 .indicator__step--active::before {
   background-color: $dark-slate-blue;
 }
+
+@media (min-width: $tablet-width) {
+  .indicator__step {
+    width: 34px;
+    height: 24px;
+  }
+
+  .indicator__step::before {
+    left: 29px;
+  }
+}

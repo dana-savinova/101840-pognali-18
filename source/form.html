@@ -160,12 +160,11 @@
       <div class="inner-page__wrapper">
         <div class="inner-page__box container">
           <h1 class="inner-page__title">Направления</h1>
-          <a class="inner-page__back" href="index.html">На главную</a>
         </div>
       </div>
       <section class="profile">
         <h2 class="visually-hidden">Профиль</h2>
-        <div class="profile__box container">
+        <div class="profile__box container container--form">
           <div class="profile__info">
             <p class="profile__lvl profile-lvl">
               <span class="visually-hidden">Уровень:</span>
@@ -188,13 +187,13 @@
             <input class="profile__file visually-hidden" id="photo-change" type="file" accept="image/*">
           </fieldset>
           <fieldset class="profile__group">
-            <div class="profile__wrapper">
-              <legend class="profile__title">Тэги</legend>
+            <div class="profile__wrapper profile__wrapper--hashtags">
+              <legend class="profile__title profile__title--hashtags">Тэги</legend>
               <textarea class="profile__tags" name="name" rows="8" cols="60">#бургер #бар #футбол #концерт #крафт</textarea>
             </div>
           </fieldset>
-          <fieldset class="profile__group transport-option">
-            <div class="profile__wrapper">
+          <fieldset class="profile__group profile__group--transport transport-option">
+            <div class="profile__wrapper profile__wrapper--transport">
               <legend class="profile__title transport-option__title">Транспорт</legend>
               <ul class="profile__list transport-option__list">
                 <li class="transport-option__item" data-tooltip="Авиаперелет">
@@ -240,32 +239,36 @@
         </div>
       </section>
       <section class="user-plan">
-        <div class="uset-plan__box container">
-          <h2 class="user-plan__title section-title">Мои планы:</h2>
+        <div class="uset-plan__box container container--form">
+          <h2 class="user-plan__title section-title section-title--inner">Мои планы:</h2>
           <ol class="user-plan__list">
             <li class="user-plan__item">
               <h3 class="user-plan__dest">Франция, Италия</h3>
-              <p class="user-plan__travelmates">3 попутчика</p>
-              <p class="user-plan__date">
-                <time datetime="2019-03-26">26 мар</time> &mdash; <time datetime="2019-03-29">29 мар</time>
-              </p>
-              <a class="user-plan__edit" href="/id2/plan/edit">Изменить</a>
+              <div class="user-plan__wrapper">
+                <p class="user-plan__travelmates">3 попутчика</p>
+                <p class="user-plan__date">
+                  <time datetime="2019-03-26">26 мар</time> &mdash; <time datetime="2019-03-29">29 мар</time>
+                </p>
+                <a class="user-plan__edit" href="/id2/plan/edit">Изменить</a>
+              </div>
             </li>
             <li class="user-plan__item">
               <h3 class="user-plan__dest">Таиланд, Индонезия</h3>
-              <p class="user-plan__travelmates">1 попутчик</p>
-              <p class="user-plan__date">
-                <time datetime="2019-07-01">1 июл</time> &mdash; <time datetime="2019-07-15">15 июл</time>
-              </p>
-              <a class="user-plan__edit" href="/id2/plan/edit">Изменить</a>
+              <div class="user-plan__wrapper">
+                <p class="user-plan__travelmates">1 попутчик</p>
+                <p class="user-plan__date">
+                  <time datetime="2019-07-01">1 июл</time> &mdash; <time datetime="2019-07-15">15 июл</time>
+                </p>
+                <a class="user-plan__edit" href="/id2/plan/edit">Изменить</a>
+              </div>
             </li>
           </ol>
         </div>
       </section>
       <section class="travel-plan">
-        <div class="travel-plan__box container">
+        <div class="travel-plan__box container container--form">
           <div class="travel-plan__wrapper">
-            <h2 class="travel-plan__title section-title">Добавить план:</h2>
+            <h2 class="travel-plan__title section-title section-title--inner">Добавить план:</h2>
             <ol class="travel-plan__indicator indicator indicator--desktop">
               <li class="indicator__step indicator__step--active">
                 <span class="indicator__text">Даты</span>
@@ -299,7 +302,7 @@
                 </ol>
               </div>
               <div class="step-form__wrapper">
-                <fieldset class="step-form__group num-field">
+                <fieldset class="step-form__group step-form__group--travelmates num-field">
                   <div class="num-field__wrapper">
                     <div class="num-field__row num-field__row--text">
                       <legend class="num-field__title">Ищу попутчиков:</legend>
@@ -318,7 +321,7 @@
                     </div>
                   </div>
                 </fieldset>
-                <fieldset class="step-form__group num-field">
+                <fieldset class="step-form__group step-form__group--days num-field">
                   <div class="num-field__wrapper">
                     <div class="num-field__row num-field__row--text">
                       <legend class="step-form__legend num-field__title">Длительность:</legend>
@@ -337,7 +340,7 @@
                     </div>
                   </div>
                 </fieldset>
-                <div class="step-form__group">
+                <div class="step-form__group step-form__group--children">
                   <input class="visually-hidden step-form__checkbox" type="checkbox" id="children" name="children" checked>
                   <label class="step-form__label" for="children">Можно с детьми</label>
                 </div>
@@ -380,7 +383,7 @@
                         </th>
                         <th class="calendar__cell calendar__cell--weekdays">
                           <span class="calendar__weekday calendar__weekend calendar__weekday--mobile">В</span>
-                          <span class="calendar__weekday calendar__weekend calendar__weekday--desktop">Вскр</span>
+                          <span class="calendar__weekday calendar__weekend calendar__weekday--desktop">Вс</span>
                         </th>
                       </tr>
                     </thead>
@@ -527,15 +530,15 @@
                   </table>
                 </section>
               </div>
-              <div class="step-form__wrapper">
+              <div class="step-form__wrapper step-form__buttons">
                 <a class="step-form__btn btn btn--round" href="#step-2">Следующий шаг</a>
               </div>
             </li>
             <li class="step-form__item" id="step-2">
               <div class="step-form__wrapper">
                 <h3 class="step-form__title">Шаг 2.<br> Маршрут</h3>
-                <div class="step-form__hint">
-                  <p>Укажите страны, которые вы хотели по посетить. Это может быть одна или сразу несколько.</p>
+                <div class="step-form__hint step-form__hint--country">
+                  <p>Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
                 </div>
                 <ol class="step-form__indicator indicator indicator--desktop">
                   <li class="indicator__step">
@@ -721,7 +724,7 @@
                   </li>
                 </ul>
               </section>
-              <div class="step-form__wrapper">
+              <div class="step-form__wrapper step-form__buttons">
                 <a class="step-form__btn btn btn--round" href="#step-2">Следующий шаг</a>
                 <a class="step-form__btn step-form__btn--back btn btn--round" href="#step-1">На шаг назад</a>
               </div>
@@ -756,7 +759,7 @@
                   <div class="plan-desc__message">Это поле должно быть заполнено</div>
                 </div>
               </div>
-              <div class="step-form__wrapper">
+              <div class="step-form__wrapper step-form__buttons">
                 <button class="step-form__btn btn btn--round" type="submit" name="submit-form">Отправить</button>
                 <a class="step-form__btn step-form__btn--back btn btn--round" href="#step-2">На шаг назад</a>
               </div>

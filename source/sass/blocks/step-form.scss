@@ -115,3 +115,166 @@
 .step-form__wrapper--third {
   margin-bottom: 22px;
 }
+
+
+@media (min-width: $tablet-width) {
+  .step-form__item {
+    width: 618px;
+    margin-bottom: 40px;
+    padding-top: 49px;
+    padding-right: 43px;
+    padding-bottom: 51px;
+    padding-left: 43px;
+
+    border-radius: 30px;
+  }
+
+  .step-form__item:first-child {
+    padding-bottom: 55px;
+  }
+
+  .step-form__item:last-child {
+    margin-top: 12px;
+    margin-bottom: 30px;
+  }
+
+  .step-form__title {
+    margin-bottom: 14px;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .step-form__hint {
+    padding-right: 10px;
+
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .step-form__wrapper:first-child {
+    box-shadow: inset 0 -1px 0 0 #d6d9e6;
+  }
+
+
+  .step-form__wrapper {
+    display: flex;
+
+    flex-direction: column;
+  }
+
+  .step-form__group--travelmates {
+    padding-top: 25px;
+
+    order: -10;
+  }
+
+  .step-form__group--children {
+    margin-bottom: 25px;
+
+    order: -8;
+  }
+
+  .step-form__group--daysn {
+    order: -5;
+  }
+
+  .step-form__label {
+    margin: 0;
+    padding-top: 11px;
+    padding-left: 61px;
+    padding-bottom: 34px;
+
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+
+    text-transform: uppercase;
+
+    box-shadow: inset 0 -1px 0 0 #d6d9e6;
+  }
+
+  .step-form__label::before {
+    top: 3px;
+    left: 2px;
+
+    width: 36px;
+    height: 36px;
+  }
+
+  .step-form__checkbox:checked ~ .step-form__label::after {
+    top: 14px;
+    left: 15px;
+
+    width: 12px;
+    height: 12px;
+
+    background-size: 12px 12px;
+  }
+
+  .step-form__date {
+    margin-top: 38px;
+    margin-bottom: 46px;
+  }
+
+  .step-form__buttons {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .step-form__btn {
+    display: flex;
+    width: 285px;
+
+    justify-content: flex-start;
+
+    font-size: 24px;
+    line-height: 24px;
+
+    text-transform: none;
+  }
+
+  .step-form__btn::after {
+    display: block;
+  }
+
+  .step-form__hint--country {
+    padding-right: 120px;
+
+    p {
+      padding: 0;
+      margin-bottom: 13px;
+    }
+  }
+
+  .step-form__country {
+    margin-bottom: 36px;
+  }
+
+  .step-form__btn--back {
+    width: 200px;
+    padding-top: 29px;
+    padding-right: 0;
+    padding-bottom: 20px;
+    padding-left: 0;
+    margin-left: auto;
+
+    justify-content: flex-end;
+  }
+
+  .step-form__btn--back::after {
+    right: 167px;
+
+    transform: rotate(180deg);
+  }
+
+  .step-form__wrapper--third {
+    padding: 0;
+    margin: 0;
+  }
+
+  .step-form__wrapper--third:first-child {
+    box-shadow: none;
+  }
+}

@@ -22,3 +22,14 @@
   align-items: center;
   justify-content: space-between;
 }
+
+@media (min-width: $tablet-width) {
+  .travel-plan {
+    padding-top: 45px;
+    padding-bottom: 64px;
+  }
+
+  .travel-plan__wrapper {
+    margin-bottom: 49px;
+  }
+}

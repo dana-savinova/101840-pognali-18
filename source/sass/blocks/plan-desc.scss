@@ -164,3 +164,85 @@
   background-image: url("../img/flag/flag-czech.svg"),
     linear-gradient(to left, #ffffff 60%, transparent);
 }
+
+@media (min-width: $tablet-width) {
+  .plan-desc {
+    padding-top: 29px;
+    padding-bottom: 48px;
+  }
+
+  .plan-desc__item {
+    width: 527px;
+  }
+
+  .plan-desc__item:not(:last-child) {
+    margin-bottom: 54px;
+  }
+
+  .plan-desc__country::before {
+    top: 8px;
+    left: 521px;
+
+    width: 15px;
+    height: 15px;
+  }
+
+  .plan-desc__item::before {
+    display: none;
+  }
+
+  .plan-desc__item:not(:last-child)::after {
+    top: 12px;
+    left: auto;
+    right: -3px;
+
+    width: 3px;
+    height: 266px;
+
+    background-color: #1d2e5b;
+    border-radius: 1px;
+  }
+
+  .plan-desc__country {
+    margin-bottom: 36px;
+    padding-left: 0;
+
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .plan-desc__flag::after {
+    top: -8px;
+    right: 26px;
+
+    width: 70px;
+    height: 47px;
+
+    background-size: 70px 47px,
+      auto;
+  }
+
+  .plan-desc__text {
+    width: 500px;
+    height: 142px;
+    padding-top: 17px;
+    padding-right: 20px;
+    padding-bottom: 9px;
+    padding-left: 17px;
+  }
+
+  .plan-desc__text,
+  .plan-desc__text::placeholder,
+  .plan-desc__message {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .plan-desc__message {
+    width: 498px;
+    padding-top: 17px;
+    padding-right: 20px;
+    padding-bottom: 9px;
+    padding-left: 17px;
+  }
+}

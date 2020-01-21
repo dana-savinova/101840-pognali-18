@@ -161,3 +161,59 @@
   color: $white;
   background-color: $dark-slate-blue;
 }
+
+
+@media (min-width: $tablet-width) {
+  .calendar__toggle {
+    padding-top: 29px;
+    padding-bottom: 22px;
+  }
+
+  .calendar__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .calendar__btn {
+    width: 15px;
+    height: 28px;
+
+    background-size: 15px 28px;
+  }
+
+  .calendar__weekday--mobile {
+    display: none;
+  }
+
+  .calendar__weekday--desktop {
+    display: block;
+
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    text-align: center;
+  }
+
+  .calendar__cell {
+    width: 70px;
+    height: 69px;
+  }
+
+  .calendar__cell--weekdays {
+    height: 49px;
+  }
+
+  .calendar__date {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+  }
+
+  .calendar__weekday {
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-bottom: 0;
+  }
+}

@@ -76,3 +76,45 @@
 .num-field__label {
   color: rgba($dark-slate-blue, 0.3);
 }
+
+@media (min-width: $tablet-width) {
+  .num-field__wrapper {
+    width: 531px;
+  }
+
+  .num-field__title,
+  .num-field__label {
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+  }
+
+  .num-field__btn {
+    width: 70px;
+    height: 70px;
+
+    background-size: 20px 20px;
+  }
+
+  .num-field__row--text {
+    margin-bottom: 22px;
+  }
+
+  .num-field__row--btns {
+    justify-content: space-between;
+  }
+
+  .num-field__input {
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+  }
+
+  .num-field__btn--incr {
+    background-position: center right 19px;
+  }
+
+  .num-field__btn--decr {
+    background-position: center right 28px;
+  }
+}

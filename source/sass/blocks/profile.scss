@@ -1,4 +1,6 @@
 .profile {
+  position: relative;
+
   padding-top: 23px;
   padding-bottom: 9px;
 }
@@ -116,4 +118,90 @@
 
 .profile__list {
   margin-bottom: 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .profile {
+    padding-top: 63px;
+    padding-bottom: 34px;
+  }
+
+  .profile__photo {
+    width: 94px;
+    height: 94px;
+    border-radius: 7px;
+  }
+
+  .profile__info {
+    padding: 0;
+    padding-bottom: 43px;
+  }
+
+  .profile__group--transport {
+    position: absolute;
+    top: 63px;
+    left: 230px;
+  }
+
+  .profile__wrapper {
+    position: relative;
+
+    width: 618px;
+  }
+
+  .profile__wrapper--transport {
+    width: 308px;
+    height: 94px;
+  }
+
+  .profile__wrapper--hashtags {
+    margin-top: 17px;
+  }
+
+  .profile__title {
+    position: absolute;
+    bottom: -12px;
+    left: 83px;
+
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+  }
+
+  .profile__title--hashtags {
+    bottom: -12px;
+    left: 269px;
+  }
+
+  .profile__btn {
+    width: 618px;
+    height: 60px;
+
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+
+    border-radius: 10px;
+  }
+
+  .profile__tags {
+    width: 618px;
+    height: 94px;
+    padding-top: 35px;
+    padding-right: 24px;
+    padding-bottom: 13px;
+    padding-left: 40px;
+
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .profile__list {
+    width: 196px;
+    margin-top: 24px;
+    margin-bottom: 0;
+
+    justify-content: space-between;
+  }
 }

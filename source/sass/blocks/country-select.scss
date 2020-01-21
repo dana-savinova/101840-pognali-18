@@ -70,6 +70,10 @@
   height: 21px;
 
   background-color: #edeff6;
+  background-image: url("../img/menu-close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 9px 9px;
   border: none;
   border-radius: 50%;
 }
@@ -242,4 +246,120 @@
   background-size: 14px 14px;
   background-position: center right;
   opacity: 0.3;
+}
+
+
+@media (min-width: $tablet-width) {
+  .country-select {
+    padding-top: 0;
+  }
+
+  .country-select__list {
+    position: relative;
+    padding-top: 40px;
+  }
+
+  .country-select__list::after {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    right: 135px;
+
+    width: 1px;
+    height: 100%;
+
+    background-color: #d6d9e6;
+  }
+
+  .country-select__list::before {
+    content: "";
+
+    position: absolute;
+    bottom: 0;
+    right: 135px;
+
+    width: 10px;
+    height: 25px;
+
+    background-image: linear-gradient(to top, #ffffff 60%, transparent);
+  }
+
+  .country-select__item {
+    margin-bottom: 15px;
+
+    justify-content: space-between;
+  }
+
+  .country-select__field {
+    width: 370px;
+
+    padding-top: 26px;
+    padding-right: 35px;
+    padding-bottom: 22px;
+    padding-left: 25px;
+
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 500;
+  }
+
+  .country-select__flag {
+    width: 70px;
+    margin-right: 40px;
+
+    border: none;
+  }
+
+  .country-select__img {
+    width: 70px;
+    height: 47px;
+  }
+
+  .country-select__item:not(:last-child)::before {
+    display: none;
+  }
+
+  .country-select__item::after {
+    top: 26px;
+    right: 128px;
+
+    width: 15px;
+    height: 15px;
+  }
+
+  .country-select__remove {
+    top: 24px;
+    right: -5px;
+
+    background-color: transparent;
+    background-size: 17px 17px;
+  }
+
+  .country-select__edit {
+    width: 40px;
+
+    background-size: 17px 9px;
+    background-position: center right 26px;
+  }
+
+  .country-select__field--choose {
+    padding-right: 26px;
+  }
+
+  .country-select__choose {
+    background-size: 17px 9px;
+    background-position: center right;
+  }
+
+  .country-select__field--add {
+    padding-right: 28px;
+  }
+
+  .country-select__add {
+    width: 30px;
+    height: 20px;
+
+    background-size: 20px 20px;
+  }
 }
