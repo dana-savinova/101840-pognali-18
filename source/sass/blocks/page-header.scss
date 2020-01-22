@@ -4,7 +4,7 @@
   display: flex;
   min-width: 320px;
   min-height: 73px;
-  padding-top: 27px;
+  padding-top: 19px;
   padding-bottom: 31px;
 
   color: $dark-blue-grey;
@@ -21,7 +21,7 @@
 }
 
 .page-header--inner {
-  background-color: #161c36;
+  background-color: #161c35;
 }
 
 .page-header--sticky {
@@ -152,11 +152,15 @@
     padding-top: 45px;
   }
 
+  .page-header.page-header--inner {
+    background-color: $white;
+  }
+
   .page-header--dark {
     background-color: $dark-blue-grey;
   }
 
-  .page-header--inner {
+  .page-header--inner.page-header--dark {
     background-color: #161c36;
   }
 
@@ -202,7 +206,7 @@
     background-color: #161c34;
   }
 
-  .page-header--inner {
+  .page-header--inner.page-header--dark {
     background-color: #161c36;
   }
 

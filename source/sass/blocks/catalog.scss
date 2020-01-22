@@ -69,6 +69,27 @@
 @media (min-width: $tablet-width) {
   .catalog {
     padding-top: 40px;
+    padding-bottom: 48px;
+  }
+
+  .catalog__item {
+    margin-bottom: 39px;
+  }
+
+  .catalog__btn {
+    margin-top: 7px;
+    padding-left: 40px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .catalog__btn::before,
+  .catalog__btn::after {
+    left: -10px;
+
+    width: 27px;
+    height: 3px;
   }
 }
 

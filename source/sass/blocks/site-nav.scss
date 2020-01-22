@@ -2,6 +2,7 @@
   @include list-reset;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .site-nav__item {

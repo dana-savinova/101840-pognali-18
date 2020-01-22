@@ -134,6 +134,13 @@
     }
   }
 
+  .intro__list {
+    width: 1322px;
+
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .intro::before {
     display: none;
   }
