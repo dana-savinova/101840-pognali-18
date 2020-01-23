@@ -49,18 +49,22 @@
   }
 
   &--99::before {
+    transform: rotate(-86deg);
     background-image: url("../img/lvl/lvl-99.svg");
   }
 
   &--80::before {
+    transform: rotate(-86deg);
     background-image: url("../img/lvl/lvl-80.svg");
   }
 
   &--50::before {
+    transform: rotate(-86deg);
     background-image: url("../img/lvl/lvl-50.svg");
   }
 
   &--25::before {
+    transform: rotate(-86deg);
     background-image: url("../img/lvl/lvl-25.svg");
   }
 }

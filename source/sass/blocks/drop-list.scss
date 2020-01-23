@@ -12,7 +12,7 @@
   display: flex;
   width: 220px;
   margin: 0;
-  margin-bottom: 60px;
+  margin-bottom: 58px;
   padding: 0;
 
   flex-wrap: wrap;
@@ -23,7 +23,7 @@
 .drop-list__letter {
   display: flex;
   width: 44px;
-  height: 42px;
+  height: 41px;
 
   justify-content: center;
   align-items: center;
@@ -48,6 +48,13 @@
     background-color: $dark-slate-blue;
     box-shadow: none;
   }
+}
+
+.drop-list__letter--active {
+  color: $white;
+
+  background-color: $dark-slate-blue;
+  box-shadow: none;
 }
 
 .drop-list__contries-list {

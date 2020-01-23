@@ -118,6 +118,10 @@
   }
 }
 
+.country-select__item--active .country-select__btn--remove {
+  display: none;
+}
+
 .country-select__btn--selected {
   width: 168px;
 
@@ -303,7 +307,7 @@
   z-index: 10;
 
   display: none;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
 
   box-shadow: 0 20px 50px 0 rgba(25, 33, 68, 0.1);
   border: 1px solid $midnight-express;
@@ -319,13 +323,17 @@
 .country-select__btn--active {
   position: relative;
 
-  background-image: none;
 
-  &:hover {
+  color: $white;
+  background-color: $dark-slate-blue;
+
+  &:hover::before,
+  &:hover::after {
     opacity: 1;
   }
 
-  &:active {
+  &:active::before,
+  &:active::after {
     opacity: 0.1;
   }
 }
@@ -335,15 +343,18 @@
   content: "";
 
   position: absolute;
-  top: 8px;
-  left: 29px;
+  top: 20px;
+  right: 13px;
+
   z-index: 10;
 
   display: block;
-  width: 9px;
+  width: 13px;
   height: 1px;
 
+  background: none;
   background-color: $white;
+  opacity: 0.3;
 }
 
 .country-select__btn--active::before {
@@ -351,7 +362,7 @@
 }
 
 
-.country-select__choose--active::after {
+.country-select__btn--active::after {
   transform: rotate(-45deg);
 }
 
@@ -442,6 +453,19 @@
     width: 15px;
     height: 15px;
   }
+
+  .country-select__dropdown {
+    top: 69px;
+  }
+
+  .country-select__btn--active::before,
+  .country-select__btn--active::after {
+    top: 33px;
+    right: 21px;
+
+    width: 24px;
+    height: 2px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -474,11 +498,13 @@
   .country-select__item::after {
     right: 218px;
   }
+
+  .country-select__dropdown {
+    top: 69px;
+  }
 }
 
 // список селекторов для выпадающего списка
-// country-select__choose--active
-// country-select__btn--remove--active
-// country-select__field--active
+//country-select__btn--active
 // country-select__item--active
 // country-select__dropdown--active
