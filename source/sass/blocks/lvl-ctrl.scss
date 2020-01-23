@@ -21,7 +21,7 @@
   text-align: center;
   color: $dark-blue;
 
-  border: 1px solid #cbced9;
+  border: 1px solid $midnight-express;
 
   &:hover {
     border-color: #959bb2;
@@ -58,7 +58,7 @@
   width: 16px;
   height: 11px;
 
-  background-color: #cbced9;
+  background-color: $midnight-express;
   border-top: 5px solid $white;
   border-bottom: 5px solid $white;
 }

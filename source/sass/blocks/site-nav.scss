@@ -23,7 +23,7 @@
   color: $dark-blue-grey;
 
   &:hover {
-    color: #ffd74b;
+    color: $light-gold;
   }
 
   &:active {
@@ -46,7 +46,7 @@
   position: absolute;
   top: 100%;
 
-  color: #ffd74b;
+  color: $light-gold;
 
   transform: translate3d(0, 0, 0);
 }

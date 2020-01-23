@@ -21,7 +21,7 @@
 }
 
 .page-header--inner {
-  background-color: #161c35;
+  background-color: $dark-blue;
 }
 
 .page-header--sticky {
@@ -67,7 +67,7 @@
 }
 
 .page-header--sticky .page-header__toggle-icon {
-  fill: #cccccc;
+  fill: $gray80;
 }
 
 .page-header__nav {

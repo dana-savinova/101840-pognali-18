@@ -35,12 +35,12 @@
   }
 
   &--add::after {
-    border-color: #cbced9;
-    background-color: #edeff6;
+    border-color: $midnight-express;
+    background-color: $solitude;
   }
 
   &--choose::after {
-    border-color: #cbced9;
+    border-color: $midnight-express;
     background-color: $white;
   }
 }
@@ -69,7 +69,7 @@
   width: 21px;
   height: 21px;
 
-  background-color: #edeff6;
+  background-color: $solitude;
   background-image: url("../img/menu-close.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -95,11 +95,11 @@
   text-transform: uppercase;
   text-align: left;
 
-  color: #1d2e5b;
+  color: $dark-slate-blue;
 }
 
 .country-select__field--selected {
-  border: 1px solid #cbced9;
+  border: 1px solid $midnight-express;
   border-radius: 4px;
 
   overflow: hidden;
@@ -146,7 +146,7 @@
   justify-content: center;
   align-items: center;
 
-  border: 1px solid #cbced9;
+  border: 1px solid $midnight-express;
   border-radius: 4px;
 }
 
@@ -209,7 +209,7 @@
 
   justify-content: space-between;
 
-  border: 1px solid #cbced9;
+  border: 1px solid $midnight-express;
   border-radius: 4px;
 }
 
@@ -233,7 +233,7 @@
 
   justify-content: space-between;
 
-  background-color: #edeff6;
+  background-color: $solitude;
   border-radius: 4px;
 }
 
@@ -269,7 +269,7 @@
     width: 1px;
     height: 100%;
 
-    background-color: #d6d9e6;
+    background-color: $hawkes-blue;
   }
 
   .country-select__list::before {

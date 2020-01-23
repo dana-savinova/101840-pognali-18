@@ -52,7 +52,7 @@
   justify-content: center;
   align-items: center;
 
-  color: #161c35;
+  color: $dark-blue;
   background-color: #dfe3f0;
   border-radius: 20px;
 
@@ -63,7 +63,7 @@
 
   &:active,
   &:active .profile__hide {
-    color: rgba(#1d2e5b, 0.3);
+    color: rgba($dark-slate-blue, 0.3);
   }
 }
 
@@ -75,7 +75,7 @@
   flex-direction: column;
   align-items: center;
 
-  border: 1px solid #cbced9;
+  border: 1px solid $midnight-express;
   border-radius: 10px;
 }
 
@@ -97,7 +97,7 @@
 
   border: 0;
 
-  // border: 1px solid #cbced9;
+  // border: 1px solid $midnight-express;
   // border-radius: 10px;
 
   resize: none;
@@ -117,7 +117,7 @@
   text-transform: uppercase;
 
   color: $dark-slate-blue;
-  background-color: #edeff6;
+  background-color: $solitude;
 }
 
 .profile__list {

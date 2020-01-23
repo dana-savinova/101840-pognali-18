@@ -1,6 +1,6 @@
 .inner-page {
   position: relative;
-  background-color: #edeff6;
+  background-color: $solitude;
 }
 
 .inner-page__box {
@@ -27,7 +27,7 @@
   padding-bottom: 10px;
 
   color: $white;
-  background-color: #161c35;
+  background-color: $dark-blue;
 
   border-bottom-left-radius: 18px;
   border-bottom-right-radius: 18px;

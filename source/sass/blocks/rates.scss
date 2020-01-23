@@ -7,7 +7,7 @@
   padding-bottom: 35px;
 
   color: $medium-grey;
-  background-color: #edeff6;
+  background-color: $solitude;
 
   @include section-bottom-round;
 }
@@ -187,7 +187,7 @@
 
     width: 67px;
     height: 67px;
-    background-color: #e2e5f2;
+    background-color: $lavander;
     background-image: url("../img/business.svg");
     background-repeat: no-repeat;
     background-size: 17px 21px;

@@ -8,7 +8,7 @@
   padding-top: 92px;
   padding-bottom: 30px;
   color: $medium-grey;
-  background-color: #edeff6;
+  background-color: $solitude;
 
   @include section-bottom-round;
 }
@@ -62,7 +62,7 @@
   width: 100%;
   height: 81px;
 
-  background: linear-gradient(to top, #edeff6, transparent);
+  background: linear-gradient(to top, $solitude, transparent);
 }
 
 @media (min-width: $tablet-width) {

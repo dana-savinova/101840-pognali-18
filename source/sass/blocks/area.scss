@@ -4,7 +4,7 @@
   padding-bottom: 28px;
 
   color: $medium-grey;
-  background-color: #e2e5f2;
+  background-color: $lavander;
 
   @include section-bottom-round;
 }
@@ -26,7 +26,7 @@
 
   align-items: center;
 
-  background-color: #e2e5f2;
+  background-color: $lavander;
 
   @include section-bottom-round;
 }
@@ -93,11 +93,11 @@
 
   &:hover,
   &:focus {
-    color: rgba(#192144, 0.6);
+    color: rgba($dark-blue-grey, 0.6);
   }
 
   &:active {
-    color: #192144;
+    color: $dark-blue-grey;
   }
 }
 
@@ -302,7 +302,7 @@
   .area {
     position: static;
 
-    background-color: #edeff6;
+    background-color: $solitude;
   }
 
   .area__box {
@@ -314,7 +314,7 @@
     padding-right: 58px;
     padding-left: 35px;
 
-    background-color: #edeff6;
+    background-color: $solitude;
   }
 
   .area__title {
