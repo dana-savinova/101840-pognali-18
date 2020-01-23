@@ -67,6 +67,11 @@
     margin-top: -12px;
   }
 
+  .lvl-ctrl::after {
+    top: 18px;
+    right: 67px;
+  }
+
   .lvl-ctrl__input {
     width: 75px;
     padding-top: 13px;
