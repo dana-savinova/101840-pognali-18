@@ -91,9 +91,13 @@
   font-weight: 400;
 
   color: $medium-grey;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
-.step-form__label::before {
+.step-form__label--checkbox::before {
   content: "";
 
   position: absolute;
@@ -108,7 +112,7 @@
   border: solid 1px $midnight-express;
 }
 
-.step-form__checkbox:checked ~ .step-form__label::after {
+.step-form__checkbox:checked ~ .step-form__label--checkbox::after {
   content: "";
 
   position: absolute;
@@ -121,6 +125,20 @@
 
   background-image: url("../img/tick.svg");
   background-size: 9px 9px;
+}
+
+.step-form__checkbox:hover ~ .step-form__label--checkbox::before,
+.step-form__checkbox:focus ~ .step-form__label--checkbox::before {
+  border-color: #959bb2;
+}
+
+.step-form__checkbox:active ~ .step-form__label--checkbox::after {
+  opacity: 0.3;
+}
+
+.step-form__checkbox:active ~ .step-form__label--checkbox::before {
+  border-color: #e2e5f1;
+  background-color: #e2e5f1;
 }
 
 .step-form__date {
@@ -234,8 +252,24 @@
   }
 
   .step-form__buttons {
+    position: relative;
+
     display: flex;
     flex-direction: row;
+  }
+
+  .step-form__buttons::after {
+    content: "";
+
+    position: absolute;
+    top: -36px;
+    right: 135px;
+
+    width: 1px;
+    height: 31px;
+
+    background-color: #d6d9e6;
+    background-image: linear-gradient(to top, #ffffff 60%, transparent);
   }
 
   .step-form__btn {
@@ -266,6 +300,8 @@
   .step-form__country {
     position: relative;
     margin-bottom: 36px;
+
+    box-shadow: 0 -1px 0 0 #d6d9e6;
   }
 
   .step-form__country::after {
@@ -306,15 +342,10 @@
   }
 
   .step-form__btn--back::after {
-    right: 172px;
+    right: 167px;
 
     transform: rotate(180deg);
   }
-
-  // .step-form__wrapper--third {
-  //   padding: 0;
-  //   margin: 0;
-  // }
 
   .step-form__wrapper--third:first-child {
     box-shadow: none;
@@ -394,7 +425,7 @@
   }
 
   .step-form__country {
-    margin-top: 6px;
+    margin-top: 4px;
     margin-bottom: 42px;
 
     box-shadow: inset 0 1px 0 0 $hawkes-blue;
@@ -402,5 +433,12 @@
 
   .step-form__country::after {
     right: 225px;
+  }
+
+  .step-form__buttons::after {
+    top: -43px;
+    right: 225px;
+    width: 1px;
+    height: 95px;
   }
 }

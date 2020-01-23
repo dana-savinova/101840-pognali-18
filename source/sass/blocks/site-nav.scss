@@ -22,8 +22,10 @@
 
   color: $dark-blue-grey;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $light-gold;
+    outline: none;
   }
 
   &:active {

@@ -65,6 +65,8 @@
   &:hover,
   &:focus {
     opacity: 0.6;
+
+    outline: none;
   }
 
   &:active {
@@ -178,6 +180,20 @@
 
   border: none;
   border-radius: 25px;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.08);
+
+    cursor: pointer;
+
+    outline: none;
+  }
+
+  &:active {
+    color: rgba($dark-blue, 0.3);
+    background-color: #f3c72b;
+  }
 }
 
 @media (min-width: $tablet-width) {

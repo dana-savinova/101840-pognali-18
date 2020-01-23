@@ -157,16 +157,16 @@
             <div class="profile__btn-wrapper">
               <fieldset class="profile__group">
                 <legend class="visually-hidden">Фотография</legend>
+                <input class="visually-hidden" id="photo-change" name="user-photo" type="file" accept="image/*">
                 <label class="profile__btn" for="photo-change">
                   <span class="profile__hide">Сменить&nbsp;</span> фото
                 </label>
-                <input class="profile__file visually-hidden" id="photo-change" type="file" accept="image/*">
               </fieldset>
             </div>
           <fieldset class="profile__group">
             <div class="profile__wrapper profile__wrapper--hashtags">
               <legend class="profile__title profile__title--hashtags">Тэги</legend>
-              <textarea class="profile__tags" name="name" rows="8" cols="60">#бургер #бар #футбол #концерт #крафт</textarea>
+              <textarea class="profile__tags" name="name" rows="8" cols="60" placeholder="Коротко о себе в виде 5-8 хештэгов">#бургер #бар #футбол #концерт #крафт</textarea>
             </div>
           </fieldset>
           <fieldset class="profile__group profile__group--transport transport-option">
@@ -322,7 +322,7 @@
                   </fieldset>
                   <div class="step-form__group step-form__group--children">
                     <input class="visually-hidden step-form__checkbox" type="checkbox" id="children" name="children" checked>
-                    <label class="step-form__label" for="children">Можно с детьми</label>
+                    <label class="step-form__label step-form__label--checkbox" for="children">Можно с детьми</label>
                   </div>
                 </div>
                 <section class="step-form__date calendar">
@@ -540,36 +540,36 @@
                 <ul class="country-select__list">
                   <li class="country-select__item country-select__item--selected">
                     <div class="country-select__field country-select__field--selected">
-                      <span class="country-select__name">Босния и Герцеговина</span>
-                      <button class="country-select__edit" type="button" name="country-add">
-                        <span class="visually-hidden">Изменить</span>
+                      <button class="country-select__btn country-select__btn--selected" type="button" name="country-add">
+                        <span class="country-select__name">Босния и Герцеговина</span>
                       </button>
                     </div>
                     <div class="country-select__flag" data-tooltip="Босния и Герцеговина">
                       <img class="country-select__img" src="img/flag/flag-bosnia.svg" alt="Флаг Боснии и Герцеговины" width="35" height="24">
                     </div>
-                    <button class="country-select__remove" type="button" name="country-remove">
+                    <button class="country-select__btn country-select__btn--remove" type="button" name="country-remove">
                       <span class="visually-hidden">Удалить</span>
                     </button>
                   </li>
                   <li class="country-select__item country-select__item--selected">
                     <div class="country-select__field country-select__field--selected">
-                      <span class="country-select__name">Чехия</span>
-                      <button class="country-select__edit" type="button" name="country-add">
-                        <span class="visually-hidden">Изменить</span>
+                      <button class="country-select__btn country-select__btn--selected" type="button" name="country-add">
+                        <span class="country-select__name">Чехия</span>
                       </button>
                     </div>
                     <div class="country-select__flag" data-tooltip="Чехия">
                       <img class="country-select__img" src="img/flag/flag-czech.svg" alt="Флаг Чехии" width="35" height="24">
                     </div>
-                    <button class="country-select__remove" type="button" name="country-remove">
+                    <button class="country-select__btn country-select__btn--remove" type="button" name="country-remove">
                       <span class="visually-hidden">Удалить</span>
                     </button>
                   </li>
                   <li class="country-select__item country-select__item--choose">
                     <div class="country-select__field country-select__field--choose">
-                      <span class="country-select__name">Выберите страну</span>
-                      <div class="country-select__dropdown drop-list">
+                      <button class="country-select__btn country-select__btn--choose country-select__btn--active" type="button" name="country-add">
+                        <span class="country-select__name">Выберите страну</span>
+                      </button>
+                      <div class="country-select__dropdown country-select__dropdown--active drop-list">
                         <section class="drop-list__alphabet">
                             <h3 class="visually-hidden">Алфавитный указатель</h3>
                             <ul class="drop-list__alphabet-list">
@@ -689,19 +689,15 @@
                             </ul>
                         </section>
                       </div>
-                      <button class="country-select__choose" type="button" name="country-add">
-                        <span class="visually-hidden">Добавить</span>
-                      </button>
                     </div>
-                    <button class="country-select__remove" type="button" name="country-remove">
+                    <button class="country-select__btn country-select__btn--remove" type="button" name="country-remove">
                       <span class="visually-hidden">Удалить</span>
                     </button>
                   </li>
                   <li class="country-select__item country-select__item--add">
                     <div class="country-select__field country-select__field--add">
-                      <span class="country-select__name">Добавить страну</span>
-                      <button class="country-select__add" type="button" name="country-add">
-                        <span class="visually-hidden">Добавить</span>
+                      <button class="country-select__btn country-select__btn--add" type="button" name="country-add">
+                        <span class="country-select__name">Добавить страну</span>
                       </button>
                     </div>
                   </li>

@@ -27,6 +27,9 @@
   &:hover,
   &:focus {
     opacity: 0.5;
+
+    cursor: pointer;
+    outline: none;
   }
 
   &:active {
@@ -170,7 +173,7 @@
 @media (min-width: $tablet-width) {
   .calendar__toggle {
     padding-top: 29px;
-    padding-bottom: 22px;
+    padding-bottom: 24px;
   }
 
   .calendar__title {
@@ -179,10 +182,10 @@
   }
 
   .calendar__btn {
-    width: 15px;
-    height: 28px;
+    width: 53px;
+    height: 34px;
 
-    background-size: 15px 28px;
+    background-size: 53px 34px;
   }
 
   .calendar__weekday--mobile {
@@ -220,8 +223,8 @@
   }
 
   .calendar__weekday {
-    padding-top: 15px;
-    padding-left: 10px;
+    padding-top: 17px;
+    padding-left: 29px;
     padding-bottom: 0;
   }
 }

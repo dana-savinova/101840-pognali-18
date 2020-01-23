@@ -126,6 +126,15 @@
 
   color: $dark-blue-grey;
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: rgba($dark-blue-grey, 0.7);
+  }
+
+  &:active {
+    color: rgba($dark-blue-grey, 0.3);
+  }
 }
 
 
@@ -234,11 +243,33 @@
     width: 67px;
     height: 67px;
     background-color: $lavander;
+
+    border-radius: 50%;
+  }
+
+  .rates__link::after {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 67px;
+    height: 67px;
+    background-color: transparent;
     background-image: url("../img/business.svg");
     background-repeat: no-repeat;
     background-size: 17px 21px;
     background-position: center center;
-    border-radius: 50%;
+  }
+
+  .rates__link:hover::after,
+  .rates__link:focus::after {
+    opacity: 0.7;
+  }
+
+  .rates__link:active::after {
+    opacity: 0.3;
   }
 }
 

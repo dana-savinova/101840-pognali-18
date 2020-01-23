@@ -94,6 +94,8 @@
   &:hover,
   &:focus {
     color: rgba($dark-blue-grey, 0.6);
+
+    outline: none;
   }
 
   &:active {
@@ -129,10 +131,12 @@
   background-size: 12px 12px;
   background-position: center top 3px;
 
-  &:hover {
+  &:hover,
+  &:focus {
     cursor: pointer;
 
     opacity: 0.6;
+    outline: none;
   }
 
   &:active {
@@ -160,10 +164,27 @@
   font-weight: 700;
   text-transform: uppercase;
 
-  color: $dark-blue;
+  color: $dark-slate-blue;
   background-color: #d6daed;
   border: none;
   border-radius: 20px;
+
+  &:hover,
+  &:focus {
+    background-color: #c8cee8;
+
+    cursor: pointer;
+
+    outline: none;
+  }
+
+  &:active {
+    background-color: #c8cee8;
+  }
+}
+
+.area__btn--minimize:active .area__btn-text {
+  opacity: 0.3;
 }
 
 .area__hint {

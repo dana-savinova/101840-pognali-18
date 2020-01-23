@@ -38,14 +38,41 @@
 
   background-color: $dark-slate-blue;
   border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    top: -9px;
+
+    width: 19px;
+    height: 19px;
+  }
+
+  &:active {
+    width: 19px;
+    height: 19px;
+
+    box-shadow: 0 3px 7px 0 rgba(29, 46, 91, 0.35);
+  }
 }
 
 .range__toggle--min {
   left: 65px;
+
+  &:hover,
+  &:focus,
+  &:active {
+    left: 62px;
+  }
 }
 
 .range__toggle--max {
   left: 208px;
+
+  &:hover,
+  &:focus,
+  &:active {
+    left: 202px;
+  }
 }
 
 
@@ -77,10 +104,22 @@
 
   .range__toggle--min {
     left: 71px;
+
+    &:hover,
+    &:focus,
+    &:active {
+      left: 68px;
+    }
   }
 
   .range__toggle--max {
     left: 271px;
+
+    &:hover,
+    &:focus,
+    &:active {
+      left: 265px;
+    }
   }
 }
 
@@ -91,9 +130,21 @@
 
   .range__toggle--min {
     left: 58px;
+
+    &:hover,
+    &:focus,
+    &:active {
+      left: 55px;
+    }
   }
 
   .range__toggle--max {
     left: 178px;
+
+    &:hover,
+    &:focus,
+    &:active {
+      left: 172px;
+    }
   }
 }

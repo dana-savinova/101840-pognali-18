@@ -28,9 +28,7 @@ body {
   font-weight: 400;
 }
 
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
+.visually-hidden {
   position: absolute;
   overflow: hidden;
 
@@ -45,7 +43,7 @@ input[type="radio"].visually-hidden {
 
   border: 0;
 
-  clip-path: inset(100%);
+  clip-path: rect(0, 0, 0, 0);
 }
 
 .no-wrap {

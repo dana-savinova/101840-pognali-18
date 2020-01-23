@@ -23,6 +23,8 @@
 
 .travelmate__photo {
   order: -1;
+
+  overflow: hidden;
 }
 
 .travelmate__img {
@@ -30,6 +32,14 @@
   height: 70px;
 
   border-radius: 50%;
+
+  transition: transform 0.3s ease-in-out;
+}
+
+.travelmate:hover .travelmate__img,
+.travelmate:focus .travelmate__img {
+  transform: scale(1.05);
+  transition: transform 0.5s ease-in-out;
 }
 
 .travelmate__name {
@@ -84,6 +94,15 @@
 
 .travelmate__status--online::before {
   background-color: #81e31e;
+}
+
+.travelmate__link:hover::before,
+.travelmate__link:focus::before {
+  opacity: 0.3;
+}
+
+.travelmate__link:active::before {
+  opacity: 0.6;
 }
 
 .travelmate__likes {
@@ -242,6 +261,10 @@
     top: 12px;
   }
 
+  .travelmate__photo {
+    border-radius: 15px;
+  }
+
   .travelmate__img {
     width: 190px;
     height: 190px;
@@ -345,6 +368,9 @@
 
   .travelmate__photo {
     margin-right: 59px;
+
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
   .travelmate__info {

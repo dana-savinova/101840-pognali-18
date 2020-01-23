@@ -4,8 +4,6 @@
 }
 
 .lvl-ctrl__input {
-  position: relative;
-
   width: 111px;
   padding-top: 10px;
   padding-right: 5px;
@@ -47,12 +45,12 @@
   border-bottom-right-radius: 5px;
 }
 
-.lvl-ctrl__input--max::after {
+.lvl-ctrl::after {
   content: "";
 
   position: absolute;
-  top: 12px;
-  right: 101px;
+  top: 18px;
+  right: 87px;
   z-index: 30;
 
   width: 16px;

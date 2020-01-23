@@ -24,6 +24,15 @@
   color: $dark-slate-blue;
 
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .travelmate-preview__photo {

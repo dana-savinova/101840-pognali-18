@@ -29,12 +29,11 @@
   .page-header.page-header--sticky {
     position: fixed;
     top: 0;
-    left: 50%;
 
     z-index: 100;
 
+    width: 100%;
     min-height: 73px;
-    margin-left: -160px;
     padding-top: 27px;
     padding-bottom: 31px;
 
@@ -180,6 +179,10 @@
     padding-top: 45px;
   }
 
+  .page-header__site {
+    text-align: left;
+  }
+
   .page-header.page-header--inner {
     background-color: $white;
   }
@@ -221,12 +224,6 @@
       margin: 0;
 
       justify-content: flex-end;
-    }
-
-    .page-header.page-header--sticky {
-      left: 50%;
-
-      margin-left: -384px;
     }
   }
 }

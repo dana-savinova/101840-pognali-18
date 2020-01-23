@@ -37,7 +37,40 @@
 }
 
 .cta__link {
+  position: relative;
+
   color: $light-gold;
+
+  text-decoration: none;
+
+
+  &:hover,
+  &:focus {
+    color: $mango;
+  }
+
+  &:active {
+    color: rgba($mango, 0.3);
+  }
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: $light-gold;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    background-color: $mango;
+  }
+
+  &:active::after {
+    background-color: rgba($mango, 0.3);
+  }
 }
 
 .cta__form {
