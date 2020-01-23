@@ -27,6 +27,9 @@
   border-radius: 50%;
 }
 
+.profile-lvl__bar {
+  transform: rotate(-83deg);
+}
 
 .profile__group {
   margin: 0;
@@ -216,9 +219,13 @@
     padding-bottom: 40px;
   }
 
+  .profile__hide {
+    display: none;
+  }
+
   .profile__info {
     position: absolute;
-    top: -254px;
+    top: -263px;
     right: 155px;
 
     width: 330px;
@@ -236,6 +243,11 @@
     border-bottom-right-radius: 0;
   }
 
+  .profile__lvl {
+    margin-left: -2px;
+    margin-bottom: 13px;
+  }
+
   .profile__btn {
     width: 190px;
     height: 47px;
@@ -245,7 +257,7 @@
 
   .profile__btn-wrapper {
     position: absolute;
-    top: -64px;
+    top: -74px;
     right: 155px;
   }
 
@@ -259,6 +271,7 @@
   .profile__wrapper--transport {
     width: 384px;
     height: 94px;
+    padding-top: 11px;
   }
 
   .profile__list {

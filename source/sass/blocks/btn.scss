@@ -44,9 +44,8 @@
   width: 10px;
   height: 14px;
 
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 10px solid $dark-slate-blue;
+  border: 8px solid transparent;
+  border-left: 10px solid #1d2e5b;
 }
 
 .btn--stroke {
@@ -119,8 +118,8 @@
   }
 
   .btn::after {
-    top: 31px;
-    right: 36px;
+    top: 33px;
+    right: 27px;
   }
 
   .btn--round {

@@ -55,6 +55,10 @@
 }
 
 .calendar__weekday {
+  display: flex;
+  width: 100%;
+  height: 100%;
+
   padding-top: 11px;
   padding-bottom: 11px;
 
@@ -186,18 +190,22 @@
   }
 
   .calendar__weekday--desktop {
-    display: block;
+    display: flex;
 
     font-size: 18px;
     line-height: 30px;
     font-weight: 400;
     letter-spacing: 0.1em;
-    text-align: center;
   }
 
   .calendar__cell {
     width: 70px;
     height: 69px;
+  }
+
+  .calendar__date:not(.calendar__date--disabled):hover::after {
+    width: 71px;
+    height: 70px;
   }
 
   .calendar__cell--weekdays {
@@ -215,5 +223,74 @@
     padding-top: 15px;
     padding-left: 10px;
     padding-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .calendar__toggle {
+    margin-bottom: 6px;
+  }
+
+  .calendar__cell {
+    width: 70px;
+    height: 71px;
+  }
+
+  .calendar__date:not(.calendar__date--disabled):hover::after {
+    width: 144px;
+    height: 72px;
+  }
+
+  .calendar__cell--weekdays {
+    height: 49px;
+  }
+
+  .calendar__date {
+    position: relative;
+
+    padding-top: 7px;
+    padding-left: 15px;
+
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+  }
+
+  .calendar__weekday {
+    padding: 0;
+    padding-top: 6px;
+    padding-left: 16px;
+
+    justify-content: flex-start;
+
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+
+    text-align: left;
+  }
+
+  .calendar__date--check-in::before,
+  .calendar__date--check-out::before {
+    position: absolute;
+    bottom: 7px;
+    left: 16px;
+
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    color: $white;
+  }
+
+  .calendar__date--check-in::before {
+    content: "Заезд";
+  }
+
+  .calendar__date--check-out::before {
+    content: "Выезд";
   }
 }

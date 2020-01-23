@@ -158,7 +158,7 @@
               <fieldset class="profile__group">
                 <legend class="visually-hidden">Фотография</legend>
                 <label class="profile__btn" for="photo-change">
-                  Сменить фото
+                  <span class="profile__hide">Сменить&nbsp;</span> фото
                 </label>
                 <input class="profile__file visually-hidden" id="photo-change" type="file" accept="image/*">
               </fieldset>
@@ -170,12 +170,12 @@
             </div>
           </fieldset>
           <fieldset class="profile__group profile__group--transport transport-option">
-            <div class="profile__wrapper profile__wrapper--transport">
-              <legend class="profile__title transport-option__title">Транспорт</legend>
-              <ul class="profile__list transport-option__list">
+            <div class="profile__wrapper profile__wrapper--transport transport-option__wrapper">
+              <legend class="profile__title profile__title--transport transport-option__legend">Транспорт</legend>
+              <ul class="transport-option__list">
                 <li class="transport-option__item" data-tooltip="Авиаперелет">
-                  <input class="visually-hidden" id="plane" type="checkbox" name="transport" value="Авиаперелет" checked>
-                  <label class="transport-option__label" for="plane">
+                  <input class="transport-option__input visually-hidden" id="form-plane" type="checkbox" name="transport" value="Авиаперелет" checked>
+                  <label class="transport-option__label" for="form-plane">
                     <span class="visually-hidden">Авиаперелет</span>
                     <svg class="transport-option__icon transport-option__icon--plane" width="14" height="16">
                       <use xlink:href="#plane"></use>
@@ -183,28 +183,28 @@
                   </label>
                 </li>
                 <li class="transport-option__item" data-tooltip="Автотранспорт">
-                  <input class="visually-hidden" id="bus" type="checkbox" name="transport" value="Автотранспорт">
-                  <label class="transport-option__label" for="bus">
+                  <input class="transport-option__input visually-hidden" id="form-bus" type="checkbox" name="transport" value="Автотранспорт">
+                  <label class="transport-option__label" for="form-bus">
                     <span class="visually-hidden">Автотранспорт</span>
-                    <svg class="transport-option__icon transport-option__icon--plane" width="14" height="16">
+                    <svg class="transport-option__icon transport-option__icon--bus" width="13" height="16">
                       <use xlink:href="#bus"></use>
                     </svg>
                   </label>
                 </li>
                 <li class="transport-option__item" data-tooltip="Велосипед">
-                  <input class="visually-hidden" id="bike" type="checkbox" name="transport" value="Велосипед" checked>
-                  <label class="transport-option__label" for="bike">
+                  <input class="transport-option__input visually-hidden" id="form-bike" type="checkbox" name="transport" value="Велосипед" checked>
+                  <label class="transport-option__label" for="form-bike">
                     <span class="visually-hidden">Велосипед</span>
-                    <svg class="transport-option__icon transport-option__icon--plane" width="14" height="16">
+                    <svg class="transport-option__icon transport-option__icon--bike" width="19" height="17">
                       <use xlink:href="#bike"></use>
                     </svg>
                   </label>
                 </li>
                 <li class="transport-option__item" data-tooltip="Пешком">
-                  <input class="visually-hidden" id="run" type="checkbox" name="transport" value="Пешком" checked>
-                  <label class="transport-option__label" for="run">
+                  <input class="transport-option__input visually-hidden" id="form-run" type="checkbox" name="transport" value="Пешком" checked>
+                  <label class="transport-option__label" for="form-run">
                     <span class="visually-hidden">Пешком</span>
-                    <svg class="transport-option__icon transport-option__icon--plane" width="14" height="16">
+                    <svg class="transport-option__icon transport-option__icon--run" width="15" height="17">
                       <use xlink:href="#run"></use>
                     </svg>
                   </label>
@@ -472,13 +472,13 @@
                           <a class="calendar__date calendar__date--disabled" href="#">25</a>
                         </td>
                         <td class="calendar__cell">
-                          <a class="calendar__date calendar__date--choosen" href="#">26</a>
+                          <a class="calendar__date calendar__date--choosen calendar__date--check-in" href="#">26</a>
                         </td>
                         <td class="calendar__cell">
                           <a class="calendar__date calendar__date--choosen" href="#">27</a>
                         </td>
                         <td class="calendar__cell">
-                          <a class="calendar__date calendar__date--choosen" href="#">28</a>
+                          <a class="calendar__date calendar__date--choosen calendar__date--check-out" href="#">28</a>
                         </td>
                         <td class="calendar__cell">
                           <a class="calendar__date" href="#">29</a>
@@ -511,7 +511,7 @@
                   </table>
                 </section>
               </div>
-              <div class="step-form__wrapper step-form__buttons">
+              <div class="step-form__buttons">
                 <a class="step-form__btn btn btn--round" href="#step-2">Следующий шаг</a>
               </div>
             </li>

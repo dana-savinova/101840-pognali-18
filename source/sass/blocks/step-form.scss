@@ -59,6 +59,19 @@
   padding-top: 12px;
 
   background-color: $white;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+
+    background-color: $white;
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    background-color: $white;
+  }
 }
 
 .step-form__group {
@@ -177,7 +190,7 @@
     order: -8;
   }
 
-  .step-form__group--daysn {
+  .step-form__group--days {
     order: -5;
   }
 
@@ -251,7 +264,34 @@
   }
 
   .step-form__country {
+    position: relative;
     margin-bottom: 36px;
+  }
+
+  .step-form__country::after {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    right: 135px;
+
+    width: 1px;
+    height: 100%;
+
+    background-color: $hawkes-blue;
+  }
+
+  .step-form__country::before {
+    content: "";
+
+    position: absolute;
+    bottom: 0;
+    right: 135px;
+
+    width: 10px;
+    height: 25px;
+
+    background-image: linear-gradient(to top, #ffffff 60%, transparent);
   }
 
   .step-form__btn--back {
@@ -266,7 +306,7 @@
   }
 
   .step-form__btn--back::after {
-    right: 167px;
+    right: 172px;
 
     transform: rotate(180deg);
   }
@@ -284,12 +324,18 @@
 @media (min-width: $desktop-width) {
   .step-form__item {
     width: 1320px;
+    margin-bottom: 33px;
     padding-top: 99px;
     padding-right: 160px;
-    padding-bottom: 0;
+    padding-bottom: 105px;
     padding-left: 159px;
 
     border-radius: 60px;
+  }
+
+  .step-form__item:first-child {
+    padding-bottom: 105px;
+    margin-bottom: 43px;
   }
 
   .step-form__break {
@@ -306,12 +352,11 @@
     padding-bottom: 15px;
 
     justify-content: space-between;
-
-    box-shadow: inset 0 -1px 0 0 $hawkes-blue;
   }
 
   .step-form__col {
     width: 676px;
+    padding-right: 79px;
   }
 
   .step-form__indicator {
@@ -331,7 +376,8 @@
   }
 
   .step-form__group--children {
-    width: 300px;
+    width: 247px;
+    margin: 0;
     margin-top: 45px;
     margin-left: auto;
 
@@ -340,5 +386,21 @@
 
   .step-form__label {
     box-shadow: none;
+  }
+
+  .step-form__date {
+    margin-top: 25px;
+    margin-bottom: 57px;
+  }
+
+  .step-form__country {
+    margin-top: 6px;
+    margin-bottom: 42px;
+
+    box-shadow: inset 0 1px 0 0 $hawkes-blue;
+  }
+
+  .step-form__country::after {
+    right: 225px;
   }
 }
