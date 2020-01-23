@@ -43,6 +43,10 @@
     border-color: $midnight-express;
     background-color: $white;
   }
+
+  &--active::after {
+    display: none;
+  }
 }
 
 .country-select__item:not(:last-child)::before {
@@ -76,6 +80,10 @@
   background-size: 9px 9px;
   border: none;
   border-radius: 50%;
+
+  &--active {
+    display: none;
+  }
 }
 
 .country-select__field {
@@ -200,17 +208,41 @@
   }
 }
 
-.country-select__dropdown {
-  display: none;
-}
-
 .country-select__field--choose {
+  position: relative;
+
   width: 220px;
 
   justify-content: space-between;
 
   border: 1px solid $midnight-express;
   border-radius: 4px;
+}
+
+.country-select__field--active {
+  color: $white;
+  background-color: $dark-slate-blue;
+  border: 1px solid $dark-slate-blue;
+}
+
+.country-select__dropdown {
+  position: absolute;
+  top: 40px;
+  left: -1px;
+  z-index: 10;
+
+  display: none;
+  padding-bottom: 20px;
+
+  box-shadow: 0 20px 50px 0 rgba(25, 33, 68, 0.1);
+  border: 1px solid $midnight-express;
+
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.country-select__dropdown--active {
+  display: flex;
 }
 
 .country-select__choose {
@@ -227,6 +259,43 @@
   opacity: 0.3;
 }
 
+.country-select__choose--active {
+  position: relative;
+
+  background-image: none;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+}
+
+.country-select__choose--active::before,
+.country-select__choose--active::after {
+  content: "";
+
+  position: absolute;
+  top: 8px;
+  left: 29px;
+
+  display: block;
+  width: 9px;
+  height: 1px;
+
+  background-color: $white;
+}
+
+.country-select__choose--active::before {
+  transform: rotate(45deg);
+}
+
+
+.country-select__choose--active::after {
+  transform: rotate(-45deg);
+}
 
 .country-select__field--add {
   width: 220px;
@@ -352,6 +421,12 @@
     background-position: center right;
   }
 
+  .country-select__choose--active::before,
+  .country-select__choose--active::after {
+    width: 23px;
+    height: 3px;
+  }
+
   .country-select__field--add {
     padding-right: 28px;
   }
@@ -362,4 +437,17 @@
 
     background-size: 20px 20px;
   }
+
+  .country-select__dropdown {
+    top: 69px;
+
+    border: none;
+  }
 }
+
+// список селекторов для выпадающего списка
+// country-select__choose--active
+// country-select__remove--active
+// country-select__field--active
+// country-select__item--active
+// country-select__dropdown--active
