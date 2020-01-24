@@ -1,4 +1,5 @@
 .area {
+  width: 100%;
   margin-top: -16px;
   padding-top: 32px;
   padding-bottom: 28px;
@@ -11,7 +12,7 @@
 
 .area--js {
   position: absolute;
-  top: 68px;
+  top: -50px;
   left: 0;
   z-index: 20;
 }
@@ -224,7 +225,9 @@
   }
 
   .area--js {
-    top: 219px;
+    top: -158px;
+
+    padding-bottom: 49px;
   }
 
   .area__box {
@@ -326,6 +329,10 @@
     padding-bottom: 124px;
 
     background-color: $solitude;
+  }
+
+  .area--js {
+    padding-bottom: 24px;
   }
 
   .area__box {
