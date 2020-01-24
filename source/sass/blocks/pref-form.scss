@@ -232,6 +232,12 @@
     margin-right: 9px;
   }
 
+  @media (max-width: 1439px) {
+    .pref-form__btn-wrapper--transport {
+      margin-top: 0;
+    }
+  }
+
   .pref-form__list {
     width: 520px;
     margin: 0;
