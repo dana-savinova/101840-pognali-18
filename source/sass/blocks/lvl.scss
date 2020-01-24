@@ -1,4 +1,6 @@
 .lvl {
+  position: relative;
+
   width: 60px;
   display: flex;
 
@@ -21,6 +23,14 @@
   font-weight: 700;
 
   color: $dark-slate-blue;
+}
+
+.lvl__scale {
+  position: absolute;
+  left: -2px;
+  top: 26px;
+
+  transform: rotate(-90deg);
 }
 
 .lvl__num {
@@ -130,6 +140,14 @@
 @media (min-width: $tablet-width) {
   .lvl__title {
     display: none;
+  }
+
+  .lvl__scale {
+    left: -11px;
+    top: -5px;
+
+    width: 65px;
+    height: 65px;
   }
 
   .lvl__num {
