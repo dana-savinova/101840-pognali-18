@@ -173,7 +173,7 @@
               <legend class="visually-hidden">Транспорт</legend>
               <div class="profile__wrapper profile__wrapper--transport transport-option__wrapper">
                 <div class="profile__title profile__title--transport transport-option__title">Транспорт</div>
-                <ul class="transport-option__list">
+                <ul class="profile__list transport-option__list">
                   <li class="transport-option__item" data-tooltip="Авиаперелет">
                     <input class="transport-option__input visually-hidden" id="form-plane" type="checkbox" name="transport" value="Авиаперелет" checked>
                     <label class="transport-option__label" for="form-plane">
@@ -264,7 +264,7 @@
             <li class="step-form__item" id="step-1">
               <div class="step-form__head">
                 <div class="step-form__col">
-                  <h3 class="step-form__title">Шаг 1.<br class="step-form__break"> Даты пребывания</h3>
+                  <h3 class="step-form__title">Шаг 1.&nbsp;<br class="step-form__break">Даты пребывания</h3>
                   <div class="step-form__hint">
                     <p>Укажите предпочтительное количество попутчиков, которых <span class="no-wrap">вы хотели</span> бы позвать в поездку и ее предполагаемую длительность.</p>
                   </div>
@@ -521,9 +521,9 @@
             <li class="step-form__item" id="step-2">
               <div class="step-form__head">
                 <div class="step-form__col">
-                  <h3 class="step-form__title">Шаг 2.<br class="step-form__break"> Маршрут</h3>
+                  <h3 class="step-form__title">Шаг 2.&nbsp;<br class="step-form__break"> Маршрут</h3>
                   <div class="step-form__hint step-form__hint--country">
-                    <p>Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
+                    <p>Укажите страны, которые вы хотели посетить. Это может <span class="step-form__wrap">быть одна</span> или сразу несколько.</p>
                   </div>
                 </div>
                 <ol class="step-form__indicator indicator indicator--desktop">
@@ -541,7 +541,7 @@
               <section class="step-form__wrapper step-form__country country-select">
                 <h2 class="visually-hidden">Выберите страну</h2>
                 <ul class="country-select__list">
-                  <li class="country-select__item">
+                  <li class="country-select__item country-select__item--selected">
                     <div class="country-select__field country-select__field--selected">
                       <button class="country-select__btn country-select__btn--selected" type="button" name="country-add">
                         <span class="country-select__name">Босния и Герцеговина</span>
@@ -554,7 +554,7 @@
                       <span class="visually-hidden">Удалить</span>
                     </button>
                   </li>
-                  <li class="country-select__item">
+                  <li class="country-select__item country-select__item--selected">
                     <div class="country-select__field country-select__field--selected">
                       <button class="country-select__btn country-select__btn--selected" type="button" name="country-add">
                         <span class="country-select__name">Чехия</span>
@@ -567,12 +567,15 @@
                       <span class="visually-hidden">Удалить</span>
                     </button>
                   </li>
-                  <li class="country-select__item country-select__item--active">
+                  <li class="country-select__item country-select__item--choose">
+                    <!-- country-select__item--active -->
                     <div class="country-select__field country-select__field--choose">
-                      <button class="country-select__btn country-select__btn--choose country-select__btn--active" type="button" name="country-add">
+                      <!-- country-select__btn--active -->
+                      <button class="country-select__btn country-select__btn--choose" type="button" name="country-add">
                         <span class="country-select__name">Выберите страну</span>
                       </button>
-                      <div class="country-select__dropdown country-select__dropdown--active drop-list">
+                      <!-- country-select__dropdown--active -->
+                      <div class="country-select__dropdown drop-list">
                         <section class="drop-list__alphabet">
                             <h3 class="visually-hidden">Алфавитный указатель</h3>
                             <ul class="drop-list__alphabet-list">
@@ -697,7 +700,7 @@
                       <span class="visually-hidden">Удалить</span>
                     </button>
                   </li>
-                  <li class="country-select__item">
+                  <li class="country-select__item country-select__item--add">
                     <div class="country-select__field country-select__field--add">
                       <button class="country-select__btn country-select__btn--add" type="button" name="country-add">
                         <span class="country-select__name">Добавить страну</span>
@@ -714,8 +717,8 @@
             <li class="step-form__item">
               <div class="step-form__head">
                 <div class="step-form__col">
-                  <h3 class="step-form__title" id="step-3">Шаг 3.<br class="step-form__break"> Развлечения</h3>
-                  <div class="step-form__hint">
+                  <h3 class="step-form__title" id="step-3">Шаг 3.&nbsp;<br class="step-form__break"> Развлечения</h3>
+                  <div class="step-form__hint step-form__hint--entertainment">
                     <p>Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
                   </div>
                 </div>

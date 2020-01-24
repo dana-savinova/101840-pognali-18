@@ -253,8 +253,14 @@
     padding-bottom: 101px;
   }
 
+  .cta__wrapper {
+    align-items: flex-start;
+  }
+
   .cta__lead {
+    margin-right: auto;
     margin-bottom: 58px;
+    margin-left: auto;
   }
 
   .cta__text {
@@ -281,7 +287,7 @@
   .cta__hint {
     width: 618px;
     margin-right: auto;
-    margin-bottom: 45px;
+    margin-bottom: 44px;
     margin-left: 342px;
   }
 
@@ -310,10 +316,15 @@
   }
 
   .cta__contacts {
-    width: 868px;
+    width: 863px;
+    margin-left: 226px;
     padding: 0;
 
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .cta__icon {
+    margin-right: 26px;
   }
 }

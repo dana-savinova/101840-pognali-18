@@ -24,6 +24,7 @@
     height: 8px;
 
     border: 1px solid $white;
+    background-color: $white;
 
     border-radius: 100%;
   }
@@ -462,7 +463,8 @@
 
 @media (min-width: $desktop-width) {
   .country-select {
-    padding-top: 63px;
+    padding-top: 76px;
+    box-shadow: none;
   }
 
   .country-select__item {

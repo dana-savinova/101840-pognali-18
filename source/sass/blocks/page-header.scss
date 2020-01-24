@@ -138,6 +138,10 @@
     padding-bottom: 10px;
   }
 
+  .page-header__nav--closed {
+    padding: 0;
+  }
+
   .page-header__site {
     margin-bottom: 47px;
 
@@ -214,6 +218,10 @@
     .page-header__contacts {
       margin-top: 81px;
       margin-bottom: 115px;
+    }
+
+    .page-header__nav--closed {
+      padding: 0;
     }
   }
 }

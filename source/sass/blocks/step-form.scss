@@ -1,3 +1,7 @@
+.step-form__wrap {
+  white-space: nowrap;
+}
+
 .step-form__row,
 .step-form__col {
   display: flex;
@@ -44,7 +48,7 @@
 }
 
 .step-form__hint {
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 
   font-size: 16px;
   line-height: 22px;
@@ -76,6 +80,7 @@
 
 .step-form__group {
   display: flex;
+  margin: 0;
 
   flex-direction: column;
 }
@@ -147,7 +152,12 @@
 }
 
 .step-form__country {
-  margin-bottom: 5px;
+  margin-bottom: 2px;
+}
+
+.step-form__btn {
+  width: 228px;
+  margin-left: -4px;
 }
 
 @media (min-width: $tablet-width) {
@@ -179,10 +189,24 @@
   }
 
   .step-form__hint {
+    position: relative;
     padding-right: 10px;
 
     font-size: 20px;
     line-height: 24px;
+  }
+
+  .step-form__hint::after {
+    content: "";
+
+    position: absolute;
+    bottom: -21px;
+    left: 0;
+
+    width: 100%;
+    height: 1px;
+
+    background-color: #d6d9e6;
   }
 
   .step-form__wrapper {
@@ -192,7 +216,7 @@
   }
 
   .step-form__group--travelmates {
-    padding-top: 25px;
+    padding-top: 38px;
 
     order: -10;
   }
@@ -209,7 +233,7 @@
 
   .step-form__label {
     margin: 0;
-    padding-top: 11px;
+    padding-top: 15px;
     padding-bottom: 34px;
     padding-left: 61px;
 
@@ -224,7 +248,7 @@
   }
 
   .step-form__label::before {
-    top: 3px;
+    top: 6px;
     left: 2px;
 
     width: 36px;
@@ -232,7 +256,7 @@
   }
 
   .step-form__checkbox:checked ~ .step-form__label::after {
-    top: 14px;
+    top: 18px;
     left: 15px;
 
     width: 12px;
@@ -270,6 +294,7 @@
   .step-form__btn {
     display: flex;
     width: 285px;
+    margin-left: 0;
 
     justify-content: flex-start;
 
@@ -294,7 +319,8 @@
 
   .step-form__country {
     position: relative;
-    margin-bottom: 36px;
+    margin-top: 16px;
+    margin-bottom: 34px;
 
     box-shadow: 0 -1px 0 0 #d6d9e6;
   }
@@ -348,6 +374,29 @@
 }
 
 @media (min-width: $desktop-width) {
+  .step-form__wrap {
+    white-space: normal;
+  }
+
+  .step-form__hint--country,
+  .step-form__hint--entertainment {
+    width: 510px;
+  }
+
+  .step-form__hint::after {
+    bottom: -35px;
+
+    width: 1007px;
+  }
+
+  .step-form__country::after {
+    top: 9px;
+  }
+
+  .step-form__btn--back::after {
+    right: 171px;
+  }
+
   .step-form__item {
     width: 1320px;
     margin-bottom: 33px;
@@ -411,6 +460,8 @@
   }
 
   .step-form__label {
+    margin-top: 10px;
+
     box-shadow: none;
   }
 

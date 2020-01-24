@@ -2,7 +2,7 @@
   position: relative;
 
   padding-top: 23px;
-  padding-bottom: 9px;
+  padding-bottom: 16px;
 }
 
 .profile__box {
@@ -19,6 +19,9 @@
   align-items: center;
 }
 
+.profile-lvl {
+  margin-top: -7px;
+}
 
 .profile__photo {
   width: 99px;
@@ -43,7 +46,7 @@
 .profile__btn {
   display: flex;
   width: 270px;
-  margin-bottom: 34px;
+  margin-bottom: 32px;
   padding-top: 7px;
   padding-right: 10px;
   padding-bottom: 3px;
@@ -73,21 +76,29 @@
 }
 
 .profile__wrapper {
+  position: relative;
+
   display: flex;
   width: 270px;
-  margin-bottom: 25px;
+  margin-bottom: 17px;
 
   flex-direction: column;
   align-items: center;
 }
 
+.profile__title--hashtags {
+  position: absolute;
+  left: 102px;
+  top: 1px;
+}
+
 .profile__tags {
   width: 270px;
-  height: 78px;
-  padding-top: 13px;
+  height: 89px;
+  padding-top: 22px;
   padding-right: 24px;
   padding-bottom: 13px;
-  padding-left: 27px;
+  padding-left: 26px;
 
   font-size: 16px;
   line-height: 22px;
@@ -134,7 +145,7 @@
 }
 
 .profile__list {
-  margin-bottom: 15px;
+  margin-bottom: 17px;
 }
 
 @media (min-width: $tablet-width) {
@@ -155,6 +166,7 @@
   }
 
   .profile-lvl {
+    margin-top: -3px;
     margin-left: -3px;
   }
 
@@ -173,7 +185,7 @@
   .profile__wrapper--transport {
     width: 308px;
     height: 94px;
-    padding-top: 22px;
+    padding-top: 1px;
   }
 
   .profile__wrapper--hashtags {
@@ -192,13 +204,15 @@
   }
 
   .profile__title--hashtags {
-    bottom: -12px;
-    left: 269px;
+    top: 95px;
+    bottom: auto;
+    left: 270px;
   }
 
   .profile__btn {
     width: 618px;
     height: 60px;
+    margin-bottom: 34px;
 
     font-size: 20px;
     line-height: 20px;
@@ -231,7 +245,7 @@
 @media (min-width: $desktop-width) {
   .profile {
     padding-top: 73px;
-    padding-bottom: 40px;
+    padding-bottom: 48px;
   }
 
   .profile__hide {
@@ -291,6 +305,7 @@
 
   .profile__list {
     width: 172px;
+    margin-top: 11px;
     margin-bottom: 0;
   }
 
