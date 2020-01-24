@@ -133,6 +133,29 @@
     position: relative;
   }
 
+  .page-header__nav {
+    padding-top: 66px;
+    padding-bottom: 10px;
+  }
+
+  .page-header__site {
+    margin-bottom: 47px;
+  }
+
+  .page-header__user {
+    margin-bottom: 52px;
+  }
+
+  .page-header__contacts {
+    margin-bottom: 41px;
+  }
+
+  .page-header__link--auth {
+    width: 266px;
+    min-height: 50px;
+    padding-top: 12px;
+  }
+
   .page-header--dark .page-header__logo::before {
     content: "";
 
@@ -178,6 +201,21 @@
         background-image: url("../img/logo-tablet-white@2x.png");
         background-size: 166px 42px;
       }
+    }
+
+    .page-header__link--auth {
+      width: 190px;
+    }
+
+    .page-header__nav {
+      padding-top: 91px;
+      padding-bottom: 43px;
+      padding-left: 58px;
+    }
+
+    .page-header__contacts {
+      margin-top: 81px;
+      margin-bottom: 115px;
     }
   }
 }
