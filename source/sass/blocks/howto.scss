@@ -1,17 +1,17 @@
 .howto {
-  margin: 0;
-  padding: 0;
-
   display: flex;
+
+  @include list-reset;
+
   flex-direction: column;
   flex-wrap: wrap;
 
   counter-reset: section;
-  list-style: none;
 }
 
 .howto__item {
   position: relative;
+
   width: 270px;
   min-height: 90px;
   padding-top: 23px;

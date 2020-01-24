@@ -1,6 +1,8 @@
 .site-nav {
-  @include list-reset;
   display: flex;
+
+  @include list-reset;
+
   flex-direction: column;
   flex-wrap: wrap;
 }
@@ -78,9 +80,10 @@
 
   .site-nav::before {
     content: "";
+
     position: absolute;
-    left: -104px;
     top: 13px;
+    left: -104px;
 
     width: 60px;
     height: 2px;
@@ -90,7 +93,6 @@
 
   .site-nav__link {
     margin: 0;
-    // margin-left: 40px;
 
     font-size: 20px;
     line-height: 30px;

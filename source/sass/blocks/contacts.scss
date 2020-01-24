@@ -1,6 +1,7 @@
 .contacts {
-  @include list-reset;
   display: flex;
+
+  @include list-reset;
 
   flex-direction: column;
 }

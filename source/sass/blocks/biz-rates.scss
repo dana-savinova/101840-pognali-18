@@ -8,7 +8,6 @@
   display: none;
   width: 270px;
   height: 443px;
-
   margin-top: calc(-443px / 2);
   margin-left: calc(-270px / 2);
 
@@ -39,11 +38,9 @@
 
 
 .biz-rates__list {
+  display: flex;
   margin: 0;
   padding: 0;
-
-
-  display: flex;
 
   flex-direction: column;
 
@@ -109,7 +106,6 @@
   .biz-rates {
     width: 688px;
     height: 526px;
-
     margin-top: calc(-526px / 2);
     margin-left: calc(-688px / 2);
   }
@@ -154,7 +150,6 @@
   .biz-rates {
     width: 750px;
     height: 526px;
-
     margin-top: calc(-526px / 2);
     margin-left: calc(-750px / 2);
   }

@@ -150,11 +150,6 @@
   margin-bottom: 5px;
 }
 
-// .step-form__wrapper--third {
-//   margin-bottom: 22px;
-// }
-
-
 @media (min-width: $tablet-width) {
   .step-form__item {
     width: 618px;
@@ -215,8 +210,8 @@
   .step-form__label {
     margin: 0;
     padding-top: 11px;
-    padding-left: 61px;
     padding-bottom: 34px;
+    padding-left: 61px;
 
     font-size: 20px;
     line-height: 20px;
@@ -332,11 +327,11 @@
 
   .step-form__btn--back {
     width: 200px;
+    margin-left: auto;
     padding-top: 29px;
     padding-right: 0;
     padding-bottom: 20px;
     padding-left: 0;
-    margin-left: auto;
 
     justify-content: flex-end;
   }

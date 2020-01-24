@@ -1,10 +1,9 @@
 .user-nav {
-  @include list-reset;
   display: flex;
 
-  flex-wrap: wrap;
+  @include list-reset;
 
-  list-style: none;
+  flex-wrap: wrap;
 }
 
 .user-nav__link {
@@ -14,7 +13,6 @@
 
   font-size: 20px;
   line-height: 30px;
-
 
   background-color: $mango;
   border-radius: 50%;

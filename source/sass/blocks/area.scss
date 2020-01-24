@@ -155,9 +155,10 @@
 .area__btn--minimize {
   width: 270px;
   padding-top: 8px;
-  padding-left: 36px;
-  padding-bottom: 3px;
   padding-right: 10px;
+  padding-bottom: 3px;
+  padding-left: 36px;
+
 
   font-size: 17px;
   line-height: 28px;
@@ -260,15 +261,14 @@
   }
 
   .area__toggle {
-    width: 178px;
     display: flex;
+    width: 178px;
     margin-left: auto;
     padding-right: 20px;
 
     text-transform: uppercase;
 
     color: $dark-blue;
-
 
     background-size: 19px 19px;
     background-position: center right;
@@ -341,8 +341,8 @@
   }
 
   .area__title {
-    width: 290px;
     display: flex;
+    width: 290px;
 
     font-size: 20px;
     line-height: 24px;
