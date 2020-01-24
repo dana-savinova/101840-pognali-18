@@ -31,15 +31,16 @@
 }
 
 .biz-rates__title {
-  margin-top: 33px;
+  margin-top: 34px;
+  margin-bottom: 29px;
 
   text-align: center;
 }
 
-
 .biz-rates__list {
   display: flex;
   margin: 0;
+  margin-bottom: 34px;
   padding: 0;
 
   flex-direction: column;
@@ -53,8 +54,8 @@
 
 .biz-rates__row {
   display: flex;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-top: 12px;
+  padding-bottom: 10px;
 
   flex-direction: column;
 
@@ -72,9 +73,9 @@
 
 .biz-rates__btn {
   width: 100%;
-  padding-top: 22px;
+  padding-top: 20px;
   padding-right: 10px;
-  padding-bottom: 20px;
+  padding-bottom: 13px;
   padding-left: 10px;
 
   font-size: 16px;
@@ -115,7 +116,15 @@
     padding-left: 92px;
   }
 
+  .biz-rates__title {
+    margin-top: 52px;
+    margin-bottom: 48px;
+  }
+
   .biz-rates__row {
+    padding-top: 13px;
+    padding-bottom: 14px;
+
     flex-direction: row;
     justify-content: space-between;
   }
@@ -152,5 +161,12 @@
     height: 526px;
     margin-top: calc(-526px / 2);
     margin-left: calc(-750px / 2);
+  }
+
+  .biz-rates__title {
+    margin-top: 47px;
+
+    font-size: 45px;
+    line-height: 45px;
   }
 }
