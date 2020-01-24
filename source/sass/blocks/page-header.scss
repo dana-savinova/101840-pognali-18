@@ -140,6 +140,8 @@
 
   .page-header__site {
     margin-bottom: 47px;
+
+    text-align: center;
   }
 
   .page-header__user {
@@ -177,10 +179,6 @@
 
   .page-header--dark.page-header--sticky .page-header__logo::before {
     display: none;
-  }
-
-  .page-header__site {
-    text-align: center;
   }
 
   .page-header__social {
