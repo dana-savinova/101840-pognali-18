@@ -22,6 +22,10 @@
 
 .page-header--inner {
   padding-top: 19px;
+  background-color: $white;
+}
+
+.page-header--inner.page-header--dark {
   background-color: $dark-blue;
 }
 
@@ -45,6 +49,7 @@
 .page-header__toggle {
   position: relative;
 
+  display: block;
   width: 25px;
   height: 25px;
 
@@ -54,6 +59,10 @@
 
   border: none;
 }
+
+// .page-header__toggle--nojs {
+//   display: none;
+// }
 
 .page-header__toggle-icon--burger {
   display: none;
