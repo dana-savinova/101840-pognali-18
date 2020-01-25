@@ -1,6 +1,6 @@
 .pagination {
   display: flex;
-  padding-bottom: 46px;
+  margin-bottom: 110px;
 
   justify-content: center;
 }
@@ -8,6 +8,7 @@
 @media (min-width: $tablet-width) {
   .pagination {
     width: 688px;
+    margin-bottom: 90px;
     padding-top: 25px;
     padding-right: 25px;
     padding-bottom: 25px;
@@ -26,12 +27,17 @@
   }
 
   .pagination__ctrl {
-    width: 84px;
+    width: 79px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .pagination {
     width: 950px;
+    margin-bottom: 0;
+  }
+
+  .pagination__ctrl {
+    width: 87px;
   }
 }

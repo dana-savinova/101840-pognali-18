@@ -1,9 +1,7 @@
 .ctrl {
   display: flex;
-  margin: 0;
-  padding: 0;
 
-  list-style: none;
+  @include list-reset;
 }
 
 .ctrl__item {
@@ -31,7 +29,7 @@
 
 @media (max-width: 767px) {
   .ctrl__item:first-child {
-    box-shadow: inset -1px 0 0 0 #edeff6;
+    box-shadow: inset -1px 0 0 0 $solitude;
 
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;

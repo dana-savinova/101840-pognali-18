@@ -1,7 +1,10 @@
 .site-nav {
-  @include list-reset;
   display: flex;
+
+  @include list-reset;
+
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .site-nav__item {
@@ -21,8 +24,10 @@
 
   color: $dark-blue-grey;
 
-  &:hover {
-    color: #ffd74b;
+  &:hover,
+  &:focus {
+    color: $light-gold;
+    outline: none;
   }
 
   &:active {
@@ -45,7 +50,7 @@
   position: absolute;
   top: 100%;
 
-  color: #ffd74b;
+  color: $light-gold;
 
   transform: translate3d(0, 0, 0);
 }
@@ -75,9 +80,10 @@
 
   .site-nav::before {
     content: "";
+
     position: absolute;
-    left: -104px;
     top: 13px;
+    left: -104px;
 
     width: 60px;
     height: 2px;
@@ -87,7 +93,6 @@
 
   .site-nav__link {
     margin: 0;
-    // margin-left: 40px;
 
     font-size: 20px;
     line-height: 30px;

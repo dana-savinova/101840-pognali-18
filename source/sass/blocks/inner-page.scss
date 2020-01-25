@@ -1,5 +1,7 @@
 .inner-page {
-  background-color: #edeff6;
+  position: relative;
+
+  background-color: $solitude;
 }
 
 .inner-page__box {
@@ -12,6 +14,10 @@
   justify-content: space-between;
 }
 
+.inner-page__container {
+  position: relative;
+}
+
 .inner-page__row {
   margin-top: -30px;
 
@@ -21,14 +27,21 @@
 .inner-page__wrapper {
   position: relative;
 
+  max-height: 70px;
   padding-top: 18px;
   padding-bottom: 10px;
 
   color: $white;
-  background-color: #161c36;
+  background-color: $dark-blue;
 
   border-bottom-left-radius: 18px;
   border-bottom-right-radius: 18px;
+}
+
+.inner-page__wrapper--js {
+  z-index: 30;
+
+  margin-bottom: 52px;
 }
 
 .inner-page__title {
@@ -73,11 +86,17 @@
   }
 
   .inner-page__wrapper {
+    max-height: 219px;
+
     padding-top: 86px;
     padding-bottom: 63px;
 
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
+  }
+
+  .inner-page__wrapper--js {
+    margin-bottom: 159px;
   }
 
   .inner-page__box {
@@ -103,10 +122,10 @@
     position: relative;
 
     display: flex;
-    // width: 247px;
+    width: 212px;
     margin-top: 26px;
     margin-left: 10px;
-    padding-right: 130px;
+    padding-right: 30px;
 
     font-size: 20px;
     line-height: 24px;
@@ -129,8 +148,8 @@
   .inner-page__back::after {
     content: "";
     position: absolute;
-    right: 70px;
-    top: 0;
+    top: 1px;
+    right: 36px;
 
     display: block;
     width: 32px;
@@ -145,12 +164,17 @@
 
 @media (min-width: $desktop-width) {
   .inner-page {
-    padding-bottom: 77px;
+    padding-bottom: 71px;
   }
 
   .inner-page__wrapper {
+    max-height: 244px;
     padding-top: 111px;
     padding-bottom: 63px;
+  }
+
+  .inner-page__wrapper--js {
+    margin: 0;
   }
 
   .inner-page__box {
@@ -175,6 +199,6 @@
   }
 
   .inner-page__col {
-    margin-bottom: 107px;
+    margin-bottom: 97px;
   }
 }

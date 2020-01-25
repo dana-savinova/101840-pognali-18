@@ -7,6 +7,7 @@
 
 .plan-desc__item {
   position: relative;
+
   display: flex;
   width: 220px;
 
@@ -27,7 +28,7 @@
   width: 13px;
   height: 2px;
 
-  background-color: #1d2e5b;
+  background-color: $dark-slate-blue;
   border-radius: 1px;
 }
 
@@ -42,7 +43,7 @@
   width: 2px;
   height: 281px;
 
-  background-color: #1d2e5b;
+  background-color: $dark-slate-blue;
   border-radius: 1px;
 }
 
@@ -60,7 +61,7 @@
   color: $medium-grey;
   background-color: $white;
   border-radius: 4px;
-  border: solid 1px #cbced9;
+  border: solid 1px $midnight-express;
 
   resize: none;
 
@@ -69,7 +70,7 @@
   }
 
   &:focus {
-    border-color: #161c35;
+    border-color: $dark-blue;
   }
 
   &:invalid {
@@ -133,7 +134,7 @@
   width: 6px;
   height: 6px;
 
-  background-color: #1d2e5b;
+  background-color: $dark-slate-blue;
   border-radius: 50%;
 }
 
@@ -167,7 +168,8 @@
 
 @media (min-width: $tablet-width) {
   .plan-desc {
-    padding-top: 29px;
+    margin-top: 6px;
+    padding-top: 37px;
     padding-bottom: 48px;
   }
 
@@ -176,7 +178,7 @@
   }
 
   .plan-desc__item:not(:last-child) {
-    margin-bottom: 54px;
+    margin-bottom: 52px;
   }
 
   .plan-desc__country::before {
@@ -199,12 +201,12 @@
     width: 3px;
     height: 266px;
 
-    background-color: #1d2e5b;
+    background-color: $dark-slate-blue;
     border-radius: 1px;
   }
 
   .plan-desc__country {
-    margin-bottom: 36px;
+    margin-bottom: 38px;
     padding-left: 0;
 
     font-size: 30px;
@@ -244,5 +246,40 @@
     padding-right: 20px;
     padding-bottom: 9px;
     padding-left: 17px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .plan-desc {
+    padding-top: 87px;
+    padding-bottom: 54px;
+  }
+
+  .plan-desc__item {
+    width: 886px;
+  }
+
+  .plan-desc__country::before {
+    top: 6px;
+    left: 768px;
+  }
+
+  .plan-desc__item:not(:last-child)::after {
+    right: 109px;
+  }
+
+  .plan-desc__text {
+    width: 730px;
+    padding-top: 24px;
+    padding-right: 15px;
+    padding-left: 25px;
+  }
+
+  .plan-desc__flag::after {
+    right: 0;
+  }
+
+  .plan-desc__message {
+    width: 728px;
   }
 }

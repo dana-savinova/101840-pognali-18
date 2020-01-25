@@ -73,7 +73,7 @@
 @media (min-width: $tablet-width) {
   .about {
     min-height: 683px;
-    padding-bottom: 75px;
+    padding-bottom: 0;
 
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
@@ -111,7 +111,7 @@
 
   .about__text {
     width: 300px;
-    margin-bottom: 83px;
+    margin-bottom: 50px;
   }
 
   .about__accent {
@@ -128,6 +128,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .about {
+    padding-bottom: 75px;
+  }
+
   .about__wrapper {
     padding-top: 133px;
     padding-right: 699px;
@@ -154,7 +158,7 @@
     background-image: url("../img/about-desktop@1x.png"),
       url("../img/rectangle-bg-blue.svg");
     background-repeat: no-repeat;
-    background-position: right bottom,
+    background-position: right 60px bottom,
       left 60px top 133px;
     background-size: 630px 665px,
       213px 213px;

@@ -1,8 +1,6 @@
 .country {
   display: flex;
   flex-direction: column;
-
-  // flex-shrink: 0;
 }
 
 .country__photo {
@@ -16,16 +14,15 @@
   position: relative;
 
   display: flex;
-  justify-content: space-between;
-
   margin-top: -18px;
   padding-top: 27px;
   padding-right: 23px;
   padding-bottom: 22px;
   padding-left: 24px;
 
-  order: 2;
+  justify-content: space-between;
   flex-shrink: 0;
+  order: 2;
 
   color: $dark-blue;
   background-color: $white;

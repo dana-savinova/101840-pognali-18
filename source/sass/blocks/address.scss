@@ -17,6 +17,7 @@
   z-index: 4;
 
   display: flex;
+  padding-bottom: 36px;
 
   flex-direction: column;
 
@@ -65,16 +66,16 @@
 
 @media (min-width: $tablet-width) {
   .address {
-    padding-top: 83px;
     margin-top: -60px;
+    padding-top: 83px;
   }
 
   .address__text {
     margin-bottom: 42px;
     padding-top: 19px;
+    padding-right: 10px;
     padding-bottom: 18px;
     padding-left: 128px;
-    padding-right: 10px;
 
     font-size: 28px;
     line-height: 28px;

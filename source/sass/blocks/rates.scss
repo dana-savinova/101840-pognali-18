@@ -7,10 +7,11 @@
   padding-bottom: 35px;
 
   color: $medium-grey;
-  background-color: #edeff6;
+  background-color: $solitude;
 
   @include section-bottom-round;
 }
+
 
 .rates__wrapper {
   padding-left: 50px;
@@ -23,6 +24,8 @@
 }
 
 .rates__list {
+  position: relative;
+
   display: flex;
   margin: 0;
   margin-bottom: 27px;
@@ -31,6 +34,26 @@
   flex-direction: column;
 
   counter-reset: row;
+}
+
+.rates__list::before {
+  content: "";
+
+  position: absolute;
+  top: -129px;
+  right: 0;
+
+  width: 99px;
+  height: 99px;
+
+  background-image: url("../img/rates@1x.png");
+  background-repeat: no-repeat;
+  background-size: 99px 99px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/rates@2x.png");
+    background-size: 99px 99px;
+  }
 }
 
 .rates__row {
@@ -103,6 +126,15 @@
 
   color: $dark-blue-grey;
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: rgba($dark-blue-grey, 0.7);
+  }
+
+  &:active {
+    color: rgba($dark-blue-grey, 0.3);
+  }
 }
 
 
@@ -114,6 +146,7 @@
   }
 
   .rates__wrapper {
+    position: relative;
     padding-right: 29px;
     padding-left: 40px;
   }
@@ -129,6 +162,28 @@
   .rates__list {
     margin-bottom: 59px;
     margin-left: 92px;
+  }
+
+  .rates__list::before {
+    top: auto;
+    right: 56px;
+    bottom: -120px;
+  }
+
+  .rates__wrapper::after {
+    content: "";
+
+    position: absolute;
+    bottom: 36px;
+    right: 40px;
+
+    width: 198px;
+    height: 285px;
+
+    border-radius: 20px;
+    background-color: $lavander;
+
+    z-index: -1;
   }
 
   .rates__row {
@@ -187,12 +242,34 @@
 
     width: 67px;
     height: 67px;
-    background-color: #e2e5f2;
+    background-color: $lavander;
+
+    border-radius: 50%;
+  }
+
+  .rates__link::after {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 67px;
+    height: 67px;
+    background-color: transparent;
     background-image: url("../img/business.svg");
     background-repeat: no-repeat;
     background-size: 17px 21px;
     background-position: center center;
-    border-radius: 50%;
+  }
+
+  .rates__link:hover::after,
+  .rates__link:focus::after {
+    opacity: 0.7;
+  }
+
+  .rates__link:active::after {
+    opacity: 0.3;
   }
 }
 
@@ -217,5 +294,27 @@
 
   .rates__list {
     width: 857px;
+  }
+
+  .rates__list::before {
+    right: -227px;
+    bottom: 0;
+
+    width: 198px;
+    height: 198px;
+
+    background-size: 198px 198px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-size: 198px 198px;
+    }
+  }
+
+  .rates__wrapper::after {
+    bottom: 31px;
+    right: 245px;
+
+    width: 444px;
+    height: 300px;
   }
 }

@@ -4,8 +4,6 @@
 }
 
 .lvl-ctrl__input {
-  position: relative;
-
   width: 111px;
   padding-top: 10px;
   padding-right: 5px;
@@ -21,7 +19,7 @@
   text-align: center;
   color: $dark-blue;
 
-  border: 1px solid #cbced9;
+  border: 1px solid $midnight-express;
 
   &:hover {
     border-color: #959bb2;
@@ -47,18 +45,18 @@
   border-bottom-right-radius: 5px;
 }
 
-.lvl-ctrl__input--max::after {
+.lvl-ctrl::after {
   content: "";
 
   position: absolute;
   top: 12px;
-  right: 101px;
+  right: 107px;
   z-index: 30;
 
   width: 16px;
   height: 11px;
 
-  background-color: #cbced9;
+  background-color: $midnight-express;
   border-top: 5px solid $white;
   border-bottom: 5px solid $white;
 }
@@ -67,6 +65,11 @@
   .lvl-ctrl {
     margin: 0;
     margin-top: -12px;
+  }
+
+  .lvl-ctrl::after {
+    top: 18px;
+    right: 67px;
   }
 
   .lvl-ctrl__input {

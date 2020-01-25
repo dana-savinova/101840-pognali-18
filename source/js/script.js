@@ -4,6 +4,7 @@ var pageHeader = document.querySelector('.page-header');
 
 if (headerNav.classList.contains('page-header__nav--nojs')) {
   headerNav.classList.remove('page-header__nav--nojs');
+  navToggle.classList.remove('page-header__toggle--nojs');
   headerNav.classList.add('page-header__nav--closed');
   pageHeader.classList.add('page-header--dark');
   navToggle.classList.add('page-header__toggle--closed');

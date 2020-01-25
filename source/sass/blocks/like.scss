@@ -14,13 +14,13 @@
 
   flex-shrink: 0;
 
-  background-color: #edeff6;
+  background-color: $solitude;
   border-radius: 50%;
 
   text-decoration: none;
 
   &:hover {
-    background-color: #e2e5f2;
+    background-color: $lavander;
 
     &::after {
       opacity: 0.5;
@@ -28,7 +28,7 @@
   }
 
   &:active {
-    background-color: #e2e5f2;
+    background-color: $lavander;
 
     &::after {
       opacity: 0.1;
@@ -38,6 +38,7 @@
 
 .like__btn::after {
   content: "";
+
   position: absolute;
   top: 10px;
   left: 9px;

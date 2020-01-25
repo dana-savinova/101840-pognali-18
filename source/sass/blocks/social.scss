@@ -1,6 +1,7 @@
 .social {
-  @include list-reset;
   display: flex;
+
+  @include list-reset;
 
   align-items: center;
 }
@@ -13,7 +14,7 @@
 }
 
 .social__icon {
-  fill: #cccccc;
+  fill: $gray80;
 }
 
 .social__icon--vk {

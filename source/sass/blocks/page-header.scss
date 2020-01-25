@@ -4,7 +4,7 @@
   display: flex;
   min-width: 320px;
   min-height: 73px;
-  padding-top: 27px;
+  padding-top: 26px;
   padding-bottom: 31px;
 
   color: $dark-blue-grey;
@@ -21,22 +21,35 @@
 }
 
 .page-header--inner {
-  background-color: #161c36;
+  padding-top: 19px;
+  background-color: $white;
 }
 
-.page-header--sticky {
-  position: fixed;
-  top: 0;
-  left: 0;
+.page-header--inner.page-header--dark {
+  background-color: $dark-blue;
+}
 
-  z-index: 1;
+@media (max-width: 1439px) {
+  .page-header.page-header--sticky {
+    position: fixed;
+    top: 0;
 
-  background-color: $white;
+    z-index: 100;
+
+    width: 100%;
+    min-height: 73px;
+    padding-top: 27px;
+    padding-bottom: 31px;
+
+    background-color: $white;
+    box-shadow: 0 1px 0 0 rgba(#000000, 0.15);
+  }
 }
 
 .page-header__toggle {
   position: relative;
 
+  display: block;
   width: 25px;
   height: 25px;
 
@@ -46,6 +59,10 @@
 
   border: none;
 }
+
+// .page-header__toggle--nojs {
+//   display: none;
+// }
 
 .page-header__toggle-icon--burger {
   display: none;
@@ -67,7 +84,7 @@
 }
 
 .page-header--sticky .page-header__toggle-icon {
-  fill: #cccccc;
+  fill: $gray80;
 }
 
 .page-header__nav {
@@ -95,7 +112,11 @@
 }
 
 .page-header__user {
+  display: flex;
+
   width: 270px;
+
+  justify-content: center;
 }
 
 .page-header__wrapper {
@@ -110,6 +131,35 @@
 @media (max-width: 1439px) {
   .page-header__logo {
     position: relative;
+  }
+
+  .page-header__nav {
+    padding-top: 66px;
+    padding-bottom: 10px;
+  }
+
+  .page-header__nav--closed {
+    padding: 0;
+  }
+
+  .page-header__site {
+    margin-bottom: 47px;
+
+    text-align: center;
+  }
+
+  .page-header__user {
+    margin-bottom: 52px;
+  }
+
+  .page-header__contacts {
+    margin-bottom: 41px;
+  }
+
+  .page-header__link--auth {
+    width: 266px;
+    min-height: 50px;
+    padding-top: 12px;
   }
 
   .page-header--dark .page-header__logo::before {
@@ -131,6 +181,17 @@
     }
   }
 
+  .page-header--dark.page-header--sticky .page-header__logo::before {
+    display: none;
+  }
+
+  .page-header__social {
+    display: flex;
+    width: 105px;
+
+    justify-content: space-between;
+  }
+
   @media (min-width: $tablet-width) {
     .page-header--dark .page-header__logo::before {
       width: 166px;
@@ -143,6 +204,25 @@
         background-size: 166px 42px;
       }
     }
+
+    .page-header__link--auth {
+      width: 190px;
+    }
+
+    .page-header__nav {
+      padding-top: 91px;
+      padding-bottom: 43px;
+      padding-left: 58px;
+    }
+
+    .page-header__contacts {
+      margin-top: 81px;
+      margin-bottom: 115px;
+    }
+
+    .page-header__nav--closed {
+      padding: 0;
+    }
   }
 }
 
@@ -152,11 +232,19 @@
     padding-top: 45px;
   }
 
+  .page-header__site {
+    text-align: left;
+  }
+
+  .page-header.page-header--inner {
+    background-color: $white;
+  }
+
   .page-header--dark {
     background-color: $dark-blue-grey;
   }
 
-  .page-header--inner {
+  .page-header--inner.page-header--dark {
     background-color: #161c36;
   }
 
@@ -202,7 +290,7 @@
     background-color: #161c34;
   }
 
-  .page-header--inner {
+  .page-header--inner.page-header--dark {
     background-color: #161c36;
   }
 

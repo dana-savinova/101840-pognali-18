@@ -1,11 +1,12 @@
 .destination__list {
   display: flex;
+
+  @include list-reset;
+
   margin-top: 15px;
 
   flex-direction: column;
   flex-wrap: wrap;
-
-  @include list-reset;
 }
 
 .destination__item {

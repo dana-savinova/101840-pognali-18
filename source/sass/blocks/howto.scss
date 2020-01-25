@@ -1,19 +1,21 @@
 .howto {
-  margin: 0;
-  padding: 0;
-
   display: flex;
+
+  @include list-reset;
+
   flex-direction: column;
+  flex-wrap: wrap;
 
   counter-reset: section;
-  list-style: none;
 }
 
 .howto__item {
   position: relative;
+
+  width: 270px;
   min-height: 90px;
   padding-top: 23px;
-  padding-right: 103px;
+  padding-right: 95px;
   padding-bottom: 20px;
   padding-left: 25px;
 
@@ -40,11 +42,11 @@
 }
 
 .howto__item:nth-child(4n+3) {
-  background-color: #ffbd30;
+  background-color: $dark-gold;
 }
 
 .howto__item:nth-child(4n+4) {
-  background-color: #ffd74b;
+  background-color: $light-gold;
 }
 
 @media (max-width: 767px) {
