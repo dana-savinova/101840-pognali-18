@@ -60,9 +60,9 @@
   border: none;
 }
 
-// .page-header__toggle--nojs {
-//   display: none;
-// }
+.page-header__toggle--nojs {
+  display: none;
+}
 
 .page-header__toggle-icon--burger {
   display: none;
@@ -291,6 +291,10 @@
   }
 
   .page-header--inner.page-header--dark {
+    background-color: #161c36;
+  }
+
+  .page-header--inner.page-header--nojs {
     background-color: #161c36;
   }
 
