@@ -136,6 +136,8 @@
 
   .routes::after {
     width: $desktop-width;
+    background-position: right 40px top 130px,
+      left 61px top 130px;
   }
 
   .routes__box {
