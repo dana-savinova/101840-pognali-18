@@ -296,13 +296,16 @@
     order: 2;
     flex-direction: row-reverse;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
   }
 
   .travelmate__btn {
     width: 148px;
-    height: 50px;
+    min-height: 50px;
     padding-top: 12px;
+    padding-right: 10px;
+    padding-bottom: 10px;
     padding-left: 7px;
   }
 
@@ -368,13 +371,14 @@
 @media (min-width: $desktop-width) {
   .travelmate {
     width: 950px;
-    height: 285px;
+    min-height: 285px;
     padding: 0;
     padding-right: 44px;
 
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
   }
+
 
   .travelmate__img {
     width: 285px;
@@ -393,26 +397,33 @@
 
   .travelmate__info {
     width: 620px;
-    height: 285px;
+    padding-right: 0;
 
     flex-direction: column;
     flex-wrap: wrap;
   }
 
   .travelmate__name {
-    margin-top: 48px;
+    margin-top: -245px;
+    margin-left: 345px;
     padding: 0;
   }
 
   .travelmate__hashtags {
     margin: 0;
     margin-top: 17px;
-    margin-left: 3px;
+    margin-left: 349px;
   }
 
   .travelmate__buttons {
-    margin-top: -96px;
+    margin: 0;
+    margin-top: 5px;
+    // margin-top: -142px;
     margin-left: 341px;
+  }
+
+  .travelmate__btn {
+    padding-bottom: 5px;
   }
 
   .travelmate__subhead--dest {
@@ -432,7 +443,10 @@
     display: flex;
     flex-direction: column;
 
-    height: 285px;
+    width: 314px;
+    min-height: 256px;
+    margin-top: -252px;
+    margin-left: 640px;
     padding-top: 26px;
 
     order: 10;
@@ -442,10 +456,12 @@
     position: relative;
 
     width: 280px;
+    min-height: 134px;
     margin: 0;
+    padding-top: 8px;
 
     margin-top: 6px;
-    margin-bottom: auto;
+    margin-bottom: 10px;
     margin-left: 34px;
   }
 
@@ -468,8 +484,8 @@
     position: static;
 
     width: 230px;
-    max-height: 85px;
-    margin-bottom: 16px;
+    margin-top: 0;
+    margin-bottom: 0;
     margin-left: 25px;
 
     align-items: flex-start;
@@ -478,7 +494,14 @@
   }
 
   .travelmate__transport {
-    margin-top: 10px;
+    min-height: 32px;
+    margin: 0;
+    margin-top: 21px;
+  }
+
+  .travelmate__lvl {
+    margin-left: 16px;
+    margin-top: 13px;
   }
 
   .travelmate__flag {
